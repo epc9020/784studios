@@ -1,10 +1,12 @@
 p {
   font:Verdana 9px;
+  font-color:white;
 }
 
 body {
-  width:900px
+  width:900px;
   margin-left:50%;
-  margin-right:50%
+  margin-right:50%;
+  background-color:black;
 }
 
