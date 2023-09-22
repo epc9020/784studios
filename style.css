@@ -1,6 +1,6 @@
 p {
   font:Verdana 9px;
-  font-color:white;
+  color:white;
 }
 
 body {
@@ -9,6 +9,7 @@ body {
   margin-left:auto;
   margin-right:auto;
   background-color:black;
+  color:white;
 }
 
 .logoimage {
