@@ -12,11 +12,17 @@ body {
   color:white;
 }
 
+main { 
+  margin-left:14px;
+  margin-right:14px;
+}
+
 .logoimage {
   width:87px;
 }
 
 header {
+  background: lightskyblue;
 }
 
 a {
@@ -24,6 +30,10 @@ a {
 }
 
 a:visited {
-  color:lightblue;
+  color:lightskyblue;
+}
+
+a:hover {
+  color:white;
 }
 
