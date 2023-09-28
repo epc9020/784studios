@@ -1,6 +1,42 @@
 p {
-  font:Verdana 9px;
+  font:"teletext1", Verdana 9px;
   color:white;
+}
+
+@font-face {
+  font-family:teletext1;
+  src: url('/fonts/MODE7GX0.TTF');
+}
+@font-face {
+  font-family: teletext2;
+  src: url('/fonts/MODE7GX1.TTF');
+}
+@font-face {
+  font-family: teletext3;
+  src: url('/fonts/MODE7GX2.TTF');
+}
+@font-face {
+  font-family: teletext4;
+  src: url('/fonts/MODE7GX3.TTF');
+}
+@font-face {
+  font-family: teletext5;
+  src: url('/fonts/MODE7GX4.TTF');
+}
+.teletext1 {
+  font: "teletext1" 9px;
+}
+.teletext2 {
+  font: "teletext2" 9px;
+}
+.teletext3 {
+  font: "teletext3" 9px;
+}
+.teletext4 {
+  font: "teletext4" 9px;
+}
+.teletext5 {
+  font: "teletext5" 9px
 }
 
 body {
@@ -10,6 +46,11 @@ body {
   margin-right:auto;
   background-color:black;
   color:white;
+}
+
+h1 {
+  font: "teletext1" 15px;
+  font-style:italic;
 }
 
 main { 
