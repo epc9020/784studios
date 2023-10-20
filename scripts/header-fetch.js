@@ -11,5 +11,5 @@
 (async function () {
   const headerHTMLRequest = await fetch('/pagefile/footer.html');
   const headerHTML = await headerHTMLRequest.text();
-  document.querySelector('.header-container').innerHTML = headerHTML;
+  document.querySelector('.footer-container').innerHTML = headerHTML;
 })();
