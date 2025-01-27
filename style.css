@@ -1,8 +1,28 @@
 p {
-  font:"teletext1" 9px;
+  font-family:"teletext";
   color:white;
 }
 
+@font-face {
+  font-family:teletext;
+  src: url('/fonts/Teletext50.otf');
+}
+@font-face {
+  font-family: teletext-excondense;
+  src: url('/fonts/Teletext50-extracondensed.otf');
+}
+@font-face {
+  font-family: teletext-cond;
+  src: url('/fonts/Teletext50-condensed.otf');
+}
+@font-face {
+  font-family: teletext-semicond;
+  src: url('/fonts/Teletext50-semicondensed.otf');
+}
+@font-face {
+  font-family: teletext-wide;
+  src: url('/fonts/Teletext50-extended.otf');
+}
 @font-face {
   font-family:teletext1;
   src: url('/fonts/MODE7GX0.TTF');
@@ -23,11 +43,11 @@ p {
   font-family: teletext5;
   src: url('/fonts/MODE7GX4.TTF');
 }
-.teletext1 {
-  font: "teletext1" 9px;
+.teletext {
+  font: "teletext" 9px;
 }
-.teletext2 {
-  font: "teletext2" 9px;
+.teletext-excond {
+  font: "teletext-excondense";
 }
 .teletext3 {
   font: "teletext3" 9px;
@@ -41,7 +61,7 @@ p {
 
 body {
   width:1320px;
-  font-family:"teletext3", Verdana;
+  font-family:'teletext';
   position:relative;
   margin-left:auto;
   margin-right:auto;
@@ -50,9 +70,14 @@ body {
 }
 
 h1 {
-  font: "teletext1" 15px;
-  font-style:italic;
+  font-family: 'teletext-excondense';
+  font-size:50px
 }
+h2 {
+  font-family: 'teletext-cond';
+  font-size: 35px;
+}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
 
 main { 
   margin-left:14px;

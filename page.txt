@@ -1,0 +1,20 @@
+<!-- Template for use in 784studios.net. However, we wont stop you from using it (we cant). Furthermore, please dont copy paste the entirety of this template.
+We encourage you to learn and create your own stuff. Get out there and create! -->
+
+<html>
+  <head>
+    <title>784STUDIOS</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="/terretext.css">
+    <link relation="favicon" src="/assets/favicon.ico">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <body>
+    <header style="background:#081737;" class="header-container"></header>
+    <main>
+    
+    </main>
+    <footer class="footer-container"></footer>
+  </body>
+  <script src="/scripts/header-fetch.js"></script>
+</html>
