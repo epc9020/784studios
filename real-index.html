@@ -1,33 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>784 Studios Television Text Service</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/style.css" rel="stylesheet">
+      <link src="/favicon.ico" rel="favicon">
+      <script src="/scripts/cursor.js"></script>
+      <link rel="stylesheet" href="/waitcur.css">
+      <script src="/scripts/loadCurWait.js"></script>
+    <title>784 Studios On-line Service</title>
     <link rel="stylesheet" href="/terretext.css">
     <meta name="viewport" content="initial-scale=1"/>
-    
+    <meta name="description" content="784 Studios is a one man video production company and provides a few services for videos such as Digital to VHS transfers and YouTube closed captions">
+    <meta name="keywords" content="vhs, digitization, analog, closed captions, subtitles, videos, 784 Studios, elite784, digital to analog, digital to vhs, vfx services, converting digital video to vhs, digitize vhs, styled subtitles, styled captions, karaeoke subtitles, subtitles for youtube, vhs to digital">
+    <script src="/scripts/lang.js"></script>
+    <meta name="keywords" content="vhs, digitization, analogo, subtitulos, videos, 784 studios, elite784, video digital a analogo, video digital a vhs, servicios de vfx, digitizar vhs, convertir video digital a vhs, subtitulos estilizados, subtitulos de karaoke, subtitulos para youtube, servicios en puerto rico, donde puedo convertir mis videos de vhs a digital, vhs a digital">
   </head>
   <style>
+    html {
+      width:900px;
+      margin:0 auto 0 auto;
+    }
       body {
           background-image: url('/deadair.gif');
           background-size: cover;
-
+          width:900px;
+          margin-left: auto;
+          margin-right: auto;
+          height: 600px;
+          color: white;
+          font-family: "teletext";
           
       }
       p, a {
         font-size: 25px;
       }
+      button {
+        cursor: default;
+      }
   </style>
   
-  <body>
-    <main style="background-color: black;min-width:400px;max-width:900px;height:670px;">
-      <h1 style="font-style:normal;background-color: black;text-align: center;;">AIRTXT <span class="flashing"><sup>((</sup></span>/\<span class="flashing"><sup>))</sup></span></h1>
+  <body id="loader">
+    <main style="background-color: black;height:670px;">
+      <h1 style="font-style:normal;background-color: black;text-align: center;;"><span class="flashing"><sup>((</sup></span>/\<span class="flashing"><sup>))</sup></span> AIRTXT <span class="flashing"><sup>((</sup></span>/\<span class="flashing"><sup>))</sup></span></h1>
       <div style="display:flex;width:100%;">
         <div style="border:5px white solid;width:100%;"></div><div style="border:5px rgb(255, 255, 0) solid;width:100%;"></div><div style="border:5px cyan solid;width:100%;"></div><div style="border:5px rgb(0, 255, 0) solid;width:100%;"></div><div style="border:5px magenta solid;width:100%;"></div><div style="border:5px red solid;width:100%;"></div><div style="border:5px blue solid;width:100%;"></div>
       </div>
-      <p style="text-align: center;">784 Studios Television Text Service</p>
-      <p>You are entering 784studios.net. We would like to take this moment to warn you that this website is <span class="red">NOT MOBILE FRIENDLY</span> as of this moment.
-       As such, we require you use a computer and reccomend the Firefox browser to view this page.</p>
-      <div style="text-align: center; width:401px;position:absolute;left:450px">
+      <p style="text-align: center;" data-i18n="tvtxt">Welcome // Bienvenidos</p>
+      <p><span data-i18n="welcome1"><span class="langselnote"></span></span><span class="red" data-i18n="welcome2"></span><span data-i18n="welcome3"></span></p>
+      <div style="text-align: center; width:401px;position:relative;right:20px;visibility: hidden;float:right;" id="testpat">
         <span style="background-color: white;color:black;font-size: 25px;"> ** TEST PATTERN ** </span>
         <div style="width:400px;height:200px;display: flex;"><div style="border:5px white solid;width:100%;background-color: white;"></div><div style="border:5px rgb(255, 255, 0) solid;width:100%;background-color: yellow;"></div><div style="border:5px cyan solid;width:100%;background-color: cyan;"></div><div style="border:5px rgb(0, 255, 0) solid;width:100%;background-color: rgb(0, 255, 0);"></div><div style="border:5px magenta solid;width:100%;background-color: magenta"></div><div style="border:5px red solid;width:100%;background-color:red;"></div><div style="border:5px blue solid;width:100%;background-color: blue;"></div></div>
         <div style="width:400px;height:10px;display:flex;"><div style="border:15px black solid;width:100%;"></div><div style="border:15px rgb(51, 51, 51) solid;width:100%;"></div><div style="border:15px rgb(100, 100, 100) solid;width:100%;"></div><div style="border:15px rgb(150, 150, 150) solid;width:100%;"></div><div style="border:15px rgb(201, 201, 201) solid;width:100%;"></div><div style="border:15px rgb(255, 255, 255) solid;width:100%;"></div></div>
@@ -38,10 +57,7 @@
         <button class="button" style="background-color: red;width:200px;font-family: 'teletext-wide';border:none;font-size: 20px;color:rgb(0, 0, 0)" onclick="changeLanguage('en-US')">English</button>
         <button class="button" style="background-color: lime;width:200px;font-family: 'teletext-wide';border:none;font-size: 20px;color:rgb(0, 0, 0)" onclick="changeLanguage('es-PR')">Español</button>
       </footer>
-      <a href="/home.html">The homepage ] {P. 101}</a><br />
-      <sub>"2xx - here you go"<br>- ez web code reference sheet</sub>
     </main>
-    
   </body>
   <script>
     /*
@@ -64,5 +80,20 @@ This script has been slightly modified by elite784 for 784 Studios to redirect s
   } else {
       null;
   }
+  // end xobyte script
+  
+  // reveal hidden elements if the browser is capable of javascript and 
+  function testpattern() {
+    document.getElementById('testpat').style["visibility"] ='visible'
+    document.getElementById('200').style["visibility"] = 'visible'
+    document.getElementById('footer').style["visibility"] = 'visible'
+    document.getElementById('index').href = "/home.html"
+  }
+  testpattern()
   </script>
+  <script src="/scripts/header-fetch.js"></script>
+  <script>setTimeout(loadfin, 600); setTimeout(cursor, 601);</script>
+  <style>
+    .langselnote
+  </style>
 </html>
