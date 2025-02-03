@@ -1,24 +1,32 @@
-  <html>
+<html >
   <head>
-    <title>Channels - 784 Studios</title>
+    <title data-i18n="titleovn">WAIT</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <link src="/favicon.ico" rel="favicon">
     <link rel="stylesheet" href="/terretext.css">
+    <script src="/scripts/lang.js"></script>
+    <script src="/scripts/cursor.js"></script>
+    <link rel="stylesheet" href="/waitcur.css">
+    <script src="/scripts/loadCurWait.js"></script>
+    
   </head>
-  <body>
-    <header>
-      <div class="header-container"></div>
-    </header>
-    <main>
-      <h1>784 Online Video Network</h1>
-      <br>
-      <p><a href="https://youtube.com/@784studios">784 Studios</a> // The main channel of 784 Studios.<br>
-      <a href="https://youtube.com/@elite784">elite784</a> // The personal channel of elite784 where he posts anything he pleases.
-      </p>
-    </main>
-    <footer>
-      <div class="footer-container"></div>
-    </footer>
+  
+  <body style="background-color:black;" id="loader">
+    
+    <div class="body">
+      <header>
+        <div class="header-container"></div>
+      </header>
+      <main>
+        <h1 data-i18n="ovnheader"><span class="flashing">◴ PG 103</span> </h1>
+        <br>
+        <p><a class="a" href="https://youtube.com/@784studios">784 Studios</a> // <span data-i18n="784net"></span><br>
+        <a class="a" href="https://youtube.com/@elite784">elite784</a> //    <span data-i18n="elite784net"></span>
+        </p>
+      </main>
+      <footer data-i18n="copyright"></footer>
+    </div>
   </body>
   <script src="/scripts/header-fetch.js"></script>
+  <script>setTimeout(loadfin, 600); setTimeout(cursor, 601);</script>
 </html>

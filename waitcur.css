@@ -1,0 +1,20 @@
+#loader {
+    cursor: url(/wait0000.png), default;
+    -webkit-animation: cursor 400ms infinite;
+    animation: cursor 400ms infinite;
+  }
+  
+  @-webkit-keyframes cursor {
+    25% {cursor: url(/wait0000.png), default;}
+    50% {cursor: url(/wait0001.png), default;}
+    75% {cursor: url(/wait0002.png), default;}
+    100% {cursor: url(/wait0003.png), default;}
+  } 
+  
+  @keyframes cursor {
+    25% {cursor: url(/wait0000.png), default;}
+    50% {cursor: url(/wait0001.png), default;}
+    75% {cursor: url(/wait0002.png), default;}
+    100% {cursor: url(/wait0003.png), default;}
+  }
+  

@@ -1,26 +1,30 @@
 <html>
   <head>
-    <title>WEBSITES - 784STUDIOS</title>
+    <script src="/scripts/loadCurWait.js"></script>
+    <title data-i18n="titlewebsites">WAIT - 784STUDIOS</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link src="/favicon.ico" rel="favicon">
     <link rel="stylesheet" href="/terretext.css">
-    <link relation="favicon" src="/assets/favicon.ico">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/scripts/lang.js"></script>
+    <script src="/scripts/cursor.js"></script>
+    <link rel="stylesheet" href="/waitcur.css">
   </head>
-  <body>
+  <body id="loader" style="background-color:black;" >
     <header style="background:#081737;">
       <div class="header-container">The navbar did not load. Your browser may not support scripts or the script failed to load.</div>
     </header>
     <main>
-        <h1>WEBSITES</h1>
-        Below are websites asociated with 784 Studios<br>
+        <h1 data-i18n="websites-header"><class class="flashing">◴ PG. 107</class></h1>
+        <span data-i18n="websites-desc"></span><br>
         <p>
-            <a href="https://elite784.online">ELITE784{dot}Online</a> /// The personal site of elite784 where he puts anything he pleases<br>
-            <a href="https://thedirectory.neocities.org">The Directory</a> /// A  work in progress website directory mainly for Neocities sites<br>
+            <a class="a" href="https://elite784.online">ELITE784[dot]Online</a> /// <span data-i18n="websites-elite784online"></span><br>
+            <a class="a" href="https://thedirectory.neocities.org">The Directory</a> /// <span data-i18n="websites-thedirectory"></span><br>
         </p>
     </main>
-    <footer>
-      <div class="footer-container"></div>
-    </footer>
+    <footer data-i18n="copyright"></footer>
   </body>
+  <script src="/scripts/header-fetch.js"></script>
+  <script>setTimeout(loadfin, 1500); setTimeout(cursor, 1501); 
+setTimeout(cursor, 2000);</script>
+  <script>setTimeout(loadfin, 600); setTimeout(cursor, 601);</script>
 </html>
-<script src="/scripts/header-fetch.js"></script>

@@ -16,10 +16,11 @@
   </head>
   <body id="loader" style="text-align: center; width:100%;margin-left:auto;margin-right:auto;">
     <div>
-    <h1 style="visibility: hidden;">784 Studios On-Line Service</h1>
+    <h1 style="visibility: hidden;display:none;">784 Studios On-Line Service</h1>
     <p style="visibility: hidden;display: none;">784 Studios is a one man video production company that provices a few services such as Digital to VHS conversions, stylized YouTube captions, and VHS Digitizations.</p>
     <h1>WELCOME TO <br>784 STUDIOS <br>DOT NETWORK</h1>
-    <p>STAND BY FOR PAGE 100<span class="flashing">...</span></p>
+    <p>STAND BY FOR PAGE 100</p>
+    <div id="loading-thingy" style="visibility: hidden;"></div>
     <div class="warnCont">
       <div class="warnBG"></div>
         <div class="warningEngUS">YOU HAVE NOT BEEN REDIRECTED IN THE LAST 10 SECONDS!!<br> AN EXTENSION MAY BE BLOCKING JAVASCRIPT OR YOUR BROWSER DOES NOT SUPPORT IT. JAVASCRIPT IS REQUIRED FOR THE OPERATION OF THIS WEBSITE. DISABLE ANY CONFLICTING BROWSER EXTENSIONS OR USE A NEWER BROWSER.<br><br>YOU WILL NOT BE ABLE TO PROCEED ANY FURTHER. 784 STUDIOS APOLOGIZES FOR THIS INCONVENIENCE.</div>
@@ -32,6 +33,11 @@
     function redirect() {
       open("real-index.html", "_self")
     }
+    if (window.matchMedia("(any-hover:none)").matches) {
+      document.getElementById("loading-thingy").style["visibility"]='visible';
+  } else {
+      null;
+  }
     setTimeout(redirect, 6000)
   </script>
   <style>
@@ -65,7 +71,7 @@
     .warningEngUS {
       opacity: 100%;
       visibility: hidden;
-      -webkit-animation: warningEngUS 10000ms steps(3, start) 10000ms infinite;
+      -webkit-animation: warningEngUS 20000ms steps(3, start) 20000ms infinite;
       animation: warningEngUS 20000ms steps(3, start) 10000ms infinite;
       color:red;
       font-size: x-large;
@@ -75,13 +81,14 @@
     .warningSpaPR {
       opacity: 100%;
       visibility: hidden;
-      -webkit-animation: warningEngUS 10000ms steps(3, start) 10000ms infinite;
-      animation: warningEngUS 20000ms steps(3, start) 15000ms infinite;
+      -webkit-animation: warningEngUS 20000ms steps(3, start) 20000ms infinite;
+      animation: warningEngUS 20000ms steps(3, start) 20000ms infinite;
       color:red;
       font-size: x-large;
       position:absolute;
       top:0px;
       z-index: 3;
+      
     }
     @-webkit-keyframes warn1 {
       99% {visibility: hidden;}
@@ -127,6 +134,29 @@
         99% {visibility: hidden}
         100% {visibility: visible}
       }
+      #loading-thingy {
+    background-image: url(/wait0000.png);
+    -webkit-animation: loadthing 400ms infinite;
+    animation: loadthing 400ms infinite;
+    width:50px;
+    height:50px;
+    margin:0 auto 0 auto
+  }
+  
+  @-webkit-keyframes loadthing {
+    25% {background-image: url(/wait0000.png);}
+    50% {background-image: url(/wait0001.png);}
+    75% {background-image: url(/wait0002.png);}
+    100% {background-image: url(/wait0003.png);}
+  } 
+  
+  @keyframes loadthing {
+    25% {background-image: url(/wait0000.png);}
+    50% {background-image: url(/wait0001.png);}
+    75% {background-image: url(/wait0002.png);}
+    100% {background-image: url(/wait0003.png);}
+  }
+  
       
     
   </style>

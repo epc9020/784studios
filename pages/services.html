@@ -1,62 +1,66 @@
 <html>
-<head>
-    <title>SERVICES - 784STUDIOS</title>
+  <head>
+    <title data-i18n="titleservices">WAIT - 784STUDIOS</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <link relation="favicon" src="/assets/favicon.ico" />
+    <link src="/favicon.ico" rel="favicon">
     <link rel="stylesheet" href="/terretext.css">
-</head>
-<body>
+    <script src="/scripts/lang.js"></script>
+    <script src="/scripts/cursor.js"></script>
+    <link rel="stylesheet" href="/waitcur.css">
+    <script src="/scripts/loadCurWait.js"></script>
+  </head>
+  <body style="background-color:black;"  id="loader">
+    <div class="body">
     <header style="background:#081737;">
         <div class="header-container"></div>
     </header>
     <main>
-        <h1>SERVICES</h1>
-        <p>We need money, we offer services.</p> 
+        <h1 data-i18n="serviceheader"><span class="flashing">◴ PG. 105</span> </h1>
+        <p data-i18n="servicemaindesc"></p> 
         <br><span style="color:lime">*** 784 Studios has started accepting new orders as of 9th of January 2025 ***</span>
-        <br />Send an order to elite784@outlook.com, payments accepted though PayPal (ATH Movil for Puerto Rico local orders) <br><span style="color:red">(PARTIAL PAYMENT MUST BE SENT FIRST BEFORE WE CAN BEGIN)</span><br />
-        <h2>Digital to Analog Conversion</h2>
-        Want the <i>real</i> analog look? We'll take your clean digital audio or video file, record it to a magnetic tape/send it over the air, and digitize it again for a truly dirty, imperfect analog feel!
-        <ul>
-            <li>For audio - Put your audio recordings into a tape
+        <br /><span data-i18n="servicepayinfo"></span><br />
+        <h2 data-i18n="dta-header"></h2>
+        <span data-i18n="dta-desc"></span>
+        <ul >
+            <li data-i18n="dta-pricing-audio"></li>
             <ul>
-                <li>Type I;Normal tape - Normal, low fidelity tape, could sound muffled at times depending on cassette used. <br /><span style="color:lime">99 cents a minute + 30 cents for conversion efforts</span></li>
-                <li>Type II;CrO<sub>2</sub> Tape - Better than Type I tape, sound is more high fidelity. <br /><span style="color:lime">$1.10 a minute + 30 cents for conversion efforts</span></li>
-                <li>Type IV;Metal tape <span style="color:red">(We currently do not carry this tape)</span> - Exellent sound! The most Hi-Fi you'll get out of an audio cassette!</li></ul>
-            </li>
-            <li>For video - Put your videos into a tape or send them off though the air and back<ul>
-                <li>SLP Tape - The lowest video quality from a video cassette, you'll definitively want to be using Hi-Fi audio with this speed unless the idea is to also have bad sound.<br />
-                <span style="color:lime">$5.00 for a video of 10 minutes or less, $4.30 every 4-8 minutes afterwards</span>
-                <li>SP Tape - The best sound and video you can get on one of these video cassettes <br />
-                <span style="color:lime">$8.50 for a video of 8 minutes or less, $5.40 every 3<sup>1/2</sup>-6<sup>1/2</sup> afterwards</span></li>
-                <li>Live Television Broadcast - Send your video over the analog airwaves     <br /><span style="color:lime">$6.00 for a video of 10 minutes or less, $4 every 10 minutes afterwards</span></li>
-                <li>Recorded Television Broadcast - Can't miss your favorite broadcast! Record the airwaves to watch it later! <br />
-                <span style="color:lime">$11.00 for a video of 8 minutes or less, $7 every 8 minutes afterwards.</span></li></ul>
-                
-                </li>
-                        
+                <li data-i18n="dta-pricing-audio1"></li>
+                <li data-i18n="dta-pricing-audio2"></li>
+                <li data-i18n="dta-pricing-audio3"></li>
+            </ul>
+            <li data-i18n="dta-pricing-video"></li>
+            <ul>
+                <li data-i18n="dta-pricing-video1"></li>
+                <li data-i18n="dta-pricing-video2"></li>
+                <li data-i18n="dta-pricing-video3"></li>
+                <li data-i18n="dta-pricing-video4"></li>
+            </ul>                
         </ul>
         <br>
-        <p>You can ask for dissortions through email. Be aware that you will be charged extra for dissortions, since dissorting analog video requires some machine abuse. This extra charge allows us to maintain and repair our equipment.</p><br>
+        <p data-i18n="dta-video-notice"></p><br>
         
-        <h2>YouTube Closed Captioning Service</h2>
-        Don't want to deal with the hassle of adding {CC} to your video? We'll do the work for you!<br />
-        <span style="color:yellow;">** Notice: We will add {CLOSED CAPTIONS BY THE 784 STUDIOS CAPTIONING SERVICE} at a point in your video where we see fit. This allows other people to easily find the service. **</span>
+        <h2 data-i18n="ytcc-header"></h2>
+        <span data-i18n="ytcc-desc"></span><br />
+        <span style="color:yellow;" data-i18n="ytcc-notice"></span>
         <ul>
-        <li>Normal captions: <span style="color:lime">20 cents per line</span></li>
-        <li>Fancy captions: <span style="color:lime">30 cents per line</span></li>
-        <li>Karaoke captioning: <span style="color:lime">40 cents or more per line depending on timing work</span></li>
+        <li data-i18n="ytcc-price1"></li>
+        <li data-i18n="ytcc-price2"></li>
+        <li data-i18n="ytcc-price3"></li>
         </ul><br>
-        <h2>VHS Archiving Service</h2>
-        Got precious tapes that need archiving? We got you covered, just send your tapes to us and we'll digitize your tapes for you!<br />
-        <span style="color:lime">$10/VHS and $8/VHS-C (Contact us via email for a free quote)</span>
-        <br><span style="color:orange"> ***CUSTOMER ASSUMES RESPONSIBILITY FOR SHIPPING COSTS***</span><br> 
-        <span class="red">This service is currently a Puerto Rico local service only!! <br>
-            <br>** WE CAN ONLY CONVERT THE FOLLOWING TAPE FORMATS: VHS, VHS-C **<br>
-            ** WE CANNOT CONVERT THE FOLLOWING TAPE FORMATS: S-VHS, S-VHS-C, BETAMAX, <br>VIDEO8, HI8, DIGITAL8, and MINIDV AS WE DO NOT HAVE THE REQUIRED EQUIPMENT TO PLAY THESE **</span>
+        <h2 data-i18n="vhsarch-header"></h2>
+        <span data-i18n="vhsarch-desc"></span><br />
+        <span style="color:lime" data-i18n="vhsarch-price"></span>
+        <br><span style="color:orange" data-i18n="vhsarch-resp"> </span><br> 
+        <span class="red" data-i18n="vhsarch-limits"></span>
 </main>
     <footer>
-        <div class="footer-container"></div>
+        <div data-i18n="copyright"></div>
     </footer>
+</div>
 </body>
-</html>
 <script src="/scripts/header-fetch.js"></script>
+<script>setTimeout(loadfin, 600); 
+setTimeout(cursor, 630);
+setTimeout(cursor, 1000);</script>
+</html>
+

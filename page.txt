@@ -3,18 +3,27 @@ We encourage you to learn and create your own stuff. Get out there and create! -
 
 <html>
   <head>
-    <title>784STUDIOS</title>
+    <title data-i18n="titleDataHere">WAIT - 784STUDIOS</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link src="/favicon.ico" rel="favicon">
     <link rel="stylesheet" href="/terretext.css">
-    <link relation="favicon" src="/assets/favicon.ico">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/scripts/lang.js"></script>
+    <script src="/scripts/cursor.js"></script>
+    <link rel="stylesheet" href="/waitcur.css">
+    <script src="/scripts/loadCurWait.js"></script>
   </head>
-  <body>
-    <header style="background:#081737;" class="header-container"></header>
-    <main>
-    
-    </main>
-    <footer class="footer-container"></footer>
+  <body id="loader">
+    <div class="body">
+      <header>
+        <div class="header-container"></div>
+      </header>
+      <main>
+
+      </main>
+      <footer data-i18n="copyright"></footer>
+    </div>
   </body>
+  <script>setTimeout(loadfin, 1500); setTimeout(cursor, 1501); setTimeout(cursor, 2000);</script>
   <script src="/scripts/header-fetch.js"></script>
+  <script>setTimeout(loadfin, 600); setTimeout(cursor, 601);</script>
 </html>

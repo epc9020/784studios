@@ -1,0 +1,88 @@
+{
+    "instructions for those who wish to localize this site in their language": "every object named comment (and this one) is not used in any page and only serves as a point of reference as to where each segment of text goes where. refer to html pages to check what you'll need to translate to your language. all text elements have the attribute data-i18n='wordRef' in them, with 'wordRef' being replaced with their respective data entry. you may have to create a stylesheet to adjust for differences within different languages.",
+
+
+    "comment0": "often updated",
+    "header-update": "** 784 Studios ha traducido sus paginas para usuarios en Puerto Rico. Hola, y bienvenidos a 784 Studios, una compañia de produccion de videos que ofrece servicios como digitaciones de VHS. **",
+    "latestvid-link": "Intro de 784 Studios",
+    "latestbrd-link": "elite784: manualmente recogiendo una cinta de video porque no tengo nada mejor que hacer [INGLES SOLO]",
+
+
+    "tvtxt": "784 Studios Texto Por Televisión",
+    "welcome1": "Estás entrando a 784studios.net. Queremos advertirles que ",
+    "welcome2": "esta pagina no es diseñada para dispositivos móviles",
+    "welcome3": ", al momento. Requerimos que utilizes una computadora y recomendamos que uses Firefox con una pantalla tamaño mínimo de 1366x768px para acceder a esta página.",
+    "entry": "Pagina inicial → [pg. 102]",
+
+    "comment0A": "page titles",
+    "titleindex": "784 Studios Servicio En-Linea",
+    "titlehome": "784 STUDIOS",
+    "titleblog": "784STUDIOS - BLOG",
+    "titlesocialnet": "784STUDIOS - REDES SOCIALES",
+    "titleaim": "784STUDIOS - SERVICIO AIM",
+    "commentA": "header",
+    "videonet": "[Red de Videos]",
+    "services": "[Servicios]",
+    "blog": "[Blog]",
+    "784socials": "[784@RedSocial]",
+    "email": "[Email]",
+    "AIM": "[AIM]",
+    "websites": "[Paginas Asociados]",
+    "welcome-home": "Bienvenidos a 784studios.net /// ",
+    "latestvid": "Video reciente: ",
+    "latestbrd": "Ultimo transmisión: ",
+    "commentB": "footer",
+    "copyright": "<br>© MMXXIV - MMXXV 784 Studios. Derechos: Todos Reservados<br>Teletext50, Mode7 and Teletext stylesheet hecho por Alan Davies de galax.xyz // © Alan Davies 2014 - 2015. Algunos contenidos bajo domino publico<br>Traduccion es-PR hecho por elite784 de 784 Studios // © MMXXV ELITE784[dot]Online, 784 Studios<br><br>",
+
+
+    "comment2": "homepage",
+    "comment2a": "below is 'Welcome to [784 Studios] .net The central website for everything by and asociated with 784 Studios'",
+    "Welcome": "Bienvenidos", "to": "a", ".net": ".net", "the": "la", "central": "pagina", "website": "central", "for": "para", "everything": "todo", "by": "hecho", "and": "y", "associated": "asociado", "with": "con", "7": "7", "8": "8", "4": "4", "Studios": "Studios",
+    "comment2b": "homepage content",
+    "videos-main": "Todo los Videos y Transmiciones",
+
+    "comment3": "video network",
+    "titleovn": "784STUDIOS - RED DE CANALES",
+    "ovnheader": "RED DE CANALES",
+    "784net": "El canal principal de 784 Studios",
+    "elite784net": "El canal personal de elite784, donde publica lo que el desee.",
+
+    "comment4": "services",
+    "titleservices": "784STUDIOS - SERVICIOS",
+    "serviceheader": "SERVICIOS",
+    "servicemaindesc": "Necesitamos hacer dinero, así que le ofrecemos servicios.",
+    "servicepayinfo": "Envié un email a elite784@outlook.com detallando su orden. Aceptamos PayPal para ordenes internacionales Y ATH Móvil para ordenes locales en Puerto Rico. <br> <span style='color:red'>SE TIENE QUE ENVIAR EL PAGO PRIMERO ANTES QUE PODAMOS EMPEZAR, ENVIENOS UN CORREO ELECTRONICO PARA UN ESTIMACION GRATIS!</span>",
+    "dta-header": "Conversion digital al analogo",
+    "dta-desc": "Quieres la apariencia <i>real</i> de los medios análogos? Nosotros tomamos tu video digital y lo pasamos por un video casete (VHS) o por transmisión de televisión análogo, para que tenga la apariencia sucia e imperfecto verdadero de los medios análogos.",
+    "dta-pricing-audio": "Para el audio – pon tus grabaciones de sonido en un casete de audio.",
+    "dta-pricing-audio1": "Tipo I;Casete normal – Tape de baja fidelidad, puede que se oiga malo algunas vises dependiendo del casete usado. <br /><span style='color:lime'>99 centavos al minuto</span>",
+    "dta-pricing-audio2": "Tipo II;Casete CrO<sub>2</sub> - Mejor calidad que Tipo I, el sonido es mas alto de fidelidad. <br /><span style='color:lime'>$1.10 al minuto</span>",
+    "dta-pricing-audio3": "Tipo IV;Casete Metal <span style='color:red'>(Por ahora, no tenemos este tipo de audio casete)</span> - Sonido excelente! La fidelidad mas alta que puedes sacar de un casete!",
+    "dta-pricing-video": "Para video – Pon tus videos digitales en un video casete o transmitirlo por el aire",
+    "dta-pricing-video1": "Velocidad SLP – calidad de video mas baja de un video casete, vas a tener que usar sonido “Hi-Fi” si la idea no es que también quieras sonido horrible.<br /><span style='color:lime'>$5.00 para un video de 10 minutos o menos, $4.30 cada 4-8 minutos después.</span>",
+    "dta-pricing-video2": "Velocidad SP – lo mejor que puedes sacar de unos de estos video casete.<br /><span style='color:lime'>$8.50 para un video de 8 minutos o menos, $5.40 cada 3<sup>1/2</sup>-6<sup>1/2</sup> minutos despues.</span>",
+    "dta-pricing-video3": "Transmisión de televisión – Transmite tu video por el aire análogo<br /><span style='color:lime'>$6.00 para un video de 10 minutos o menos, $4 cada 10 minutos después.</span>",
+    "dta-pricing-video4": "Recorded Television Broadcast - Can't miss your favorite broadcast! Record the airwaves to watch it later! <br /><span style='color:lime'>$11.00 for a video of 8 minutes or less, $7 every 8 minutes afterwards.</span>",
+    "dta-video-notice": "Puedes pedir distorciones extras por correo electronico. Date cuenta que puedes que te cargemos extra para los distorciones, ya que para esto se nesesita abusar las maquinas. Este cargo nos deja mantener y reparar nuestras maquinas.",
+    
+    "ytcc-header": "Servicio de subtitulos para YouTube",
+    "ytcc-desc": "No quieres bregar con la dificultad de tener que escribir subtituos a tus videos? Nosotros haremos ese trabajo por ti!",
+    "ytcc-notice": "** NOTA: POR EL MOMENTO, ESTE SERVICIO ES SOLAMENTE PARA VIDEOS EN INGLES. ESTO ES PORQUE NO SABEMOS SI NUESTRO ESTANDARD DE ESCRIBIR EN ESPANOL ES SUFICIENTEMENTE ALTA PARA NUESTROS CLIENTES. NOSOTROS PERDONAMOS POR ESTA INCONVENIENCIA **",
+    "ytcc-price1": "Subtutulos normales: <span style='color: lime'>20 centavos per linea</span>",
+    "ytcc-price2": "Subtitulos estilizados: <span style='color:lime'> 30 centavos per linea</span>",
+    "ytcc-price3": "Subtitulos de kareoke: <span style='color:lime'> 40 centavos per linea</span>",
+
+    "vhsarch-header": "Servicio de digitazion de VHS",
+    "vhsarch-desc": "Tienes cintas de videos que quieres archivar? Envianolos y nosotros te lo preservamos digitalmente!",
+    "vhsarch-price": "$10/VHS y $8/VHS-C (Contactanos para un estimacion de precio gratis!)",
+    "vhsarch-resp": "***CLIENTE ASUME LA RESPONSABILIDAD DEL COSTO DE ENVIO POR CORREO***",
+    "vhsarch-limits": "Este servicio solamente disponible en Puerto Rico! <br><br>** SOLAMENTE PODEMOS DIGIZAR LOS FORMATOS SIGIENTES: VHS, VHS-C **<br>** NO PODEMOS DIGITIZAR LOS FORMATOS SIGIENTES: S-VHS, S-VHS-C, BETAMAX, <br>VIDEO8, HI8, DIGITAL8, and MINIDV YA QUE NO TENEMOS LAS MAQUINAS REQUERIDAS PARA REPRODUCIRLOS **",
+
+
+    "comment5": "websites",
+    "titlewebsites": "784STUDIOS - PAGINAS ASOCIADOS",
+    "websites-header": "PAGINAS",
+    "websites-desc": "Debajo es una lista de paginas asociado con 784 Studios",
+    "websites-elite784online": "La pagina personal de elite784 donde pone cualquier cosa que quere",
+    "websites-thedirectory": "Un repositorio de paginas mayormente de Neocities, un proyecto en progreso."
+}

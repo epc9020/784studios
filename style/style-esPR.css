@@ -1,0 +1,291 @@
+/* below is css that will need to be changed thoughout different translations */
+
+.welcome {
+    position:relative;
+    left:45px;
+    top:100px;
+    width:auto;
+    font-size: 46px;
+    letter-spacing: 0.155em;
+    color: pink;
+    text-shadow: -2px 2px 0 #000000, 
+    2px 2px 0 #000000, 
+    2px -2px 0 #000000, 
+    -2px -2px 0 #000000;
+    font-family: teletext-excond;
+}
+.to {
+    position:relative;
+    left:328px;
+    top:90px;
+    width:auto;
+    font-size: 36px;
+    letter-spacing: 0.3em;
+    color: deeppink;
+    font-family: teletext-wide;
+}
+.net {
+    position:relative;
+    left:910.2px;
+    top:54.5px;
+    width:auto;
+    font-size: 38px;
+    color: orange;
+    text-shadow: -2px 2px 0 #000000,
+    2px 2px 0 #000000,
+    2px -2px 0 #000000,
+    -2px -2px 0 #000000;
+}
+
+.the {
+    position:relative;
+    left:133.5px;
+    top:176.5px;
+    width:auto;
+    font-size: 26px;
+    letter-spacing: 0.311em;
+    font-family: teletext-wide;
+}
+.central {
+    position:relative;
+    left:223.8px;
+    top:142.5px;
+    width:auto;
+    font-size: 31px;
+    font-style: italic;
+    font-weight: 600;
+    color: #ed8efa;
+    text-shadow: -2px 2px 0 #000,
+     2px 2px 0 #000, 
+     2px -2px 0 #000, 
+     -2px -2px 0 #000;
+     letter-spacing: 0.072em;
+}
+
+.website {
+    position:relative;
+    left:377px;
+    top:113px;
+    width:auto;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(255, 245, 95);
+    text-shadow: -2px 2px 0 #000000,
+     2px 2px 0 #000000,
+      2px -2px 0 #000000, 
+      -2px -2px 0 #000000;
+      letter-spacing: 0.175em;
+}
+
+.for {
+    position:relative;
+    left:533.5px;
+    top:79.5px;
+    width:auto;
+}
+
+.everything {
+    position:relative;
+    left:610.2px;
+    top:51.5px;
+    width:auto;
+    font-size: 34px;
+    letter-spacing: 0.6em;
+    text-shadow: -2px 2px 0 #000000, 
+    2px 2px 0 #000000, 
+    2px -2px 0 #000000, 
+    -2px -2px 0 #000000;
+    color: yellowgreen;
+}
+
+.by {
+    position:relative;
+    left:295.3px;
+    top:96.8px;
+    width:auto;
+    font-size: 27px;
+    text-shadow: -2px 2px 0 #000000, 
+    2px 2px 0 #000000, 
+    2px -2px 0 #000000, 
+    -2px -2px 0 #000000;
+    letter-spacing: 0.322em;
+    color: lightgreen;
+}
+
+.and {
+    position:relative;
+    left:446px;
+    top:81.5px;
+    width:auto;
+    text-shadow: -1px 1px 0 #000000, 
+    1px 1px 0 #000000, 
+    1px -1px 0 #000000, 
+    -1px -1px 0 #000000;
+    font-size: 21px;
+    letter-spacing: 0.241em;
+}
+
+.associated {
+    position:relative;
+    left:484.3px;
+    top:55.8px;
+    width:auto;
+    text-shadow: -1px 1px 0 #000000, 
+    1px 1px 0 #000000, 
+    1px -1px 0 #000000, 
+    -1px -1px 0 #000000;
+    letter-spacing: 0.267em;
+    color: hotpink;
+    font-family: teletext-wide;
+}
+
+.with {
+    position:relative;
+    left:640.1px;
+    top:19.0px;
+    width:auto;
+    font-size: 27px;
+    line-height: 1;
+    letter-spacing: 0.008em;
+}
+
+.container784 {
+    position:relative;
+    left:724px;
+    top:-20px;
+    width:auto;
+    font-size: 42px;
+}
+
+.seven {color: blue;}
+.eight {color: cyan;} 
+.four{color: pink;}
+.studios {
+    position:relative;
+    left:886px;
+    top:-58px;
+    width:auto;
+    font-size: 43px;
+    color: blue;
+    text-shadow: -1px 1px 0 #000000,
+     1px 1px 0 #000000, 
+     1px -1px 0 #000000, 
+     -1px -1px 0 #000000;
+}
+
+/* below is other style stuff that probably wont need changing */
+
+p {
+    font-family:"teletext";
+    color:white;
+    
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color:black;
+  }
+  @font-face {
+    font-family:teletext;
+    src: url('/fonts/Teletext50.otf');
+  }
+  @font-face {
+    font-family: teletext-excond;
+    src: url('/fonts/Teletext50-extracondensed.otf');
+  }
+  @font-face {
+    font-family: teletext-cond;
+    src: url('/fonts/Teletext50-condensed.otf');
+  }
+  @font-face {
+    font-family: teletext-semicond;
+    src: url('/fonts/Teletext50-semicondensed.otf');
+  }
+  @font-face {
+    font-family: teletext-wide;
+    src: url('/fonts/Teletext50-extended.otf');
+  }
+  @font-face {
+    font-family:teletext1;
+    src: url('/fonts/MODE7GX0.TTF');
+  }
+  @font-face {
+    font-family: teletext2;
+    src: url('/fonts/MODE7GX1.TTF');
+  }
+  @font-face {
+    font-family: teletext3;
+    src: url('/fonts/MODE7GX2.TTF');
+  }
+  @font-face {
+    font-family: teletext4;
+    src: url('/fonts/MODE7GX3.TTF');
+  }
+  @font-face {
+    font-family: teletext5;
+    src: url('/fonts/MODE7GX4.TTF');
+  }
+  .teletext {
+    font: "teletext" 9px;
+  }
+  .teletext-excond {
+    font: "teletext-excondense";
+  }
+  .teletext3 {
+    font: "teletext3" 9px;
+  }
+  .teletext4 {
+    font: "teletext4" 9px;
+  }
+  .teletext5 {
+    font: "teletext5" 9px
+  }
+  
+  body {
+    width:1320px;
+    font-family:'teletext';
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+  
+    color:white;
+  }
+  
+  h1 {
+    font-family: 'teletext-excond';
+    font-size:50px
+  }
+  h2 {
+    font-family: 'teletext-cond';
+    font-size: 35px;
+  }
+  h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+  
+  main { 
+    margin-left:14px;
+    margin-right:14px;
+  }
+  
+  .logoimage {
+    width:87px;
+  }
+  
+  header {
+    background: rgb(0, 48, 78);
+  }
+  
+  a {
+    color:lightblue;
+  }
+  
+  a:visited {
+    color:lightskyblue;
+  }
+  
+  a:hover {
+    color:white;
+  }
+  
+  

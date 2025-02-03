@@ -1,0 +1,95 @@
+
+{
+    "instructions for those who wish to localize this site in their language": "every object named comment (and this one) is not used in any page and only serves as a point of reference as to where each segment of text goes where. refer to html pages to check what you'll need to translate to your language. all text elements have the attribute data-i18n='wordRef' in them, with 'wordRef' being replaced with their respective data entry. you may have to create a stylesheet to adjust for differences within different languages.",
+
+    "comment0": "often updated",
+    "header-update": "** 784 Studios has localized its pages for users in Puerto Rico **", 
+    "latestvid-link": "784 Studios Intro Sequence",
+    "latestbrd-link": "elite784: manually rewinding a tape because i have nothing better to do",
+
+
+    "comment1": "index page",
+    "tvtxt": "784 Studios Television Text Service",
+    "welcome1": "You are entering 784studios.net. We would like to take this moment to warn you that this website is ",
+    "welcome2": "NOT MOBILE FRIENDLY",
+    "welcome3": " as of this moment. As such, we require you use a computer and recommend the Firefox browser and a screen of at least 1366x768px to view this page.",
+    "entry": "The homepage → [pg. 101]",
+
+    "comment0A": "page titles",
+    "titleindex": "784 Studios On-Line Service",
+    "titlehome": "784 STUDIOS",
+    "titleblog": "784STUDIOS - BLOG",
+    "titlesocialnet": "784STUDIOS - SOCIAL NETWORK",
+    "titleaim": "784STUDIOS - AIM SERVICE",
+    "titlewebsites": "784STUDIOS - ASOCIATED PAGES",
+
+    "commentA": "header",
+    "videonet": "[Video Network]",
+    "services": "[Services]",
+    "blog": "[Blog]",
+    "784socials": "[784@SocialNet]",
+    "email": "[Email]",
+    "AIM": "[AIM]",
+    "websites": "[Websites]",
+    "welcome-home": "Welcome to 784studios.net /// ",
+    "latestvid": "Latest video: ",
+    "latestbrd": "Last broadcast: ",
+    "commentB": "footer",
+    "copyright": "<br>© MMXXIV - MMXXV 784 Studios. Rights: All Reserved<br>Teletext50, Mode7 and Teletext stylesheet by Alan Davies of <a href='https://galax.xyz' class='a'>galax.xyz</a> // © Alan Davies 2014 - 2015. Some content under public domain.<br><br> <script>fetch('/assets/useless-file-that-does-nothing.txt')</script>",
+
+
+    "comment2": "homepage",
+    "comment2a": "below is 'Welcome to [784 Studios] .net The central website for everything by and asociated with 784 Studios'",
+    "Welcome": "Welcome", "to": "to", ".net": ".net", "the": "the", "central": "central", "website": "website", "for": "for", "everything": "everything", "by": "by", "and": "and", "associated": "associated", "with": "with", "7": "7", "8": "8", "4": "4", "Studios": "Studios",
+    "comment2b": "main content",
+    "videos-main": "All Videos And Broadcasts",
+
+
+    "comment3": "video network",
+    "titleovn": "784STUDIOS - ON-LINE VIDEO NETWORK",
+    "ovnheader": "ON-LINE VIDEO NETWORK",
+    "784net": "The main channel for 784 Studios",
+    "elite784net": "The personal channel of elite784 where he posts anything he pleases.",
+
+
+    "comment4": "services",
+    "titleservices": "784STUDIOS - SERVICES",
+    "serviceheader": "SERVICES",
+    "servicemaindesc": "We need money, we offer services.",
+    "servicepayinfo": "Send an email about your order to elite784@outlook.com. We accept PayPal for international orders, and ATH Movil for PR local orders. <br> <span style='color:red'>PAYMENT MUST BE SENT FIRST BEFORE WE BEGIN, EMAIL US FOR A FREE QUOTE!</span>",
+    "dta-header": "Digital to Analog Conversion",
+    "dta-desc": "Want the <i>real</i> analog look? We'll take your clean digital audio or video file, record it to a magnetic tape/send it over the air, and digitize it again for a truly dirty, imperfect analog feel!",
+    "dta-pricing-audio": "For audio - Put your audio recordings into a tape",
+    "dta-pricing-audio1": "Type I;Normal tape - Normal, low fidelity tape, could sound muffled at times depending on cassette used. <br /><span style='color:lime'>99 cents a minute</span>",
+    "dta-pricing-audio2": "Type II;CrO<sub>2</sub> Tape - Better than Type I tape, sound is more high fidelity. <br /><span style='color:lime'>$1.10 a minute</span>",
+    "dta-pricing-audio3": "Type IV;Metal tape <span style='color:red'>(We currently do not carry this tape)</span> - Exellent sound! The most Hi-Fi you'll get out of an audio cassette!",
+    "dta-pricing-video": "For video - Put your videos into a tape or send them off though the air and back",
+    "dta-pricing-video1": "SLP Tape - The lowest video quality from a video cassette, you'll definitively want to be using Hi-Fi audio with this speed unless the idea is to also have bad sound.<br /><span style='color:lime'>$5.00 for a video of 10 minutes or less, $4.30 every 4-8 minutes afterwards</span>",
+    "dta-pricing-video2": "SP Tape - The best sound and video you can get on one of these video cassettes <br /><span style='color:lime'>$8.50 for a video of 8 minutes or less, $5.40 every 3<sup>1/2</sup>-6<sup>1/2</sup> afterwards</span>",
+    "dta-pricing-video3": "Live Television Broadcast - Send your video over the analog airwaves<br /><span style='color:lime'>$6.00 for a video of 10 minutes or less, $4 every 10 minutes afterwards</span>",
+    "dta-pricing-video4": "Recorded Television Broadcast - Can't miss your favorite broadcast! Record the airwaves to watch it later! <br /><span style='color:lime'>$11.00 for a video of 8 minutes or less, $7 every 8 minutes afterwards.</span>",
+    "dta-video-notice": "You can ask for dissortions through email. Be aware that you will be charged extra for dissortions, since dissorting analog video requires some machine abuse. This extra charge allows us to maintain and repair our equipment.",
+
+    "ytcc-header": "YouTube Closed Captioning",
+    "ytcc-desc": "Don't want to deal with the hassle of adding {CC} to your video? We'll do the work for you!",
+    "ytcc-notice": "** Notice: We will add [CLOSED CAPTIONS BY THE 784 STUDIOS CAPTIONING SERVICE] at a point in your video where we see fit. This allows other people to easily find the service. **",
+    "ytcc-price1": "Normal captions: <span style='color:lime'>20 cents per line</span>",
+    "ytcc-price2": "Fancy captions: <span style='color:lime'>30 cents per line</span>",
+    "ytcc-price3": "Karaoke captioning: <span style='color:lime'>40 cents or more per line depending on timing work</span>",
+
+    "vhsarch-header": "VHS Archiving Service",
+    "vhsarch-desc": "Got precious tapes that need archiving? We got you covered, just send your tapes to us and we'll digitize your tapes for you!",
+    "vhsarch-price": "$10/VHS and $8/VHS-C (Contact us via email for a free quote)",
+    "vhsarch-resp": "***CUSTOMER ASSUMES RESPONSIBILITY FOR SHIPPING COSTS***",
+    "vhsarch-limits": "This service is currently a Puerto Rico local service only!! <br><br>** WE CAN ONLY CONVERT THE FOLLOWING TAPE FORMATS: VHS, VHS-C **<br>** WE CANNOT CONVERT THE FOLLOWING TAPE FORMATS: S-VHS, S-VHS-C, BETAMAX, <br>VIDEO8, HI8, DIGITAL8, and MINIDV AS WE DO NOT HAVE THE REQUIRED EQUIPMENT TO PLAY THESE **",
+
+
+    "comment5": "websites",
+    "websites-header": "WEBSITES",
+    "websites-desc": "Below are websites asociated with 784 Studios",
+    "websites-elite784online": "The personal site of elite784 where he puts anything he pleases",
+    "websites-thedirectory": "A  work in progress website directory mainly for Neocities sites"
+
+
+}
+
