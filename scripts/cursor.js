@@ -17,11 +17,16 @@ function cursor() {
 
     
     link.fillStyle = "white";
-    point.fillStyle = "white";
-    point.font = "28px teletext";
+    point.fillStyle = "black";
+    point.font = "35px teletext";
     link.font = "28px teletext";
-    point.fillText("🮰", -3, 20)
-    link.fillText("↖", -3, 20)
+    point.fillText("🮰", -3, 24);
+    point.fillText("🮰", -3, 23);
+    point.font = "28px teletext";
+    point.fillStyle = "white";
+    point.fillText("🮰", -3, 20);
+
+    link.fillText("↖", -3, 20);
     document.body.style.cursor = "url('" + cur.toDataURL() + "'), default";
     var alink = document.getElementsByClassName("a");
     var thebutton = document.getElementsByClassName("button");

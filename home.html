@@ -6,7 +6,10 @@
     <link id="styles-link" href="/style.css" rel="stylesheet" type="text/css" media="all">
     <link src="/favicon.ico" rel="favicon">
     <link rel="stylesheet" href="/terretext.css">
+    <script src="/scripts/fucking-jquery.js"></script>
+    <script src="/scripts/jquery.webticker.min.js"></script>
     <script src="/scripts/cursor.js"></script>
+    <script src="/scripts/header-fetch.js"></script>
   </head>
   <body style="background-color:black;">
 
@@ -14,10 +17,13 @@
       <div class="header-container">The navbar did not load. Your browser may not support scripts or the script failed to load.</div>
     </header>
     <main>
-      <marquee><i class="teletext5" data-i18n="welcome-home">Welcome to 784Studios.net! ///</i>
-        <i><span class="teletext5" data-i18n="header-update" style="color:lime">◴ WAIT!</span>
+
+      
+        <marquee>
+        <i><span class="teletext5" data-i18n="welcome-home"></span><span class="teletext5" data-i18n="header-update" style="color:red">◴ WAIT!</span>
        /// <span style="color:magenta" data-i18n="latestvid">Latest Video:</span> <a data-i18n="latestvid-link" href="https://youtu.be/R72WXMLLXI0?si=0Y3YCfgasfVkzU0b"></a> ///
         <span style="color:red" data-i18n="latestbrd">Last Broadcast:</span> <a href="https://www.youtube.com/live/sSShSW941Kg?si=PZkGwrPGF-2nauOQ" data-i18n="latestbrd-link"></a></i> </marquee>
+      
             <br>
             <div style="background-image: url('assets/images/bgbanner.jpeg'); height:434px;overflow:hidden;">
               <!-- devnote: WELCOME TO HELL!! -->
@@ -41,8 +47,7 @@
               <div class="studios" data-i18n="Studios"></div>
             
             </div>
-            <div style="display:flex; margin: 10px;">
-            </div>
+            <div></div>
             <br>
             <videocont> <!-- vidoecont is not a real tag, i did this for vid organization. --> <!-- <iframe style="background-image:url('/deadair.gif')" width="420" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> -->
               <h1 data-i18n="videos-main">All Videos and Broadcasts</h1>
@@ -56,9 +61,13 @@
     </main>
     <footer data-i18n="copyright"></footer>
 </body>
-<script src="/scripts/header-fetch.js"></script>
+<script>desktopGet();</script>
 <script>setTimeout(loadfin, 1500); setTimeout(cursor, 1501); 
 setTimeout(cursor, 2000);</script>
 <script src="/scripts/lang.js"></script>
 <script>setTimeout(cursor, 6000);</script>
+<script>$('#webTicker').webTicker() ({
+  height:'30px'
+});
+</script>
 </html>

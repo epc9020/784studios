@@ -8,6 +8,7 @@
     <script src="/scripts/cursor.js"></script>
     <link rel="stylesheet" href="/waitcur.css">
     <script src="/scripts/loadCurWait.js"></script>
+    <script src="/scripts/header-fetch.js"></script>
   </head>
   <body style="background-color:black;"  id="loader">
     <div class="body">
@@ -15,6 +16,10 @@
         <div class="header-container"></div>
     </header>
     <main>
+        <div class="teletext"><span class="greenbg"> </span><span class="magenta greenbg">&#xe23c;&#xe21c;&#xe20c;&#xe20c;  &#xe23c;&#xe20c;&#xe20c;&#xe204; &#xe23c;&#xe20c;&#xe23c;&#xe210; &#xe22c;&#xe234; &#xe220;&#xe23c;&#xe204; &#xe208;&#xe20c;&#xe23c;&#xe21c;&#xe20c; &#xe228;&#xe21c;&#xe20c;&#xe20c; &#xe228;&#xe23c;&#xe20c;&#xe20c;&#xe204; &#xe23c;&#xe20c;&#xe20c;&#xe20c; </span>
+<span class="magenta greenbg"> &#xe233;&#xe233;&#xe23b;&#xe23f;  &#xe23f;&#xe233;&#xe233;&#xe211; &#xe23f;&#xe20c;&#xe22f;&#xe214;  &#xe20b;&#xe23d;&#xe21f;&#xe201;  &#xe220;&#xe230;&#xe23f;&#xe235;&#xe230; &#xe22a;&#xe235;&#xe230;&#xe230; &#xe22a;&#xe23f;&#xe233;&#xe233;&#xe210; &#xe233;&#xe233;&#xe233;&#xe23f; </span>
+<span class="magenta greenbg">            &#xe203; &#xe202;&#xe201;                              </span>
+</div>
         <h1 data-i18n="serviceheader"><span class="flashing">◴ PG. 105</span> </h1>
         <p data-i18n="servicemaindesc"></p> 
         <br><span style="color:lime">*** 784 Studios has started accepting new orders as of 9th of January 2025 ***</span>
@@ -58,7 +63,7 @@
     </footer>
 </div>
 </body>
-<script src="/scripts/header-fetch.js"></script>
+<script>desktopGet();</script>
 <script>setTimeout(loadfin, 600); 
 setTimeout(cursor, 630);
 setTimeout(cursor, 1000);</script>

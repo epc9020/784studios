@@ -3,9 +3,9 @@
     "instructions for those who wish to localize this site in their language": "every object named comment (and this one) is not used in any page and only serves as a point of reference as to where each segment of text goes where. refer to html pages to check what you'll need to translate to your language. all text elements have the attribute data-i18n='wordRef' in them, with 'wordRef' being replaced with their respective data entry. you may have to create a stylesheet to adjust for differences within different languages.",
 
     "comment0": "often updated",
-    "header-update": "** 784 Studios has localized its pages for users in Puerto Rico **", 
+    "header-update": "** 784 Studios has closed it's  Digital to Analog and VHS Digitization Services to allow for upgrades to digitization methods. Please visit <a href='https://elite784.online/sections/projects'>ELITE784[dot]Online's project page</a> for updates on the upgrade. **", 
     "latestvid-link": "784 Studios Intro Sequence",
-    "latestbrd-link": "elite784: manually rewinding a tape because i have nothing better to do",
+    "latestbrd-link": "elite784:  manually rewinding a tape because i have nothing better to do",
 
 
     "comment1": "index page",
@@ -31,11 +31,21 @@
     "email": "[Email]",
     "AIM": "[AIM]",
     "websites": "[Websites]",
-    "welcome-home": "Welcome to 784studios.net /// ",
+    "welcome-home": "Welcome to 784studios.net // ",
     "latestvid": "Latest video: ",
     "latestbrd": "Last broadcast: ",
+    "homedesc": "784 Studios is a one man media production company that creates videos in the ''VHS'' asthetic. We are very passionate about old mediums and aim to create new videos with this style. We also make videos about other things, too!<br><br>Alongside this, we also offer services to people such as making your video look like it was actually recorded with the tech from yester year, writing captions for those who want to reach a wider audience, and digitization of videotape for those who want to forever preserve their memories at the highest quality possible, at reasonable prices and with better results than our competitors.<br>Please check out our services section for more information about our services!",
     "commentB": "footer",
     "copyright": "<br>© MMXXIV - MMXXV 784 Studios. Rights: All Reserved<br>Teletext50, Mode7 and Teletext stylesheet by Alan Davies of <a href='https://galax.xyz' class='a'>galax.xyz</a> // © Alan Davies 2014 - 2015. Some content under public domain.<br><br> <script>fetch('/assets/useless-file-that-does-nothing.txt')</script>",
+
+    "comment404": "404 page",
+    "header404": "AIRTXT SERVICE DISRUPTION (CODE 404)",
+    "404desc1": "We apoligize for this service disruption.",
+    "404desc2": "The page or file you're looking for doesn't seem to exist within 784studios.net.<br>Please try the following:",
+    "404desc-li": "<li>Check if the file name and directories is written correctly</li><li>Check if what you're looking for has been moved, renamed, or deleted.</li><li>Check the <a href='https://web.archive.org'>Wayback Machine on the Internet Archive</a>.</li>",
+    "404desc3": "If nothing else works, contact the webmaster if you have reason to believe this is a mistake.",
+    "4xxjoke": "&#34;4xx - You fucked up&#34;<br>- ez web response code reference sheet",
+    "blackholesun": "← Go home",
 
 
     "comment2": "homepage",
@@ -56,8 +66,8 @@
     "titleservices": "784STUDIOS - SERVICES",
     "serviceheader": "SERVICES",
     "servicemaindesc": "We need money, we offer services.",
-    "servicepayinfo": "Send an email about your order to elite784@outlook.com. We accept PayPal for international orders, and ATH Movil for PR local orders. <br> <span style='color:red'>PAYMENT MUST BE SENT FIRST BEFORE WE BEGIN, EMAIL US FOR A FREE QUOTE!</span>",
-    "dta-header": "Digital to Analog Conversion",
+    "servicepayinfo": "Send an email about your order to elite784@outlook.com. We accept PayPal for international orders, and ATH Movil for PR local orders. <br> <span style='color:red'>PAYMENT MUST BE SENT FIRST BEFORE WE BEGIN, EMAIL US FOR A FREE QUOTE!</span><br>",
+    "dta-header": "Digital to Analog Conversion <span style='color:red;'>(SERVICE TEMPORARILY CLOSED)</span>",
     "dta-desc": "Want the <i>real</i> analog look? We'll take your clean digital audio or video file, record it to a magnetic tape/send it over the air, and digitize it again for a truly dirty, imperfect analog feel!",
     "dta-pricing-audio": "For audio - Put your audio recordings into a tape",
     "dta-pricing-audio1": "Type I;Normal tape - Normal, low fidelity tape, could sound muffled at times depending on cassette used. <br /><span style='color:lime'>99 cents a minute</span>",
@@ -77,7 +87,7 @@
     "ytcc-price2": "Fancy captions: <span style='color:lime'>30 cents per line</span>",
     "ytcc-price3": "Karaoke captioning: <span style='color:lime'>40 cents or more per line depending on timing work</span>",
 
-    "vhsarch-header": "VHS Archiving Service",
+    "vhsarch-header": "VHS Archiving Service <span style='color:red;'>(SERVICE TEMPORARILY CLOSED)</span>",
     "vhsarch-desc": "Got precious tapes that need archiving? We got you covered, just send your tapes to us and we'll digitize your tapes for you!",
     "vhsarch-price": "$10/VHS and $8/VHS-C (Contact us via email for a free quote)",
     "vhsarch-resp": "***CUSTOMER ASSUMES RESPONSIBILITY FOR SHIPPING COSTS***",

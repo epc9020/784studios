@@ -8,6 +8,7 @@
     <script src="/scripts/cursor.js"></script>
     <link rel="stylesheet" href="/waitcur.css">
     <script src="/scripts/loadCurWait.js"></script>
+    <script src="/scripts/header-fetch.js"></script>
     
   </head>
   
@@ -18,6 +19,24 @@
         <div class="header-container"></div>
       </header>
       <main>
+        <div class="teletext">
+          <span class="redbg"> </span><span class="black redbg">&#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2d0;&#xe2e0;&#xe2f0;&#xe2d0;   &#xe2f0;&#xe2f0; &#xe2f0;&#xe2f0;     &#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0;  &#xe2f0;&#xe2f0;    &#xe2f0;&#xe2f0; &#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0;   </span>
+          <span class="black redbg"> &#xe2ff;&#xe2df;&#xe2cf;&#xe2cf;&#xe2ff;&#xe2d5;&#xe2ea;&#xe2ff;&#xe2ff;&#xe2d4;  &#xe2ff;&#xe2ff; &#xe2ff;&#xe2ff;     &#xe2cf;&#xe2cf;&#xe2ef;&#xe2ff;&#xe2df;&#xe2cf;&#xe2cf;  &#xe2ff;&#xe2ff;&#xe2fd;   &#xe2ff;&#xe2ff; &#xe2ff;&#xe2ff;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;   </span>
+          <span class="black redbg"> &#xe2ff;&#xe2d5;  &#xe2ff;&#xe2d5;&#xe2ea;&#xe2ff;&#xe2ea;&#xe2ff;&#xe2d4; &#xe2ff;&#xe2ff; &#xe2ff;&#xe2ff;       &#xe2ea;&#xe2ff;&#xe2d5;    &#xe2ff;&#xe2d5;&#xe2ff;&#xe2fd;  &#xe2ff;&#xe2ff; &#xe2ff;&#xe2ff;        </span>
+          <span class="black redbg"> &#xe2ff;&#xe2d5;  &#xe2ff;&#xe2d5;&#xe2ea;&#xe2ff; &#xe2ff;&#xe2f5; &#xe2ff;&#xe2ff; &#xe2ff;&#xe2ff;       &#xe2ea;&#xe2ff;&#xe2d5;    &#xe2ff;&#xe2d5;&#xe2ea;&#xe2ff;&#xe2d0; &#xe2ff;&#xe2ff; &#xe2ff;&#xe2ff;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;   </span>
+          <span class="black redbg"> &#xe2ff;&#xe2d5;  &#xe2ff;&#xe2d5;&#xe2ea;&#xe2ff; &#xe2ef;&#xe2ff; &#xe2ff;&#xe2ff; &#xe2ff;&#xe2ff;       &#xe2ea;&#xe2ff;&#xe2d5;    &#xe2ff;&#xe2d5;&#xe2ca;&#xe2ff;&#xe2d5; &#xe2ff;&#xe2ff; &#xe2ff;&#xe2ff;&#xe2c3;&#xe2c3;&#xe2c3;&#xe2c3;&#xe2c3;   </span>
+          <span class="black redbg"> &#xe2ff;&#xe2f5;&#xe2f0;&#xe2f0;&#xe2ff;&#xe2d5;&#xe2ea;&#xe2ff; &#xe2ea;&#xe2ff;&#xe2d0;&#xe2ff;&#xe2ff; &#xe2ff;&#xe2ff;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2d0;&#xe2f0;&#xe2f0;&#xe2fa;&#xe2ff;&#xe2f5;&#xe2f0;&#xe2f0;&#xe2d0; &#xe2ff;&#xe2d5; &#xe2ff;&#xe2fd; &#xe2ff;&#xe2ff; &#xe2ff;&#xe2ff;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0;   </span>
+          <span class="black redbg"> &#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2c5;&#xe2ca;&#xe2cf;  &#xe2c3;&#xe2cf;&#xe2cf;&#xe2cf; &#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2c5;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2c5; &#xe2cf;&#xe2c5; &#xe2c2;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf; &#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;   </span>
+          <span class="black redbg">    &#xe2e8;&#xe2fc;&#xe2d4;    &#xe2e8;&#xe2fc;&#xe2d4;  &#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2d4; &#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2f4;&#xe2d0; &#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc; &#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;    </span>
+          <span class="black redbg">    &#xe2c2;&#xe2ff;&#xe2fd;    &#xe2fe;&#xe2ff;&#xe2c1;  &#xe2c3;&#xe2c3;&#xe2c3;&#xe2ff;&#xe2ff;&#xe2d7;&#xe2c3;&#xe2c3;&#xe2c1; &#xe2ff;&#xe2d5;  &#xe2eb;&#xe2ff; &#xe2ff;&#xe2ff;&#xe2c3;&#xe2c3;&#xe2c3;&#xe2c3; &#xe2ff;&#xe2ff;&#xe2c3;&#xe2c3;&#xe2c3;&#xe2ff;&#xe2ff;    </span>
+          <span class="black redbg">     &#xe2eb;&#xe2ff;&#xe2d4;  &#xe2e8;&#xe2ff;&#xe2d7;      &#xe2ff;&#xe2ff;&#xe2d5;    &#xe2ff;&#xe2d5;  &#xe2ea;&#xe2ff; &#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff; &#xe2ff;&#xe2ff;   &#xe2ff;&#xe2ff;    </span>
+          <span class="black redbg">     &#xe2c2;&#xe2ff;&#xe2fd;  &#xe2fe;&#xe2ff;&#xe2c1;      &#xe2ff;&#xe2ff;&#xe2d5;    &#xe2ff;&#xe2f5;&#xe2f0;&#xe2f0;&#xe2fe;&#xe2df; &#xe2ff;&#xe2ff;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2f0; &#xe2ff;&#xe2ff;&#xe2f0;&#xe2f0;&#xe2f0;&#xe2ff;&#xe2ff;    </span>
+          <span class="black redbg">      &#xe2c2;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2c1;    &#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2c5; &#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2c7;  &#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf; &#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;    </span>
+          <span class="black redbg">&#xe2e8;&#xe2fc;&#xe2f4;  &#xe2fc;&#xe2fc; &#xe2e8;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc; &#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2d4;&#xe2e8;&#xe2fc;&#xe2d4; &#xe2f0;&#xe2d0; &#xe2fc;&#xe2fc; &#xe2e8;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2d4;&#xe2e8;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2fc;&#xe2d0;  &#xe2fc;&#xe2fc;  &#xe2f8;&#xe2fc;&#xe2c4;</span>
+          <span class="black redbg">&#xe2ea;&#xe2ff;&#xe2d7;&#xe2ed;&#xe2d0;&#xe2ff;&#xe2ff; &#xe2ea;&#xe2ff;&#xe2fc;&#xe2fc;&#xe2fc;  &#xe2ea;&#xe2ff;  &#xe2ea;&#xe2ff;&#xe2d5; &#xe2ff;&#xe2d5; &#xe2ff;&#xe2ff; &#xe2ea;&#xe2ff;   &#xe2ff;&#xe2d5;&#xe2ea;&#xe2ff;&#xe2f0;&#xe2f0;&#xe2ff;&#xe2c5;  &#xe2ff;&#xe2ff;&#xe2e0;&#xe2fe;&#xe2df;&#xe2c1; </span>
+          <span class="black redbg">&#xe2ea;&#xe2ff;&#xe2d5;&#xe2c2;&#xe2ef;&#xe2ff;&#xe2ff; &#xe2ea;&#xe2ff;&#xe2f0;&#xe2f0;&#xe2f0;  &#xe2ea;&#xe2ff;  &#xe2ea;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2c7; &#xe2ca;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2c5;&#xe2ea;&#xe2ff;&#xe2d5;&#xe2ea;&#xe2ff;&#xe2d5;  &#xe2ff;&#xe2ff;&#xe2cb;&#xe2fd;&#xe2f4;  </span>
+          <span class="black redbg">        &#xe2c2;&#xe2c3;&#xe2c3;&#xe2c3;&#xe2c3;  &#xe2c2;&#xe2c3;                   &#xe2ca;&#xe2cf;&#xe2c5;&#xe2ca;&#xe2cf;&#xe2c5;  &#xe2cf;&#xe2cf; &#xe2c2;&#xe2cf;&#xe2cd; </span>
+          </div>
         <h1 data-i18n="ovnheader"><span class="flashing">◴ PG 103</span> </h1>
         <br>
         <p><a class="a" href="https://youtube.com/@784studios">784 Studios</a> // <span data-i18n="784net"></span><br>
@@ -27,6 +46,7 @@
       <footer data-i18n="copyright"></footer>
     </div>
   </body>
+  <script>desktopGet();</script>
   <script src="/scripts/header-fetch.js"></script>
   <script>setTimeout(loadfin, 600); setTimeout(cursor, 601);</script>
 </html>

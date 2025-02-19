@@ -3,7 +3,7 @@
 
 
     "comment0": "often updated",
-    "header-update": "** 784 Studios ha traducido sus paginas para usuarios en Puerto Rico. Hola, y bienvenidos a 784 Studios, una compañia de produccion de videos que ofrece servicios como digitaciones de VHS. **",
+    "header-update": "** 784 Studios ha cerrado sus servicios de digital a analogo y digitacion de VHS para permitir mejorar los metodos de digitaciones. Visite <a href='https://elite784.online/sections/projects'>el seccion de projectos de ELITE784[dot]Online (PAGINA SOLO EN INGLES)</a> para informacion sobre estas actualizaciones. **",
     "latestvid-link": "Intro de 784 Studios",
     "latestbrd-link": "elite784: manualmente recogiendo una cinta de video porque no tengo nada mejor que hacer [INGLES SOLO]",
 
@@ -31,8 +31,18 @@
     "welcome-home": "Bienvenidos a 784studios.net /// ",
     "latestvid": "Video reciente: ",
     "latestbrd": "Ultimo transmisión: ",
+    "homedesc": "784 Studios is a one man media production company that creates videos in the ''VHS'' asthetic. We are very passionate about old mediums and aim to create new videos with this style. We also make videos about other things, too!<br><br>Alongside this, we also offer services to people such as making your video look like it was actually recorded with the tech from yester year, writing captions for those who want to reach a wider audience, and digitization of videotape for those who want to forever preserve their memories at the highest quality possible, at reasonable prices and with better results than our competitors.<br>Please check out our services section for more information about our services!",
     "commentB": "footer",
-    "copyright": "<br>© MMXXIV - MMXXV 784 Studios. Derechos: Todos Reservados<br>Teletext50, Mode7 and Teletext stylesheet hecho por Alan Davies de galax.xyz // © Alan Davies 2014 - 2015. Algunos contenidos bajo domino publico<br>Traduccion es-PR hecho por elite784 de 784 Studios // © MMXXV ELITE784[dot]Online, 784 Studios<br><br>",
+    "copyright": "<br>© MMXXIV - MMXXV 784 Studios. Derechos: Todos Reservados<br>Teletext50, Mode7 and Teletext stylesheet hecho por Alan Davies de galax.xyz // © Alan Davies 2014 - 2015.<br>Traduccion es-PR hecho por elite784 de 784 Studios // © MMXXV ELITE784[dot]Online, 784 Studios<br><br>",
+
+    "comment404": "404 page",
+    "header404": "DISRUPTION DEL SERVICIO AIRTXT (CODICO 404)",
+    "404desc1": "Perdonamos por la interrupcion en el servicio.",
+    "404desc2": "Parece que la pagina o documento que buscabas no existe dentro de 784studios.net<br>Trata lo siguiente:",
+    "404desc-li": "<li>Verifique que has escrito el URL correctamente</li><li>Averigue que lo que buscas existe aqui</li><li>Refierete al <a href='https://web.archive.org'>Wayback Machine en el Archivo del Internet (Internet Archive)</a>.</li>",
+    "404desc3": "Si no logra resultados positivos, contacta el administrador de las paginas si tienes razon que esto es un error de nuesto parte.",
+    "4xxjoke": "&#34;4xx - Tu causastes el maldito problema&#34<br> - referencia facil de codicos de respuestas <br>del internet (traducido de ingles)",
+    "blackholesun": "← Regresar al inicio",
 
 
     "comment2": "homepage",
@@ -51,8 +61,8 @@
     "titleservices": "784STUDIOS - SERVICIOS",
     "serviceheader": "SERVICIOS",
     "servicemaindesc": "Necesitamos hacer dinero, así que le ofrecemos servicios.",
-    "servicepayinfo": "Envié un email a elite784@outlook.com detallando su orden. Aceptamos PayPal para ordenes internacionales Y ATH Móvil para ordenes locales en Puerto Rico. <br> <span style='color:red'>SE TIENE QUE ENVIAR EL PAGO PRIMERO ANTES QUE PODAMOS EMPEZAR, ENVIENOS UN CORREO ELECTRONICO PARA UN ESTIMACION GRATIS!</span>",
-    "dta-header": "Conversion digital al analogo",
+    "servicepayinfo": "Envié un email a elite784@outlook.com detallando su orden. Aceptamos PayPal para ordenes internacionales Y ATH Móvil para ordenes locales en Puerto Rico. <br> <span style='color:red'>SE TIENE QUE ENVIAR EL PAGO PRIMERO ANTES QUE PODAMOS EMPEZAR, ENVIENOS UN CORREO ELECTRONICO PARA UN ESTIMACION GRATIS!</span><br>",
+    "dta-header": "Conversion digital al analogo <span style='color:red;'>(SERVICIO CERRADO TEMPORALMENTE)</span>",
     "dta-desc": "Quieres la apariencia <i>real</i> de los medios análogos? Nosotros tomamos tu video digital y lo pasamos por un video casete (VHS) o por transmisión de televisión análogo, para que tenga la apariencia sucia e imperfecto verdadero de los medios análogos.",
     "dta-pricing-audio": "Para el audio – pon tus grabaciones de sonido en un casete de audio.",
     "dta-pricing-audio1": "Tipo I;Casete normal – Tape de baja fidelidad, puede que se oiga malo algunas vises dependiendo del casete usado. <br /><span style='color:lime'>99 centavos al minuto</span>",
@@ -72,7 +82,7 @@
     "ytcc-price2": "Subtitulos estilizados: <span style='color:lime'> 30 centavos per linea</span>",
     "ytcc-price3": "Subtitulos de kareoke: <span style='color:lime'> 40 centavos per linea</span>",
 
-    "vhsarch-header": "Servicio de digitazion de VHS",
+    "vhsarch-header": "Servicio de digitazion de VHS <span style='color:red;'>(SERVICIO CERRADO TEMPROALMENTE)</span>",
     "vhsarch-desc": "Tienes cintas de videos que quieres archivar? Envianolos y nosotros te lo preservamos digitalmente!",
     "vhsarch-price": "$10/VHS y $8/VHS-C (Contactanos para un estimacion de precio gratis!)",
     "vhsarch-resp": "***CLIENTE ASUME LA RESPONSABILIDAD DEL COSTO DE ENVIO POR CORREO***",
@@ -85,4 +95,6 @@
     "websites-desc": "Debajo es una lista de paginas asociado con 784 Studios",
     "websites-elite784online": "La pagina personal de elite784 donde pone cualquier cosa que quere",
     "websites-thedirectory": "Un repositorio de paginas mayormente de Neocities, un proyecto en progreso."
+
+
 }
