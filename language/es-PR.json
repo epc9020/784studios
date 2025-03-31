@@ -3,7 +3,7 @@
 
 
     "comment0": "often updated",
-    "header-update": "** 784 Studios ha cerrado sus servicios de digital a analogo y digitacion de VHS para permitir mejorar los metodos de digitaciones. Visite <a href='https://elite784.online/sections/projects'>el seccion de projectos de ELITE784[dot]Online (PAGINA SOLO EN INGLES)</a> para informacion sobre estas actualizaciones. **",
+    "header-update": "** 784 Studios ha volvido a abrir sus servcios de conversion de digital a analogo y digitazion de VHS, pero no se ha actualizado los metodos para digitazion, ya que se esta tomando mucho tiempo para implementar **",
     "latestvid-link": "Intro de 784 Studios",
     "latestbrd-link": "elite784: manualmente recogiendo una cinta de video porque no tengo nada mejor que hacer [INGLES SOLO]",
 
@@ -62,7 +62,8 @@
     "serviceheader": "SERVICIOS",
     "servicemaindesc": "Necesitamos hacer dinero, así que le ofrecemos servicios.",
     "servicepayinfo": "Envié un email a elite784@outlook.com detallando su orden. Aceptamos PayPal para ordenes internacionales Y ATH Móvil para ordenes locales en Puerto Rico. <br> <span style='color:red'>SE TIENE QUE ENVIAR EL PAGO PRIMERO ANTES QUE PODAMOS EMPEZAR, ENVIENOS UN CORREO ELECTRONICO PARA UN ESTIMACION GRATIS!</span><br>",
-    "dta-header": "Conversion digital al analogo <span style='color:red;'>(SERVICIO CERRADO TEMPORALMENTE)</span>",
+    
+    "dta-header": "Conversion digital al analogo",
     "dta-desc": "Quieres la apariencia <i>real</i> de los medios análogos? Nosotros tomamos tu video digital y lo pasamos por un video casete (VHS) o por transmisión de televisión análogo, para que tenga la apariencia sucia e imperfecto verdadero de los medios análogos.",
     "dta-pricing-audio": "Para el audio – pon tus grabaciones de sonido en un casete de audio.",
     "dta-pricing-audio1": "Tipo I;Casete normal – Tape de baja fidelidad, puede que se oiga malo algunas vises dependiendo del casete usado. <br /><span style='color:lime'>99 centavos al minuto</span>",
@@ -82,7 +83,7 @@
     "ytcc-price2": "Subtitulos estilizados: <span style='color:lime'> 30 centavos per linea</span>",
     "ytcc-price3": "Subtitulos de kareoke: <span style='color:lime'> 40 centavos per linea</span>",
 
-    "vhsarch-header": "Servicio de digitazion de VHS <span style='color:red;'>(SERVICIO CERRADO TEMPROALMENTE)</span>",
+    "vhsarch-header": "Servicio de digitazion de VHS",
     "vhsarch-desc": "Tienes cintas de videos que quieres archivar? Envianolos y nosotros te lo preservamos digitalmente!",
     "vhsarch-price": "$10/VHS y $8/VHS-C (Contactanos para un estimacion de precio gratis!)",
     "vhsarch-resp": "***CLIENTE ASUME LA RESPONSABILIDAD DEL COSTO DE ENVIO POR CORREO***",
