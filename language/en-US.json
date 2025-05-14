@@ -3,7 +3,7 @@
     "instructions for those who wish to localize this site in their language": "every object named comment (and this one) is not used in any page and only serves as a point of reference as to where each segment of text goes where. refer to html pages to check what you'll need to translate to your language. all text elements have the attribute data-i18n='wordRef' in them, with 'wordRef' being replaced with their respective data entry. you may have to create a stylesheet to adjust for differences within different languages.",
 
     "comment0": "often updated",
-    "header-update": "** 784 Studios has reopened its digital to analog and digitization services, no changes to our digitization methods have been made, since implementation is taking too long. **", 
+    "header-update": "** NO NEW INFORMATION **", 
     "latestvid-link": "784 Studios Intro Sequence",
     "latestbrd-link": "elite784:  manually rewinding a tape because i have nothing better to do",
 
@@ -98,8 +98,14 @@
     "websites-header": "WEBSITES",
     "websites-desc": "Below are websites asociated with 784 Studios",
     "websites-elite784online": "The personal site of elite784 where he puts anything he pleases",
-    "websites-thedirectory": "A  work in progress website directory mainly for Neocities sites"
+    "websites-thedirectory": "A  work in progress website directory mainly for Neocities sites",
 
+
+    "mobiletext": "Mobite site translation, it may probably be the same as desktop version.",
+
+    "indexmobile": "mobileindex translation",
+    "mbtxt": "784 STUDIOS MOBLTXT SERVICE",
+    "mbwelcome": "WELCOME TO 784STUDIOS.NET, THE CENTRAL WEBSITE FOR EVERYTHING BY AND ASSOCIATED WITH 784 STUDIOS. THIS IS THE MOBILE VERSION, MORE CONTENT CAN BE FOUND BY VISITING THIS SITE WITH A COMPUTER"
 
 }
 

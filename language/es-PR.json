@@ -3,7 +3,7 @@
 
 
     "comment0": "often updated",
-    "header-update": "** 784 Studios ha volvido a abrir sus servcios de conversion de digital a analogo y digitazion de VHS, pero no se ha actualizado los metodos para digitazion, ya que se esta tomando mucho tiempo para implementar **",
+    "header-update": "** NO HAY INFORMACION NUEVO **",
     "latestvid-link": "Intro de 784 Studios",
     "latestbrd-link": "elite784: manualmente recogiendo una cinta de video porque no tengo nada mejor que hacer [INGLES SOLO]",
 
@@ -95,7 +95,12 @@
     "websites-header": "PAGINAS",
     "websites-desc": "Debajo es una lista de paginas asociado con 784 Studios",
     "websites-elite784online": "La pagina personal de elite784 donde pone cualquier cosa que quere",
-    "websites-thedirectory": "Un repositorio de paginas mayormente de Neocities, un proyecto en progreso."
+    "websites-thedirectory": "Un repositorio de paginas mayormente de Neocities, un proyecto en progreso.",
+
+    "mobiletext": "Mobite site translation, it may probably be the same as desktop version.",
+
+    "indexmobile": "mobileindex translation",
+    "mbtxt": "784 STUDIOS SERVICIO MOVILTXT"
 
 
 }
