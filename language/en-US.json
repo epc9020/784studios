@@ -1,9 +1,9 @@
 
 {
-    "instructions for those who wish to localize this site in their language": "every object named comment (and this one) is not used in any page and only serves as a point of reference as to where each segment of text goes where. refer to html pages to check what you'll need to translate to your language. all text elements have the attribute data-i18n='wordRef' in them, with 'wordRef' being replaced with their respective data entry. you may have to create a stylesheet to adjust for differences within different languages.",
+    "instructions for those who wish to localize this site in their language": "every object named comment (and this one) is not used in any page and only serves as a point of reference as to where each segment of text goes where. refer to html pages to check what you'll need to translate to your language. all text elements have the attribute data-i18n='wordRef' in them, with 'wordRef' being replaced with their respective data entry. you may have to create a stylesheet to adjust for differences within different languages. If so, I recommend copying from the main English CSS file and modify from there.",
 
     "comment0": "often updated",
-    "header-update": "** NO NEW INFORMATION **", 
+    "header-update": "** 784 STUDIOS WILL NOT BE TAKING ORDERS UNTIL SOMETIME NEXT MONTH, WE APOLIGIZE FOR ANY INCONVENIENCE. **", 
     "latestvid-link": "784 Studios Intro Sequence",
     "latestbrd-link": "elite784:  manually rewinding a tape because i have nothing better to do",
 
@@ -34,9 +34,10 @@
     "welcome-home": "Welcome to 784studios.net // ",
     "latestvid": "Latest video: ",
     "latestbrd": "Last broadcast: ",
-    "homedesc": "784 Studios is a one man media production company that creates videos in the ''VHS'' asthetic. We are very passionate about old mediums and aim to create new videos with this style. We also make videos about other things, too!<br><br>Alongside this, we also offer services to people such as making your video look like it was actually recorded with the tech from yester year, writing captions for those who want to reach a wider audience, and digitization of videotape for those who want to forever preserve their memories at the highest quality possible, at reasonable prices and with better results than our competitors.<br>Please check out our services section for more information about our services!",
+    "homedesc": "784 Studios is a one man media production company that creates videos in the ''VHS'' asthetic. We are very passionate about old mediums and aim to create new videos with this style. We also make videos about other things, too!<br><br>Alongside this, we also offer services to people such as making your video look like it was actually recorded with the tech from yester year, writing captions for those who want to reach a wider audience, and digitization of videotape for those who want to forever preserve their memories at the highest quality possible and at a more resonable price than most of our competitors*.<br>Please check out our services section for more information about our services!<br><br>784 Studios also runs websites such as ELITE784[dot]Online, the personal website of a person, protogen, and webmaster on the internet! (i run this site! hai-nee!)<br><br><br>* Digitization service only available in Puerto Rico at this current time. Price claim based on independent research.",
+    "whoweareimage": "<img src='/assets/images/whoweare-eng.gif' alt='Who we are' draggable='false'>",
     "commentB": "footer",
-    "copyright": "<br>© MMXXIV - MMXXV 784 Studios. Rights: All Reserved<br>Teletext50, Mode7 and Teletext stylesheet by Alan Davies of <a href='https://galax.xyz' class='a'>galax.xyz</a> // © Alan Davies 2014 - 2015. Some content under public domain.<br><br> <script>fetch('/assets/useless-file-that-does-nothing.txt')</script>",
+    "copyright": "<br>© MMXXIV - MMXXV 784 Studios. Rights: All Reserved<br>Teletext50, Mode7 and Teletext stylesheet by Alan Davies of <a href='https://galax.xyz' class='a'>galax.xyz</a> // © Alan Davies 2014 - 2015. Some content under public domain.<br>Some teletext graphics made in <a href='https://edit.tf'>edit.tf</a><br> <script>fetch('/assets/useless-file-that-does-nothing.txt')</script>",
 
     "comment404": "404 page",
     "header404": "AIRTXT SERVICE DISRUPTION (CODE 404)",
@@ -101,9 +102,9 @@
     "websites-thedirectory": "A  work in progress website directory mainly for Neocities sites",
 
 
-    "mobiletext": "Mobite site translation, it may probably be the same as desktop version.",
+    "comment-mobile": "Mobite site translation, it may probably be the same as desktop version.",
 
-    "indexmobile": "mobileindex translation",
+    "coment-indexmobile": "mobileindex translation",
     "mbtxt": "784 STUDIOS MOBLTXT SERVICE",
     "mbwelcome": "WELCOME TO 784STUDIOS.NET, THE CENTRAL WEBSITE FOR EVERYTHING BY AND ASSOCIATED WITH 784 STUDIOS. THIS IS THE MOBILE VERSION, MORE CONTENT CAN BE FOUND BY VISITING THIS SITE WITH A COMPUTER"
 
