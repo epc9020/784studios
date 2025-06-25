@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RecreaPR - Enfoca. Conecta. Transforma.</title>
+        <link rel="stylesheet" href="/chres/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html"><img src="images/logo.png" alt="RecreaPR logo. 5 open hands making the shape of a logo"></a>
+            <nav>
+                <a class="navlink" href="events.html">[ Events ]</a> 
+                <a class="navlink" href="host.html">[ Host ] </a>
+                <a class="navlink" href="about.html">[ About ] </a>
+                <a class="navlink" href="contact.html">[ Contact ] </a>
+            </nav>
+        </header>
+        <br>
+        <div class="form-container">
+            <h1>Host an event</h1>
+            <p>Want to host an event? Fill out the form below and we'll get you started.</p>
+            <form>
+                <label for="activity">Name of activity</label>
+                <input id="activity" type="text" required>
+
+                <label for="location">Location</label>
+                <input id="location" type="text" required>
+
+                <label>Time and date</label>
+                <div class="form-row">
+                    <input type="number" min="1" max="31" placeholder="Day" style="width:60px" required>
+                    <select required>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    <input type="number" min="2024" max="2100" placeholder="Year" style="width:80px" required>
+                </div>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" required>
+
+                <button id="spoofbutton" type="submit">Submit form</button>
+            </form>
+        </div>
+        <footer style="position: fixed; left: 0; bottom: 0; width: 100%; background: #f4a460; text-align: center; padding: 10px 0;font-style:italic;">
+            αlpha version, not for general audience.
+        </footer>
+    </body>
+    <script>
+        document.getElementById('spoofbutton').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'pages/success.html';
+        });
+    </script>
+</html>
