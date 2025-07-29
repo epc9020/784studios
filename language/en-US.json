@@ -3,7 +3,7 @@
     "instructions for those who wish to localize this site in their language": "every object named comment (and this one) is not used in any page and only serves as a point of reference as to where each segment of text goes where. refer to html pages to check what you'll need to translate to your language. all text elements have the attribute data-i18n='wordRef' in them, with 'wordRef' being replaced with their respective data entry. you may have to create a stylesheet to adjust for differences within different languages. If so, I recommend copying from the main English CSS file and modify from there.",
 
     "comment0": "often updated",
-    "header-update": "** 784 STUDIOS WILL NOT BE TAKING ORDERS UNTIL SOMETIME NEXT MONTH, WE APOLIGIZE FOR ANY INCONVENIENCE. **", 
+    "header-update": "<span style='color:yellow'>** 784 Studios, 3 years of operation, 3 years of obscurity *</span><span style=color:limegreen >* 784 STUDIOS HAS STARTED ACCEPTING NEW ORDERS FOR ALL SERVICES **</span>", 
     "latestvid-link": "784 Studios Intro Sequence",
     "latestbrd-link": "elite784:  manually rewinding a tape because i have nothing better to do",
 
