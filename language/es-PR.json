@@ -1,7 +1,5 @@
 {
-    "instructions for those who wish to localize this site in their language": "every object named comment (and this one) is not used in any page and only serves as a point of reference as to where each segment of text goes where. refer to html pages to check what you'll need to translate to your language. all text elements have the attribute data-i18n='wordRef' in them, with 'wordRef' being replaced with their respective data entry. you may have to create a stylesheet to adjust for differences within different languages.",
-
-
+    
     "comment0": "often updated",
     "header-update": "** 784 Studios, 3 años de operacion, 3 años de obscuridad ** 784 STUDIOS ESTA ACCEPTANDO ORDENES PARA TODOS SERVICIOS **",
     "latestvid-link": "Intro de 784 Studios",

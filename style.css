@@ -1,191 +1,8 @@
-/* below is css that will need to be changed across languages */
-
-.welcome {
-  position:relative;
-  left:150px;
-  top:100px;
-  width:auto;
-  font-size: 46px;
-  letter-spacing: 0.155em;
-  color: pink;
-  text-shadow: -2px 2px 0 #000000, 
-  2px 2px 0 #000000, 
-  2px -2px 0 #000000, 
-  -2px -2px 0 #000000;
-  font-family: teletext-excond;
-}
-.to {
-  position:relative;
-  left:328px;
-  top:90px;
-  width:auto;
-  font-size: 36px;
-  letter-spacing: 0.3em;
-  color: deeppink;
-  font-family: teletext-wide;
-}
-.net {
-  position:relative;
-  left:910.2px;
-  top:54.5px;
-  width:auto;
-  font-size: 38px;
-  color: orange;
-  text-shadow: -2px 2px 0 #000000,
-  2px 2px 0 #000000,
-  2px -2px 0 #000000,
-  -2px -2px 0 #000000;
-}
-
-.the {
-  position:relative;
-  left:120.5px;
-  top:176.5px;
-  width:auto;
-  font-size: 26px;
-  letter-spacing: 0.311em;
-  font-family: teletext-wide;
-}
-.central {
-  position:relative;
-  left:208.6px;
-  top:134.7px;
-  width:auto;
-  font-size: 31px;
-  font-style: italic;
-  font-weight: 600;
-  color: #ed8efa;
-  text-shadow: -2px 2px 0 #000,
-   2px 2px 0 #000, 
-   2px -2px 0 #000, 
-   -2px -2px 0 #000;
-   letter-spacing: 0.072em;
-}
-
-.website {
-  position:relative;
-  left:373.7px;
-  top:113px;
-  width:auto;
-  font-size: 25px;
-  font-style: italic;
-  font-weight: 600;
-  color: rgb(255, 245, 95);
-  text-shadow: -2px 2px 0 #000000,
-   2px 2px 0 #000000,
-    2px -2px 0 #000000, 
-    -2px -2px 0 #000000;
-    letter-spacing: 0.175em;
-}
-
-.for {
-  position:relative;
-  left:533.5px;
-  top:79.5px;
-  width:auto;
-}
-
-.everything {
-  position:relative;
-  left:610.2px;
-  top:51.5px;
-  width:auto;
-  font-size: 34px;
-  letter-spacing: 0.6em;
-  text-shadow: -2px 2px 0 #000000, 
-  2px 2px 0 #000000, 
-  2px -2px 0 #000000, 
-  -2px -2px 0 #000000;
-  color: yellowgreen;
-}
-
-.by {
-  position:relative;
-  left:351.6px;
-  top:96.8px;
-  width:auto;
-  font-size: 27px;
-  text-shadow: -2px 2px 0 #000000, 
-  2px 2px 0 #000000, 
-  2px -2px 0 #000000, 
-  -2px -2px 0 #000000;
-  letter-spacing: 0.322em;
-  color: lightgreen;
-}
-
-.and {
-  position:relative;
-  left:411.8px;
-  top:81.5px;
-  width:auto;
-  text-shadow: -1px 1px 0 #000000, 
-  1px 1px 0 #000000, 
-  1px -1px 0 #000000, 
-  -1px -1px 0 #000000;
-  font-size: 21px;
-  letter-spacing: 0.241em;
-}
-
-.associated {
-  position:relative;
-  left:474.3px;
-  top:55.8px;
-  width:auto;
-  text-shadow: -1px 1px 0 #000000, 
-  1px 1px 0 #000000, 
-  1px -1px 0 #000000, 
-  -1px -1px 0 #000000;
-  letter-spacing: 0.267em;
-  color: hotpink;
-  font-family: teletext-wide;
-}
-
-.with {
-  position:relative;
-  left:640.1px;
-  top:19.0px;
-  width:auto;
-  font-size: 27px;
-  line-height: 1;
-  letter-spacing: 0.008em;
-}
-
-.container784 {
-  position:relative;
-  left:724px;
-  top:-20px;
-  width:auto;
-  font-size: 42px;
-}
-
-.seven {color: blue;}
-.eight {color: cyan;} 
-.four{color: pink;}
-.studios {
-  position:relative;
-  left:886px;
-  top:-58px;
-  width:auto;
-  font-size: 43px;
-  color: blue;
-  text-shadow: -1px 1px 0 #000000,
-   1px 1px 0 #000000, 
-   1px -1px 0 #000000, 
-   -1px -1px 0 #000000;
-}
-
-/* below is css that probably wont need to be changed */
-
 p {
   font-family:"teletext";
   color:white;
   
-}
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-color:black;
+  
 }
 @font-face {
   font-family:teletext;
@@ -244,14 +61,19 @@ body {
 }
 
 body {
-  width:1320px;
+  max-width:1320px;
+  height: 100%;
+  margin: 0;
+  background-color:black;
   font-family:'teletext';
   position:relative;
   margin-left:auto;
   margin-right:auto;
 
   color:white;
+  
 }
+
 
 h1 {
   font-family: 'teletext-excond';
@@ -264,8 +86,9 @@ h2 {
 h1, h2, h3, h4, h5, h6 {font-weight: normal;}
 
 main { 
-  margin-left:14px;
-  margin-right:14px;
+  margin-left:6px;
+  margin-right:6px;
+  font-size: large;
 }
 
 .logoimage {
@@ -278,6 +101,7 @@ header {
 
 a {
   color:lightblue;
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAyCAYAAABLXmvvAAABV0lEQVRYR+2VsWrCUBSGvYhDn0RwCmhnx75EcSguRV/A2ZdoC46dfYXi4CSULsW1Ooo+gcH+B27gGhPy6wlG8AQOCeQ/57//d3OJq1V0uYp8a9UZH3CRqffOuQapLZS5WzNeY8nb1LJjJO4URiEFeYn7MJmQMy6S5Rn/YdoM5r2LphJNofES+jnqxfeJ+Rg1xQJ2xKyzJKHxGzqHqH1qQgTjn7OmEuIjYxi84iuvo+8jSB7j+R3vBsQ8WnJiLJ0w7+L2hBr5Sb+4f5VpnmnszVu4f6KaqAeUJG+j1mXsea5xwgzpv/EcBQxLOWpiLCnk2iDJKr1JeC/JnwPspRw16ifh91zOdHLUFljkI/0lZQgpY7/n8rUnR+16xpp0Wb10YjPWEjDUWoJ0v6GmUWmFhlpLkO431DQqrdBQawnS/YaaRqUVGmotQbrfUNOotEJDrSVI998f6n+/e20zGpntHAAAAABJRU5ErkJggg=="), pointer;
 }
 
 a:visited {
@@ -286,5 +110,8 @@ a:visited {
 
 a:hover {
   color:white;
+  
 }
 
+
+html {background-color: black;}

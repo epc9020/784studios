@@ -2,6 +2,7 @@
 <html lang="en" style="overflow:hidden">
   <head>
     <link href="/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
       <link src="/favicon.ico" rel="favicon">
       <script src="/scripts/cursor.js"></script>
       <link rel="stylesheet" href="/waitcur.css">
@@ -17,147 +18,26 @@
   <body id="loader" style="text-align: center; width:100%;margin-left:auto;margin-right:auto;">
     <div>
     <h1 style="visibility: hidden;display:none;">784 Studios On-Line Service</h1>
-    <p style="visibility: hidden;display: none;">784 Studios is a one man video production company that provices a few services such as Digital to VHS conversions, stylized YouTube captions, and VHS Digitizations.</p>
-    <h1>WELCOME TO <br>784 STUDIOS <br>DOT NETWORK</h1>
-    <p>STAND BY FOR PAGE 100</p>
-    <div id="loading-thingy" style="visibility: hidden;"></div>
-    <div class="warnCont">
-      <div class="warnBG"></div>
-        <div class="warningEngUS">YOU HAVE NOT BEEN REDIRECTED IN THE LAST 10 SECONDS!!<br> AN EXTENSION MAY BE BLOCKING JAVASCRIPT OR YOUR BROWSER DOES NOT SUPPORT IT. JAVASCRIPT IS REQUIRED FOR THE OPERATION OF THIS WEBSITE. DISABLE ANY CONFLICTING BROWSER EXTENSIONS OR USE A NEWER BROWSER.<br><br>YOU WILL NOT BE ABLE TO PROCEED ANY FURTHER. 784 STUDIOS APOLOGIZES FOR THIS INCONVENIENCE.</div>
-        <div class="warningSpaPR">¡¡NO SE PUDO RE-DIRIGIRTE ENTRE LAS ÚLTIMOS 10 SEGUNDOS!!<br> PUEDE QUE UN EXTENCION ESTE BLOQUEANDO JAVASCRIPT O TU NAVEGADOR NO LO SOPORTA. JAVASCRIPT ES NECESARIO PARA LA OPERACIÓN DE ESTA PAGINA. DESACTIVE CUALQUIER EXTENCION QUE ESTE AFECTANDO O USE UN NAVEGADOR NUEVO.<br><br>NO VAS A PODER ACCEDER ESTA PAGINA. PERDONAMOS POR ESTA INCONVENIENCIA.</div>
-      
-    </div>
+    <p style="visibility: hidden;display: none;">One man video production company providing Digital to VHS, captioning, and VHS Digitizing.</p>
+    <p style="visibility: hidden;display: none;">Compania de producion proveyendo digitaziones de VHS, VFX de VHS real, y subtitulaciones para video.</p>
+    <h1 id="welcome">PLEASE<br>ENABLE<br>JAVASCRIPT</h1>
+    <p id="standby">OR USE A SUPPORTED BROWSER</p>
+    <div id="loading-thingy" style="visibility: hidden;height:100vw"></div>
+    
     </div>
   </body>
+  
   <script>
     function redirect() {
-      open("real-index.html", "_self")
+      open("splash.html", "_self")
     }
     if (window.matchMedia("(any-hover:none)").matches) {
       document.getElementById("loading-thingy").style["visibility"]='visible';
   } else {
       null;
   }
-    setTimeout(redirect, 6000)
+  document.getElementById("welcome").innerHTML = "WELCOME TO <br> 784 STUDIOS<br> DOT NETWORK";
+  document.getElementById("standby").innerText = "STAND BY FOR PAGE 100";
+    setTimeout(redirect, 2500)
   </script>
-  <style>
-    .warnCont {
-      border: 10px dashed red;
-      max-width: 900px;
-      max-height:620px;
-      height:calc(100vh - 25vh);
-      min-width:340px;
-      position:relative;
-      margin-left:auto;
-      margin-right:auto;
-      bottom:340px;
-      z-index: 1;
-      animation: warn1 8000ms forwards;
-      -webkit-animation: warn1 8000ms forwards;
-      visibility: hidden;
-      
-    }
-    .warnBG{
-      opacity: 70%;
-      width:100%;
-      height:100%;
-      position: absolute;
-      z-index: 0;
-      visibility: hidden;
-      animation: warnbg 9000ms forwards;
-      -webkit-animation: warnbg 9000ms forwards;
-      background-color:black;
-    }
-    .warningEngUS {
-      opacity: 100%;
-      visibility: hidden;
-      -webkit-animation: warningEngUS 20000ms steps(3, start) 20000ms infinite;
-      animation: warningEngUS 20000ms steps(3, start) 10000ms infinite;
-      color:red;
-      font-size: x-large;
-      position:absolute;
-      z-index: 2;
-    }
-    .warningSpaPR {
-      opacity: 100%;
-      visibility: hidden;
-      -webkit-animation: warningEngUS 20000ms steps(3, start) 20000ms infinite;
-      animation: warningEngUS 20000ms steps(3, start) 20000ms infinite;
-      color:red;
-      font-size: x-large;
-      position:absolute;
-      top:0px;
-      z-index: 3;
-      
-    }
-    @-webkit-keyframes warn1 {
-      99% {visibility: hidden;}
-      100% {visibility: visible;}
-    }
-    @keyframes warn1 {
-      99% {visibility: hidden;}
-      100% {visibility: visible;}
-    }
-    
-      @-webkit-keyframes warningEngUS {
-        0% {visibility: hidden;}
-        1% {visibility: visible;}
-        49% {visibility: visible;}
-        50% {visibility: hidden;}
-      }  
-   
-      @keyframes warningEngUS {
-        0% {visibility: hidden;}
-        1% {visibility: visible;}
-        49% {visibility: visible;}
-        50% {visibility: hidden;}
-      } 
-      
-      @-webkit-keyframes warningEspPR {
-        49% {display: none;}
-        50% {display: block;}
-        99% {display: block;}
-        100% {display: none;}
-      }  
-   
-      @keyframes warningEspPR {
-        49% {display: none;}
-        50% {display: block;}
-        99% {display: block;}
-        100% {display: none;}
-      }
-    
-      @-webkit-keyframes warnbg {
-        99% {visibility: hidden}
-        100% {visibility: visible}
-      }@keyframes warnbg {
-        99% {visibility: hidden}
-        100% {visibility: visible}
-      }
-      #loading-thingy {
-    background-image: url(/wait0000.png);
-    -webkit-animation: loadthing 400ms infinite;
-    animation: loadthing 400ms infinite;
-    width:50px;
-    height:50px;
-    margin:0 auto 0 auto
-  }
-  
-  @-webkit-keyframes loadthing {
-    25% {background-image: url(/wait0000.png);}
-    50% {background-image: url(/wait0001.png);}
-    75% {background-image: url(/wait0002.png);}
-    100% {background-image: url(/wait0003.png);}
-  } 
-  
-  @keyframes loadthing {
-    25% {background-image: url(/wait0000.png);}
-    50% {background-image: url(/wait0001.png);}
-    75% {background-image: url(/wait0002.png);}
-    100% {background-image: url(/wait0003.png);}
-  }
-  
-      
-    
-  </style>
 </html>

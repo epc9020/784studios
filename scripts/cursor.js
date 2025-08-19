@@ -1,6 +1,5 @@
-
-
-
+// suffer, forevermore
+// script by elite784, using some other shits maybe.... 
 
 function cursor() {
     var cur = document.createElement("canvas");
@@ -16,7 +15,7 @@ function cursor() {
     var spa = span.getContext("2d")
 
     
-    link.fillStyle = "white";
+    
     point.fillStyle = "black";
     point.font = "35px teletext";
     link.font = "28px teletext";
@@ -26,6 +25,10 @@ function cursor() {
     point.fillStyle = "white";
     point.fillText("🮰", -3, 20);
 
+    link.fillStyle = "black";
+    link.fillText("↖", -3, 24);
+    link.fillText("↖", -3, 23);
+    link.fillStyle = "white";
     link.fillText("↖", -3, 20);
     document.body.style.cursor = "url('" + cur.toDataURL() + "'), default";
     var alink = document.getElementsByClassName("a");

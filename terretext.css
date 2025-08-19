@@ -124,10 +124,31 @@ a.red:active, .red a:active {
 }
 
 .tvtxtlogo {
+    font-size: calc(0px + 1.2vw);
+    letter-spacing: -0.042em;
+    width: 100%;
+    overflow-x: hidden;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+    text-align: left;
+    white-space: pre;
+    display: block;
+    font-family: "teletext3";
+    line-height: 1em;
+}
+
+@media (min-width:1000px){
+  .tvtxtlogo{
+  font-size: 6px; 
+}}
+
+@media (min-width: 1000px) {
+    .tvtxtlogo {
     font-size:8px;
     font-smooth: never;
     -webkit-font-smoothing : none;
     text-align: left;
     white-space: pre;
     display: block;
+}
 }
