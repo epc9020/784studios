@@ -58,4 +58,4 @@ function handleHash() {
 */
 
 window.addEventListener('DOMContentLoaded', handleHash);
-window.addEventListener('hashupdate', handleHash);
+window.addEventListener('hashchange', handleHash);
