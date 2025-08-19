@@ -1,18 +1,18 @@
 
 {
-    "instructions for those who wish to localize this site in their language": "every object named comment (and this one) is not used in any page and only serves as a point of reference as to where each segment of text goes where. refer to html pages to check what you'll need to translate to your language. all text elements have the attribute data-i18n='wordRef' in them, with 'wordRef' being replaced with their respective data entry. you may have to create a stylesheet to adjust for differences within different languages. If so, I recommend copying from the main English CSS file and modify from there.",
 
+    "comment.unusedSentence": " using unconventional means such as shooting on tape and using jerry rigged on the spot editing methods.",
     "comment0": "often updated",
-    "header-update": "<span style='color:yellow'>** 784 Studios, 3 years of operation, 3 years of obscurity *</span><span style=color:limegreen >* 784 STUDIOS HAS STARTED ACCEPTING NEW ORDERS FOR ALL SERVICES **</span>", 
+    "header-update": "<span style='color:red'></span>", 
     "latestvid-link": "784 Studios Intro Sequence",
     "latestbrd-link": "elite784:  manually rewinding a tape because i have nothing better to do",
 
 
     "comment1": "index page",
     "tvtxt": "784 Studios Television Text Service",
-    "welcome1": "You are entering 784studios.net. We would like to take this moment to warn you that this website is ",
-    "welcome2": "NOT MOBILE FRIENDLY",
-    "welcome3": " as of this moment. As such, we require you use a computer and recommend the Firefox browser and a screen of at least 1366x768px to view this page.",
+    "welcome1": "You are entering 784studios.net. The content within this website is intended for a WEB-14 audience. ",
+    "welcome2": "CHILDREN, GO AWAY.",
+    "welcome3": " We require you to use a computer and recommend the Firefox browser and a screen of at least 720p or above to view this page.",
     "entry": "The homepage → [pg. 101]",
 
     "comment0A": "page titles",
@@ -24,17 +24,17 @@
     "titlewebsites": "784STUDIOS - ASOCIATED PAGES",
 
     "commentA": "header",
-    "videonet": "[Video Network]",
+    "videonet": "[VideoNet]",
     "services": "[Services]",
-    "blog": "[Blog]",
-    "784socials": "[784@SocialNet]",
+    "blog": "<a href='/pages/posts.html'>[Blog]</a>",
+    "784socials": "[SocialNet]",
     "email": "[Email]",
     "AIM": "[AIM]",
     "websites": "[Websites]",
     "welcome-home": "Welcome to 784studios.net // ",
     "latestvid": "Latest video: ",
     "latestbrd": "Last broadcast: ",
-    "homedesc": "784 Studios is a one man media production company that creates videos in the ''VHS'' asthetic. We are very passionate about old mediums and aim to create new videos with this style. We also make videos about other things, too!<br><br>Alongside this, we also offer services to people such as making your video look like it was actually recorded with the tech from yester year, writing captions for those who want to reach a wider audience, and digitization of videotape for those who want to forever preserve their memories at the highest quality possible and at a more resonable price than most of our competitors*.<br>Please check out our services section for more information about our services!<br><br>784 Studios also runs websites such as ELITE784[dot]Online, the personal website of a person, protogen, and webmaster on the internet! (i run this site! hai-nee!)<br><br><br>* Digitization service only available in Puerto Rico at this current time. Price claim based on independent research.",
+    "homedesc": "784 Studios is a one man media production company that creates and publishes ameture video productions on the internet.<br><br>Alongside this, we also offer services to people such as making your video look like it was actually recorded with VHS by using real VHS equipment, writing YouTube captions for those who want to reach a wider audience, and digitization of videotapes for those who want to preserve their memories shot on VHS at a more resonable cost than most of our competitors*.<br>Please check out our services section for more information about our services!<br><br>784 Studios also administers websites such as ELITE784[dot]Online, the personal website of a person, protogen, and webmaster on the internet! (i run this site! hai-nee!)<br><br><br>* Digitization service only available in Puerto Rico at this current time. Price claim based on independent research.",
     "whoweareimage": "<img src='/assets/images/whoweare-eng.gif' alt='Who we are' draggable='false'>",
     "commentB": "footer",
     "copyright": "<br>© MMXXIV - MMXXV 784 Studios. Rights: All Reserved<br>Teletext50, Mode7 and Teletext stylesheet by Alan Davies of <a href='https://galax.xyz' class='a'>galax.xyz</a> // © Alan Davies 2014 - 2015. Some content under public domain.<br>Some teletext graphics made in <a href='https://edit.tf'>edit.tf</a><br> <script>fetch('/assets/useless-file-that-does-nothing.txt')</script>",

@@ -20,7 +20,7 @@
 
       
         <marquee>
-        <i><span class="teletext5" data-i18n="welcome-home"></span><span class="teletext5" data-i18n="header-update" style="color:rgb(255, 255, 255)">◴ WAIT!</span>
+        <i><span class="teletext5" data-i18n="header-update" style="color:lime">◴ WAIT!</span>
        /// <span style="color:magenta" data-i18n="latestvid">Latest Video:</span> <a data-i18n="latestvid-link" href="https://youtu.be/R72WXMLLXI0?si=0Y3YCfgasfVkzU0b"></a> ///
         <span style="color:red" data-i18n="latestbrd">Last Broadcast:</span> <a href="https://www.youtube.com/live/sSShSW941Kg?si=PZkGwrPGF-2nauOQ" data-i18n="latestbrd-link"></a></i> </marquee>
       
@@ -49,6 +49,16 @@
             </div>
             <div></div>
             <br>
+            <div class="teletext">
+              <span class="yellowbg"> </span><span class="black yellowbg">&#xe228;&#xe23c;&#xe214;&#xe214;   &#xe23c;&#xe23c;&#xe228; &#xe228;&#xe23c;&#xe214;&#xe214;  &#xe23c;&#xe23c;&#xe228;  &#xe238;&#xe23c;&#xe23c;&#xe23c;&#xe23c;&#xe23c;&#xe218;&#xe210;   &#xe220;&#xe23c;&#xe23c;&#xe23c;&#xe23c;&#xe234;&#xe224;  &#xe238;&#xe23c;&#xe23c;&#xe23c;&#xe218;&#xe210; &#xe23c;&#xe23c;&#xe23c;&#xe23c;&#xe23c;&#xe228;   &#xe228;&#xe23c;&#xe214;&#xe214;   &#xe23c;&#xe23c;&#xe228; &#xe228;&#xe23c;&#xe23c;&#xe23c;&#xe23c;&#xe214;&#xe214; </span>
+              <span class="black yellowbg"> &#xe22a;&#xe23f;&#xe215;&#xe215;&#xe220;&#xe23c; &#xe23f;&#xe23f;&#xe22a; &#xe22a;&#xe23f;&#xe215;&#xe205;  &#xe23f;&#xe23f;&#xe22a; &#xe22a;&#xe23f;&#xe23f;&#xe207;&#xe213;&#xe22f;&#xe23f;&#xe23f;&#xe22a;   &#xe23f;&#xe23f;&#xe228;&#xe20c;&#xe22a;&#xe23f;&#xe215;&#xe215; &#xe23f;&#xe217;&#xe213;&#xe22f;&#xe23f;&#xe22a; &#xe23f;&#xe23f;&#xe203;&#xe203;&#xe203;&#xe202;   &#xe22a;&#xe23f;&#xe215;&#xe215;&#xe220;&#xe23c; &#xe23f;&#xe23f;&#xe22a; &#xe22a;&#xe23f;&#xe217;&#xe203;&#xe203;&#xe201;&#xe201; </span>
+              <span class="black yellowbg"> &#xe22a;&#xe23f;&#xe215;&#xe215;&#xe22a;&#xe23f; &#xe23f;&#xe23f;&#xe22a; &#xe22a;&#xe23f;&#xe23f;&#xe23f;&#xe23f;&#xe23f;&#xe23f;&#xe23f;&#xe22a; &#xe22a;&#xe23f;&#xe215;&#xe216;  &#xe23f;&#xe23f;&#xe22a;   &#xe23f;&#xe23f;&#xe232;&#xe230;&#xe23a;&#xe23f;&#xe215;&#xe215; &#xe23f;&#xe23d;&#xe231;&#xe23a;&#xe21f;&#xe21a; &#xe23f;&#xe23f;&#xe23f;&#xe23f;&#xe23f;    &#xe22a;&#xe23f;&#xe215;&#xe215;&#xe22a;&#xe23f; &#xe23f;&#xe23f;&#xe22a; &#xe22a;&#xe23f;&#xe23f;&#xe23f;&#xe23f;&#xe215;  </span>
+              <span class="black yellowbg"> &#xe22a;&#xe23f;&#xe215;&#xe215;&#xe22a;&#xe23f; &#xe23f;&#xe23f;&#xe22a; &#xe22a;&#xe23f;&#xe215;&#xe21c;&#xe20c;&#xe204;&#xe23f;&#xe23f;&#xe22a; &#xe22a;&#xe23f;&#xe215;&#xe205;  &#xe23f;&#xe23f;&#xe22a;   &#xe23f;&#xe23f;&#xe20f;&#xe20f;&#xe22f;&#xe23f;&#xe215;&#xe215; &#xe23f;&#xe217;&#xe213;&#xe22f;&#xe235;&#xe225; &#xe23f;&#xe23f;&#xe228;&#xe20c;&#xe204;    &#xe22a;&#xe23f;&#xe215;&#xe215;&#xe22a;&#xe23f; &#xe23f;&#xe23f;&#xe22a; &#xe22a;&#xe23f;&#xe215;&#xe21c;&#xe20c;   </span>
+              <span class="black yellowbg"> &#xe22a;&#xe23f;&#xe23d;&#xe234;&#xe23e;&#xe23f;&#xe238;&#xe23f;&#xe23f;&#xe22a; &#xe22a;&#xe23f;&#xe215;&#xe215;  &#xe23f;&#xe23f;&#xe22a; &#xe22a;&#xe23f;&#xe23f;&#xe234;&#xe230;&#xe23e;&#xe23f;&#xe23f;&#xe22a;   &#xe23f;&#xe23f;&#xe22a;&#xe203;&#xe22a;&#xe23f;&#xe215;&#xe215; &#xe23f;&#xe215;&#xe217;&#xe22a;&#xe23f;&#xe22a; &#xe23f;&#xe23f;&#xe232;&#xe230;&#xe230;    &#xe22a;&#xe23f;&#xe23d;&#xe23c;&#xe23e;&#xe23f;&#xe23c;&#xe23f;&#xe23f;&#xe22a; &#xe22a;&#xe23f;&#xe235;&#xe231;&#xe230;&#xe210;  </span>
+              <span class="black yellowbg">  &#xe20b;&#xe20f;&#xe20f;&#xe203;&#xe203;&#xe20b;&#xe20f;&#xe209;&#xe201; &#xe20a;&#xe20f;&#xe205;&#xe205;  &#xe20f;&#xe20f;&#xe20a;  &#xe20b;&#xe20f;&#xe20f;&#xe20f;&#xe20f;&#xe20f;&#xe209;&#xe201;   &#xe20f;&#xe20f;&#xe20a; &#xe20a;&#xe20f;&#xe205;&#xe205; &#xe20f;&#xe205;&#xe205;&#xe20a;&#xe20f;&#xe20a; &#xe20f;&#xe20f;&#xe20f;&#xe20f;&#xe20f;&#xe20a;    &#xe203;&#xe20f;&#xe20f;&#xe207;&#xe203;&#xe203;&#xe20f;&#xe205;&#xe205; &#xe20a;&#xe20f;&#xe20f;&#xe20f;&#xe20f;&#xe205;&#xe205; </span>
+              </div>
+              <br>
+              <p style="margin: 0 100px 0 100px;font-size: 1.3em;text-align: center;" data-i18n="homedesc">784 Studios</p>
             <videocont> <!-- vidoecont is not a real tag, i did this for vid organization. --> <!-- <iframe style="background-image:url('/deadair.gif')" width="420" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe> -->
               <h1 data-i18n="videos-main">All Videos and Broadcasts</h1>
                 <iframe style="background-image:url('/deadair.gif')" width="420" height="315" src="https://www.youtube.com/embed/R72WXMLLXI0?si=Hscg1RQmvg0psSa9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>

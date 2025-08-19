@@ -1,0 +1,9 @@
+instructions for those who wish to localize this site in their language
+
+every object named comment is not used in any page and only serves as a point of reference as to where each segment of text goes in which page. 
+refer to html pages source code to see where a fragment of text is located for the data entry. all text elements have the attribute data-i18n='wordRef' in them, with 'wordRef' being replaced with their respective data entry. 
+
+you may have to create a stylesheet to adjust for text length differences within different languages to allow the homepage text to be displayed correctly. 
+If so, I recommend copying from the main English CSS file and modifing from there. please let me know of the changes so i can implement in script, or if you know js, you can take the liberty of doing it for me (although i think my script is a "one size fits all" solution, please "fuck around and find out")
+
+to repeat, do not translate any other object named 'comment___' as they are not used anywhere on the website and exists solely for reference to volunteer translators. Lastly, the blog page does not use this file, and instead uses seperate html files. If you were looking to translate blog pages, please go to directory /pages/blogs and read the README.txt file.

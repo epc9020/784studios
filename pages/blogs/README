@@ -1,0 +1,6 @@
+INSTRUCTIONS FOR TRANSLATING BLOG PAGES
+
+Take the english file and translate to the language you will be translating it to. If there is no language folder for your language, you may take the liberty of making a new folder named with the corresponding language and locale. For example: 
+japanese = jp
+spain spanish = es_SP
+traditional chinese = tdch(?)
