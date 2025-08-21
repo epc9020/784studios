@@ -59,37 +59,39 @@
       </div>
     </header>
     <div style="display:flex">
-      <nav style="display:flex;flex-direction: column;background-color:darkblue ; font-size: x-large;" class="sidenav">
-        <a class="teletext4 a" href="#about" onclick="loadPage('pages/about.html', 'ABOUT 784 STUDIOS')">[About]</a>
-        <a class="teletext4 a" href="#network" onclick="loadPage('pages/network.html', 'MEDIA NETWORK - 784 STUDIOS')">[Network]</a>
-        <a class="teletext4 a" href="#service" onclick="loadPage('pages/services.html', 'SERVICES - 784 STUDIOS')">[Services]</a>
-        <a class="teletext4 a" href="#blog" onclick="loadPage('pages/blog.html', 'BLOG - 784 STUDIOS')">[Blog]</a>
-        <a class="teletext4 a" href="#social" onclick="loadPage('pages/social.html'), 'SOCIAL NETWORK ACCOUNTS - 784 STUDIOS'">[SocialNet]</a>
-        <a class="teletext4 a" href="#contact" onclick="loadPage('pages/contact.html', 'CONTACT - 784 STUDIOS')">[Contact]</a>
-        <a class="teletext4 a" href="#aim" onclick="loadPage('pages/aim.html', 'AIM SERVICE - 784 STUDIOS')">[AIM]</a>
-        <br><br><br>
-        <span style="font-size:medium;">link us:</span><br>
-        <img src="/assets/784studios8831.png" width="88" height="31"><br>
-        <textarea><a href="https://784studios.net"><img src="dir/to/784studios8831.png"></a></textarea>
-        <br>
-        <span style="font-size:medium;">do not hotlink</span>
-      </nav>
-      <main id="viewer">
-        <div id="teltxt">
-          <h1>WELCOME TO 784STUDIOS.NET, THE MAIN SITE FOR EVERYTHING BY AND ASSOCIATED WITH 784 STUDIOS</h1>
-          <img class="airtxt-img" src="/assets/images/airtxt.png" alt="AIRTXT: 784 Studios Teletext Service"><br>
-          <h1 class="red">AIRTXT IS OFF AIR</h1>
-          <p>The 784 Studios Teletext Service is currently off-air. Possible issues include:</p>
-          <ul>
-            <li>You may have a script blocker</li>
-            <li>The Teletext server is offline or experiencing a technical fault</li>
-            <li>Our network infrastructure may have been knocked out by a cat or unknowing individual</li>
-            <li>Our ISP may have gone fishing</li>
-          </ul>
-          <p>If the issue still persists after more than a day or two, please contact the webmaster at <a href="mailto:webmaster@784studios.net">webmaster@784studios.net</a>.</p>
-        </div>
-        <br>
-      </main>
+      <div class="main-flex">
+        <nav class="sidenav">
+          <a class="teletext4 a" href="#about" onclick="loadPage('pages/about.html', 'ABOUT 784 STUDIOS')">[About]</a>
+          <a class="teletext4 a" href="#network" onclick="loadPage('pages/network.html', 'MEDIA NETWORK - 784 STUDIOS')">[Network]</a>
+          <a class="teletext4 a" href="#service" onclick="loadPage('pages/services.html', 'SERVICES - 784 STUDIOS')">[Services]</a>
+          <a class="teletext4 a" href="#blog" onclick="loadPage('pages/blog.html', 'BLOG - 784 STUDIOS')">[Blog]</a>
+          <a class="teletext4 a" href="#social" onclick="loadPage('pages/social.html'), 'SOCIAL NETWORK ACCOUNTS - 784 STUDIOS'">[SocialNet]</a>
+          <a class="teletext4 a" href="#contact" onclick="loadPage('pages/contact.html', 'CONTACT - 784 STUDIOS')">[Contact]</a>
+          <a class="teletext4 a" href="#aim" onclick="loadPage('pages/aim.html', 'AIM SERVICE - 784 STUDIOS')">[AIM]</a>
+          <br><br><br>
+          <span style="font-size:medium;">link us:</span><br>
+          <img src="/assets/784studios8831.png" width="88" height="31"><br>
+          <textarea><a href="https://784studios.net"><img src="dir/to/784studios8831.png"></a></textarea>
+          <br>
+          <span style="font-size:medium;">do not hotlink</span>
+        </nav>
+        <main id="viewer">
+          <div id="teltxt">
+            <h1>WELCOME TO 784STUDIOS.NET, THE MAIN SITE FOR EVERYTHING BY AND ASSOCIATED WITH 784 STUDIOS</h1>
+            <img class="airtxt-img" src="/assets/images/airtxt.png" alt="AIRTXT: 784 Studios Teletext Service"><br>
+            <h1 class="red">AIRTXT IS OFF AIR</h1>
+            <p>The 784 Studios Teletext Service is currently off-air. Possible issues include:</p>
+            <ul>
+              <li>You may have a script blocker</li>
+              <li>The Teletext server is offline or experiencing a technical fault</li>
+              <li>Our network infrastructure may have been knocked out by a cat or unknowing individual</li>
+              <li>Our ISP may have gone fishing</li>
+            </ul>
+            <p>If the issue still persists after more than a day or two, please contact the webmaster at <a href="mailto:webmaster@784studios.net">webmaster@784studios.net</a>.</p>
+          </div>
+          <br>
+        </main>
+      </div>
     </div>
     <footer style="padding:10px;margin:5px;border-top: 1px red solid;">
       © 784 Studios MMXXIV - MMXXV. Rights: All Reserved<br>
@@ -113,25 +115,40 @@
     });
   </script>
   <style>
-    .wide {visibility: visible;}
-    .teltxt {width: 59vw}
-    .narrow {visibility: hidden;width: 0px;overflow: hidden;}
-    .topnav {visibility: hidden;height:0;}
-    .airtxt-img {width: 100%; max-width: 500px; height: auto; margin: 0 auto; display: block;}
-    .indexdiv {height:fit-content;overflow:hidden;max-width:100%;align-content: center;flex-direction: column;display: flex;align-items: center;padding-bottom: 60px}
-    .ch7txt {width:500px}
+    .teltxt { width: 100%; max-width: 800px; margin: 0 auto; }
+    .airtxt-img { width: 100%; max-width: 500px; height: auto; margin: 0 auto; display: block; }
+    .main-flex {
+      display: flex;
+      width: 100%;
+    }
+    .sidenav {
+      flex: 1 1 200px;
+      min-width: 180px;
+      max-width: 195px;
+      display:flex;
+      flex-direction: column;
+      background-color:darkblue;
+      font-size: x-large;
+    }
+    #viewer, .teltxt {
+      flex: 2 1 1000px;
+      min-width: 250px;
+      max-width: 100%;
+    }
+    .topnav {
+      height: 0;
+      display: none;
+    }
     @media (max-width: 700px) {
-      iframe {
-        margin: 0;
-      }
-      .infotxt {visibility: hidden; width: 0px; overflow: hidden}
-      .whoweare {max-width:98%}
-      .sidenav {visibility: hidden; width: 0px; overflow: hidden}
-      .topnav {visibility: visible;height:auto;}
-      .wide {visibility: hidden; width:0px;overflow:hidden;}
-      .narrow {visibility: visible; width: auto;}
-      .ch7txt {width: 100%}
-      .teltxt {width: 98vw}
+      iframe { margin: 0; }
+      .infotxt { visibility: hidden; width: 0px; overflow: hidden}
+      .whoweare { max-width:98% }
+      .sidenav { visibility: hidden; width: 0px; overflow: hidden; height: 0;display:none; }
+      .topnav { display: block; height: auto; }
+      .ch7txt { width: 100% }
+      .teltxt { width: 98vw; max-width: 98vw; flex: none; }
+      .main-flex { flex-direction: column; }
+      #viewer { min-width: 0; }
     }
   </style>
 </html>
