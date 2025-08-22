@@ -76,16 +76,19 @@
           <span style="font-size:medium;">do not hotlink</span>
         </nav>
         <main id="viewer">
-          <div id="teltxt">
-            <h1>WELCOME TO 784STUDIOS.NET, THE MAIN SITE FOR EVERYTHING BY AND ASSOCIATED WITH 784 STUDIOS</h1>
+          <div id="teltxt" style="text-align: center;">
+            <h1 style="text-align: center;">WELCOME TO 784 STUDIOS DOT NET</h1>
+            <p style="text-align: center;">THE SITE FOR EVERYTHING BY AND ASSOCIATED WITH 784 STUDIOS</p>
             <img class="airtxt-img" src="/assets/images/airtxt.png" alt="AIRTXT: 784 Studios Teletext Service"><br>
             <h1 class="red">AIRTXT IS OFF AIR</h1>
             <p>The 784 Studios Teletext Service is currently off-air. Possible issues include:</p>
             <ul>
-              <li>You may have a script blocker</li>
+              <li>You may have a script blocker (booo!)</li>
               <li>The Teletext server is offline or experiencing a technical fault</li>
+              <li>The webmaster may have simply have forgotten to turn the server back on</li>
               <li>Our network infrastructure may have been knocked out by a cat or unknowing individual</li>
-              <li>Our ISP may have gone fishing</li>
+              <li>Our ISP may have gone fishing, or is performing in the circus</li>
+              <li>Puerto Rico's power company is demonstrating their power by shutting off the grid</li>
             </ul>
             <p>If the issue still persists after more than a day or two, please contact the webmaster at <a href="mailto:webmaster@784studios.net">webmaster@784studios.net</a>.</p>
           </div>
@@ -146,8 +149,11 @@
       .sidenav { visibility: hidden; width: 0px; overflow: hidden; height: 0;display:none; }
       .topnav { display: block; height: auto; }
       .ch7txt { width: 100% }
-      .teltxt { width: 98vw; max-width: 98vw; flex: none; }
+      .teltxt { width: 98vw; max-width: 98vw;}
       .main-flex { flex-direction: column; }
+      #viewer, .teltxt {
+        flex: none;
+      }
       #viewer { min-width: 0; }
     }
   </style>
