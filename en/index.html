@@ -11,8 +11,8 @@
     <script src="/scripts/fucking-jquery.js"></script>
     <script src="/scripts/jquery.webticker.min.js"></script>
     <script src="/scripts/cursor.js"></script>
-    <script src="/scripts/header-fetch.js"></script>
     <script src="scripts/fetch.js"></script>
+    <script defer src="/scripts/sit-script.js"></script>
   </head>
   <body style="background-color:black;">
     <header>
@@ -45,10 +45,16 @@
       </nav>
       <!-- AIRTXT INFOTICK SERVICE -->
       <div style="display:flex;">
-        <span style="font-size: larger;background-color: red;color:black;" class="infotxt">INFOTICK  ((o))  </span>
+        <span style="font-size: larger;background-color: red;color:black; width: 200px;word-wrap: unset; flex-shrink: 0;" class="infotxt">
+          <span id="jsless">ENABLE JAVASCRIPT!</span>
+          <span class="infotick"> INFOTICK  ((o))</span>
+          <span id="mySwatchClock1"></span>
+          <span id="localTime1"></span>
+          <span id="date1"></span>
+        </span>
         <marquee style="font-size: larger;background-color: darkblue;">
           <i>
-            <span class="teletext-excond"></span>
+            <span><span id="mySwatchClock2">******* //</span> <span id="localTime2">*********** //</span></span>
             <span class="teletext-excond" style="color:rgb(255, 0, 0)">** 784 Studios is currently not taking any new service orders until further notice. **</span> //
             <span style="color:magenta">Latest Video:</span> <a href="https://youtu.be/R72WXMLLXI0?si=0Y3YCfgasfVkzU0b">784 Studios Intro Sequence Version 1</a> //
             <span style="color:red">Last Broadcast:</span> <a href="https://www.youtube.com/live/sSShSW941Kg?si=PZkGwrPGF-2nauOQ">elite784: manually rewinding a video cassette because i have nothing better to do</a> //
@@ -78,10 +84,13 @@
         <main id="viewer">
           <div id="teltxt" style="text-align: center;">
             <h1 style="text-align: center;">WELCOME TO 784 STUDIOS DOT NET</h1>
-            <p style="text-align: center;">THE SITE FOR EVERYTHING BY AND ASSOCIATED WITH 784 STUDIOS</p>
+            <span style="text-align: center;">THE SITE FOR EVERYTHING BY AND ASSOCIATED WITH 784 STUDIOS</span>
             <img class="airtxt-img" src="/assets/images/airtxt.png" alt="AIRTXT: 784 Studios Teletext Service"><br>
-            <h1 class="red">AIRTXT IS OFF AIR</h1>
-            <p>The 784 Studios Teletext Service is currently off-air. Possible issues include:</p>
+            <h1 class="red">AIRTXT IS OFF-AIR</h1>
+            <p>
+              The usual times of operation are from @500 SIT to @132 SIT.<br>
+              If that is the current time, some possible issues include:
+            </p>
             <ul>
               <li>You may have a script blocker (booo!)</li>
               <li>The Teletext server is offline or experiencing a technical fault</li>
@@ -104,6 +113,22 @@
     </footer>
   </body>
   <script src="https://airtxt.784studios.net/scripts/hell.js"></script>
+  
+  <script>
+      var mySwatchClock1 = document.getElementById('mySwatchClock1');
+      var mySwatchClock2 = document.getElementById('mySwatchClock2');
+      function updateSwatchClock() {
+          mySwatchClock1.innerHTML = 'INTERNET: @' + GetSwatchTime();
+          mySwatchClock2.innerHTML = "@" + GetSwatchTime() + " // ";
+      }
+      function getTime() {
+        document.getElementById('localTime1').innerHTML = "   " + new Date().toLocaleTimeString();
+        document.getElementById('localTime2').innerHTML = new Date().toLocaleTimeString() + " // ";
+      }
+      document.getElementById('date1').innerHTML = "    " + new Date().toLocaleDateString();
+      setInterval(getTime, 1000);
+      setInterval(updateSwatchClock, 864);
+  </script>
   <script>
     setTimeout(loadfin, 1500);
     setTimeout(cursor, 1501);
@@ -111,11 +136,6 @@
   </script>
   <script>
     setTimeout(cursor, 6000);
-  </script>
-  <script>
-    $('#webTicker').webTicker() ({
-      height:'30px'
-    });
   </script>
   <style>
     .teltxt { width: 100%; max-width: 800px; margin: 0 auto; }
@@ -142,9 +162,12 @@
       height: 0;
       display: none;
     }
+    #localTime2, #mySwatchClock2 {
+      display:none;
+    }
     @media (max-width: 700px) {
       iframe { margin: 0; }
-      .infotxt { visibility: hidden; width: 0px; overflow: hidden}
+      .infotxt, .infotick, #mySwatchClock1, #localTime1 {display: none; visibility: hidden; width: 0px; overflow: hidden}
       .whoweare { max-width:98% }
       .sidenav { visibility: hidden; width: 0px; overflow: hidden; height: 0;display:none; }
       .topnav { display: block; height: auto; }
@@ -155,6 +178,15 @@
         flex: none;
       }
       #viewer { min-width: 0; }
+      #mySwatchClock2, #localTime2 {
+        display: inline;
+      }
+    }
+    .infotick,
+    #mySwatchClock1,
+    #localTime1 {
+      display: none;
     }
   </style>
+<script src="scripts/the-cycler.js"></script>
 </html>
