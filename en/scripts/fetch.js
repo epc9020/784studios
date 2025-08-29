@@ -3,7 +3,7 @@ function loadPage(url, title) {
         .then(response => response.text())
         .then(html => {
             document.getElementById('viewer').innerHTML = html;
-            document.getElementById('title').innerText = title || "784STUDIOS";
+            document.getElementById('title').innerText = title || "784 STUDIOS";
         })
         .catch(err => {
             document.getElementById('viewer').innerHTML = "<p>Page load failure. If problem persists, contact the webmaster.</p>";
@@ -14,6 +14,9 @@ function loadPage(url, title) {
 function handleHash() {
     const hash = window.location.hash;
     // primary pages
+    if (hash === "#index") {
+      loadPage('home.html', '784 STUDIOS')
+    }
     if (hash === "#network") {
         loadPage('pages/network.html', 'MEDIA NETWORK - 784 STUDIOS');
     }
@@ -48,6 +51,11 @@ function handleHash() {
     }
     if (hash === "#vhs2digital-service") {
       loadPage('pages/services/vhs-digitization.html', 'VHS TO DIGITAL SERVICE - 784 STUDIOS')
+    }
+
+    // temp redir main page
+    if (hash === "#teltest") {
+      loadPage('pages/teltest.html', 'HELP: TELTEST - 784 STUDIOS')
     }
 }
 
