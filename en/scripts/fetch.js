@@ -14,11 +14,11 @@ function loadPage(url, title) {
 function handleHash() {
     const hash = window.location.hash;
     // primary pages
-    if (hash === "#index") {
-      loadPage('home.html', '784 STUDIOS')
+    if (hash === "#home") {
+      loadPage('https://airtxt.784studios.net/', '784 STUDIOS');
     }
     if (hash === "#network") {
-        loadPage('pages/network.html', 'MEDIA NETWORK - 784 STUDIOS');
+      loadPage('pages/network.html', 'MEDIA NETWORK - 784 STUDIOS');
     }
     if (hash === "#service") {
       loadPage('pages/services.html', 'SERVICES - 784 STUDIOS')
