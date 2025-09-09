@@ -15,7 +15,7 @@ function handleHash() {
     const hash = window.location.hash;
     // primary pages
     if (hash === "#home") {
-      loadPage('https://airtxt.784studios.net/', '784 STUDIOS');
+      damnIt();
     }
     if (hash === "#network") {
       loadPage('pages/network.html', 'MEDIA NETWORK - 784 STUDIOS');
