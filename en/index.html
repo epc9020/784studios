@@ -21,7 +21,7 @@ Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
   </head>
   <body style="background-color:black;">
     <header>
-      <a href="#" onclick="damnIt();">
+      <a href="#home" onclick="damnIt();">
         <div class="tvtxtlogo a">
           <span class="blue">&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2c7;  &#xe2e0;&#xe2fe;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2fd;&#xe2f4;         &#xe2e0;&#xe2fe;&#xe2ff;&#xe2ff;                                                                                                                                                         </span>
           <span class="blue">&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2c5;  &#xe2f8;&#xe2ff;&#xe2ff;&#xe2df;&#xe2c3;&#xe2c3;&#xe2c3;&#xe2ef;&#xe2ff;&#xe2ff;&#xe2fd;       &#xe2f8;&#xe2ff;&#xe2ff;&#xe2ff;&#xe2d7;                                                                                                                                                         </span>
@@ -37,15 +37,16 @@ Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
         </div>
       </a>
       <nav class="topnav">
-        <details style="display:flex;flex-direction: row;font-size: xx-large;">
+        <details id="main-nav" style="display:flex;flex-direction: row;font-size: xx-large;">
           <summary style="font-size: xx-large;">NAVIGATION MENU</summary>
-          <a class="teletext4 a" href="#about" onclick="loadPage('pages/about.html', 'ABOUT 784 STUDIOS')">[About]</a>
-          <a class="teletext4 a" href="#network" onclick="loadPage('pages/network.html', 'MEDIA NETWORK - 784 STUDIOS')">[Network]</a>
-          <a class="teletext4 a" href="#service" onclick="loadPage('pages/services.html', 'SERVICES - 784 STUDIOS')">[Services]</a>
-          <a class="teletext4 a" href="#blog" onclick="loadPage('pages/blog.html', 'BLOG - 784 STUDIOS')">[Blog]</a>
-          <a class="teletext4 a" href="#social" onclick="loadPage('pages/social.html'), 'SOCIAL NETWORK ACCOUNTS - 784 STUDIOS'">[SocialNet]</a>
-          <a class="teletext4 a" href="#contact" onclick="loadPage('pages/contact.html', 'CONTACT - 784 STUDIOS')">[Contact]</a>
-          <a class="teletext4 a" href="#aim" onclick="loadPage('pages/aim.html', 'AIM SERVICE - 784 STUDIOS')">[AIM]</a>
+          <a class="teletext4 a navlink" href="#about" onclick="loadPage('pages/about.html', 'ABOUT 784 STUDIOS')">[About]</a>
+          <a class="teletext4 a navlink" href="#network" onclick="loadPage('pages/network.html', 'MEDIA NETWORK - 784 STUDIOS')">[Network]</a>
+          <a class="teletext4 a navlink" href="#service" onclick="loadPage('pages/services.html', 'SERVICES - 784 STUDIOS')">[Services]</a>
+          <a class="teletext4 a navlink" href="#blog" onclick="loadPage('pages/blog.html', 'BLOG - 784 STUDIOS')">[Blog]</a>
+          <a class="teletext4 a navlink" href="#social" onclick="loadPage('pages/social.html', 'SOCIAL NETWORK ACCOUNTS - 784 STUDIOS')">[SocialNet]</a>
+          <a class="teletext4 a navlink" href="#contact" onclick="loadPage('pages/contact.html', 'CONTACT - 784 STUDIOS')">[Contact]</a>
+          <a class="teletext4 a navlink" href="#sites" onclick="loadPage('pages/sites.html', 'ASSOCIATED SITES - 784 STUDIOS')">[Outlinks]</a>
+          <a class="teletext4 a navlink" href="#aim" onclick="loadPage('pages/aim.html', 'AIM SERVICE - 784 STUDIOS')">[AIM]</a>
         </details>
       </nav>
       <!-- AIRTXT INFOTICK SERVICE -->
@@ -78,6 +79,7 @@ Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
           <a class="teletext4 a" href="#blog" onclick="loadPage('pages/blog.html', 'BLOG - 784 STUDIOS')">[Blog]</a>
           <a class="teletext4 a" href="#social" onclick="loadPage('pages/social.html'), 'SOCIAL NETWORK ACCOUNTS - 784 STUDIOS'">[SocialNet]</a>
           <a class="teletext4 a" href="#contact" onclick="loadPage('pages/contact.html', 'CONTACT - 784 STUDIOS')">[Contact]</a>
+          <a class="teletext4 a" href="#sites" onclick="loadPage('pages/sites.html', 'ASSOCIATED SITES - 784 STUDIOS')">[Outlinks]</a>
           <a class="teletext4 a" href="#aim" onclick="loadPage('pages/aim.html', 'AIM SERVICE - 784 STUDIOS')">[AIM]</a>
           <br><br><br>
           <span style="font-size:medium;">link us:</span><br>
@@ -117,7 +119,7 @@ Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
       Teletext viewer by Jamie Nemeth of <a href="https://jamienemeth.co.uk">jamienemeth.co.uk</a>
     </footer>
   </body>
-  <script src="https://airtxt.784studios.net/scripts/SHITSTAIN.js"></script>
+  <script src="http://localhost:37207/scripts/SHITSTAIN.js"></script>
   
   <script>
       var mySwatchClock1 = document.getElementById('mySwatchClock1');
@@ -135,6 +137,13 @@ Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
       setInterval(updateSwatchClock, 864);
   </script>
   <script>
+
+  document.querySelectorAll('.navlink').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('main-nav').open = false;
+    });
+  });
+
     setTimeout(loadfin, 1500);
     setTimeout(cursor, 1501);
     setTimeout(cursor, 2000);
