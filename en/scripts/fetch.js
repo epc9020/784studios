@@ -15,6 +15,7 @@ function handleHash() {
     const hash = window.location.hash;
     // primary pages
     if (hash === "#home") {
+      loadPage('home.html', '784 STUDIOS');
       damnIt();
     }
     if (hash === "#network") {
