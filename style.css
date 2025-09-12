@@ -113,5 +113,8 @@ a:hover {
   
 }
 
+li {
+  list-style-type: ">> ";
+}
 
 html {background-color: black;}

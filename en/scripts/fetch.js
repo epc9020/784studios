@@ -73,6 +73,11 @@ function handleHash() {
     if (hash === "#teltest") {
       loadPage('pages/teltest.html', 'HELP: TELTEST - 784 STUDIOS')
     }
+
+    // perma dir main page
+    if (hash === "#aboutsit") {
+      loadPage('pages/about-sit.html', 'ABOUT SIT - 784 STUDIOS')
+    }
 }
 
 /*  hash thing temp
