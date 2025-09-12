@@ -37,7 +37,7 @@ Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
         </div>
       </a>
       <nav class="topnav">
-        <details id="main-nav" style="display:flex;flex-direction: row;font-size: xx-large;">
+        <details id="main-nav" style="display:flex;flex-direction: column;font-size: xx-large;">
           <summary style="font-size: xx-large;">NAVIGATION MENU</summary>
           <a class="teletext4 a navlink" href="#about" onclick="loadPage('pages/about.html', 'ABOUT 784 STUDIOS')">[About]</a>
           <a class="teletext4 a navlink" href="#network" onclick="loadPage('pages/network.html', 'MEDIA NETWORK - 784 STUDIOS')">[Network]</a>
@@ -162,11 +162,29 @@ Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
       display:none;
     }
     @media (max-width: 700px) {
+      .topnav {
+        display: block;
+        height: auto;
+        width: 100%;
+      }
+      #main-nav summary {
+        font-size: xx-large;
+        cursor: pointer;
+      }
+      #main-nav a {
+        display: block;
+        width: 100%;
+        margin: 0.2em 0;
+        font-size: xx-large;
+        text-align: left;
+      }
+    }
+    @media (max-width: 700px) {
       iframe { margin: 0; }
       .infotxt, .infotick, #mySwatchClock1, #localTime1 {display: none; visibility: hidden; width: 0px; overflow: hidden}
       .whoweare { max-width:98% }
       .sidenav { visibility: hidden; width: 0px; overflow: hidden; height: 0;display:none; }
-      .topnav { display: block; height: auto; }
+      .topnav { display: block; height: auto; width: 100%; }
       .ch7txt { width: 100% }
       .teltxt { width: 98vw; max-width: 98vw;}
       .main-flex { flex-direction: column; }
