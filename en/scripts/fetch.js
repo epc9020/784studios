@@ -22,14 +22,16 @@ function handleHash() {
         document.getElementById('title').innerText = "784 STUDIOS";
         document.getElementById('viewer').innerHTML = '<iframe src="https://airtxt.784studios.net/" frameborder="0" height="670" width="1100" class="teltxt"></iframe>';
       } else {
-        loadPage('home.html', '784 STUDIOS - HOME');
+        loadPage('home.html', '784 STUDIOS');
       }
     })
     .catch(() => {
-      loadPage('home.html', '784 STUDIOS - HOME');
+      loadPage('home.html', '784 STUDIOS');
     });
 
   return;
+    } else if (hash === "" || hash === "#") {
+      loadPage('home.html', '784 STUDIOS');
     }
     if (hash === "#network") {
       loadPage('pages/network.html', 'MEDIA NETWORK - 784 STUDIOS');
