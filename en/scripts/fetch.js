@@ -15,8 +15,12 @@ function handleHash() {
     const hash = window.location.hash;
     // primary pages
     if (hash === "#home") {
-      loadPage('home.html', '784 STUDIOS');
-      damnIt();
+      if(fetch('https://airtxt.784studios.net/').then(response.ok)) {
+        document.getElementById('title').innerText = "784 STUDIOS";
+        document.getElementById('viewer').innerHTML = '<iframe src="https://airtxt.784studios.net/"frameborder="0" height="670" width="1100" class="teltxt"></iframe>';
+      } else {
+        loadPage('pages/home.html', '784 STUDIOS - HOME');
+      }
     }
     if (hash === "#network") {
       loadPage('pages/network.html', 'MEDIA NETWORK - 784 STUDIOS');
