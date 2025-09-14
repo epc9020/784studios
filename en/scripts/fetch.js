@@ -1,3 +1,12 @@
+/* so what this does is that basically
+1. reads the hash in the url every time it updates (e.g a link is clicked on the sidenav)
+2. based on that, it fetches a corresponding html file
+3. puts the html file into the .viewer element on index.html
+
+this makes development of the site easier since i dont have to be inserting the same ol nav, headers, and footers in all pages
+i also made it more convinient to end users to link to pages, so like, its all very seamless, yes yes
+*/
+
 function loadPage(url, title) {
     fetch(url)
         .then(response => response.text())
@@ -80,6 +89,7 @@ function handleHash() {
     if (hash === "#aboutsit") {
       loadPage('pages/about-sit.html', 'ABOUT SIT - 784 STUDIOS')
     }
+
 }
 
 /*  hash thing temp
