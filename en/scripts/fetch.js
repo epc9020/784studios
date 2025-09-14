@@ -14,8 +14,12 @@ function loadPage(url, title) {
 function handleHash() {
     const hash = window.location.hash;
     // primary pages
-    if (hash === "#home") {
+    if (hash === "#home" || hash === "#" || hash === "") {
   fetch('https://airtxt.784studios.net/stillalive.txt')
+  .catch(() => {
+    loadPage('home.html', '784 STUDIOS');
+    return;
+  })
     .then(response => response.text())
     .then(text => {
       if (text.includes("thisWasATriumph")) {
@@ -23,11 +27,9 @@ function handleHash() {
         document.getElementById('viewer').innerHTML = '<iframe src="https://airtxt.784studios.net/" frameborder="0" height="670" width="1100" class="teltxt"></iframe>';
       } else {
         loadPage('home.html', '784 STUDIOS');
+
       }
     })
-    .catch(() => {
-      loadPage('home.html', '784 STUDIOS');
-    });
 
   return;
     } else if (hash === "" || hash === "#") {
