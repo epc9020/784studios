@@ -22,8 +22,8 @@
     <p style="visibility: hidden;display: none;">Compania de producion proveyendo digitaziones de VHS, VFX de VHS real, y subtitulaciones para video.</p>
     <h1 id="welcome">PLEASE<br>ENABLE<br>JAVASCRIPT</h1>
     <p id="standby">OR USE A SUPPORTED BROWSER</p>
-    <div id="loading-thingy" style="visibility: visible;"></div>
-    
+    <div id="loading-thingy" style="visibility: hidden;"></div>
+    <div style="width:100%;height:100vh"></div>
     </div>
   </body>
   
@@ -40,4 +40,28 @@
   document.getElementById("standby").innerText = "STAND BY FOR PAGE 100";
     setTimeout(redirect, 2500)
   </script>
+  <style>
+    #loading-thingy {
+    background-image: url(/wait0000.png);
+    -webkit-animation: loadthing 400ms infinite;
+    animation: loadthing 400ms infinite;
+    width:50px;
+    height:50px;
+    margin:0 auto 0 auto
+  }
+  
+  @-webkit-keyframes loadthing {
+    25% {background-image: url(/wait0000.png);}
+    50% {background-image: url(/wait0001.png);}
+    75% {background-image: url(/wait0002.png);}
+    100% {background-image: url(/wait0003.png);}
+  } 
+  
+  @keyframes loadthing {
+    25% {background-image: url(/wait0000.png);}
+    50% {background-image: url(/wait0001.png);}
+    75% {background-image: url(/wait0002.png);}
+    100% {background-image: url(/wait0003.png);}
+  }
+  </style>
 </html>
