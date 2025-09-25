@@ -80,6 +80,14 @@ function handleHash() {
       loadPage('pages/services/vhs-digitization.html', 'VHS TO DIGITAL SERVICE - 784 STUDIOS')
     }
 
+    // media network pages
+    if (hash === "#vidnet") {
+      loadPage('pages/videos.html', 'VIDEO NETWORK - 784 STUDIOS')
+    }
+    if (hash === "#socialnet") {
+      loadPage('pages/social.html', 'SOCIAL NETWORK - 784 STUDIOS')
+    }
+
     // temp redir main page
     if (hash === "#teltest") {
       loadPage('pages/teltest.html', 'HELP: TELTEST - 784 STUDIOS')

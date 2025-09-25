@@ -12,7 +12,7 @@ function cursor() {
     pointer.height = 50
     var point = cur.getContext("2d");
     var link = pointer.getContext("2d");
-    var spa = span.getContext("2d")
+    var span = span.getContext("2d")
 
     
     
@@ -37,7 +37,6 @@ function cursor() {
         thebutton[i].style.cursor = "url('" + pointer.toDataURL() + "'), pointer";
     }
     (async function () {
-        await fetch('/assets/useless-file-that-does-nothing.txt');
         for (var i = 0; i < alink.length; i++ ) {
         alink[i].style.cursor = "url('" + pointer.toDataURL() + "'), pointer";
         }
