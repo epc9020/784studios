@@ -15,26 +15,27 @@ Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
     <link rel="stylesheet" href="/terretext.css">
     <script src="/scripts/fucking-jquery.js"></script>
     <script src="/scripts/jquery.webticker.min.js"></script>
-    <script src="/scripts/cursor.js"></script>
-    
+    <script src="/scripts/cursor.js"></script>  
     <script defer src="/scripts/sit-script.js"></script>
   </head>
   <body style="background-color:black;">
-    <header style="background-color: black;display: flex;">
-      <a href="index.html" onclick="damnIt();">
-        <img src="../../assets/images/en/thewirecompact.png">
+    <header>
+      <a href="news#">
+        <span class="blue mobilelogo teletext-excond"> <span style="font-weight: 1000;">⎯⎯</span> T H E  W I R E <span style="font-weight: 1000;">⎯⎯</span> </span>
+        <img class="desktoplogo" src="../../assets/images/en/thewirecompact.png">
       </a>
-      <div>
-        <a href=""
-      </div>
-      <nav class="topnav">
-        <details id="main-nav" style="display:flex;flex-direction: column;font-size: xx-large;">
-          <summary style="font-size: xx-large;">NAVIGATION MENU</summary>
-          <a class="teletext4 a navlink" href="#about" onclick="loadPage('pages/about.html', 'ABOUT - 784 STUDIOS')">[About]</a>
-        </details>
-      </nav>
-      <!-- AIRTXT INFOTICK SERVICE -->
-      <div style="display:flex;">
+      <div style="padding: 20px;">
+        <div style="padding-bottom: 10px;">NEWS NAVIGATION ↓</div>
+        <div>
+          <a href="#local"  class="red" style="font-size: xx-large;">LOCAL</a>
+          <a href="#regional" class="green" style="font-size: xx-large;">REGIONAL</a> 
+          <a href="#national"  class="yellow" style="font-size: xx-large;">NATIONAL</a> 
+          <a href="#world" class="cyan" style="font-size: xx-large;">WORLD</a>
+        </div>
+      </div>  
+    </header>
+    <!-- AIRTXT INFOTICK SERVICE -->
+    <div style="display:flex;flex-direction: row;">
         <span style="font-size: larger;background-color: red;color:black; width: 200px;word-wrap: unset; flex-shrink: 0;" class="infotxt">
           <span id="jsless">ENABLE JAVASCRIPT!</span>
           <span class="infotick"> INFOTICK  ((o))</span>
@@ -45,38 +46,26 @@ Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
         <marquee style="font-size: larger;background-color: rgb(255, 255, 255);color:black;">
           <i>
             <span><span id="mySwatchClock2"> ENABLE   </span> <span id="localTime2">JAVASCRIPT  //</span></span>
-            <b>NEWSWIRE: </b>
-            JUAN THE HORSE STEALS PORTAL TO AGARTHA, MOST WANTED --- TEACHER TORTURES CHILDREN WITH "NUMBERS" --- HATSUNE MIKU FOUND DRUNK AT ONLINE NIGHTCLUB --- 
-            KID SHOT DEAD DOING WHAT HE LOVED DOING MOST: DING DONG DITCHING --- LOCAL FAMILY DEBATING WHO MOVED CHAIR --- REPORT: WE CANT --- LOCAL TABLET CHILD CAN'T LEARN BASIC COMPUTER USAGE --- UK PARLAMENT BANS MASTRUBATION --- STUDY SHOWS THERE'S MORE SHIT IN THE AIR --- CONSUMABLE BLEACH --- OLD MAN COMPLAINS SUBWOOFER NOT LOUD ENOUGH IN THE CAR NEXT TO HIM IN TRAFFIC --- INVESTIGATION: MIKU DROVE A 2011 TOYOTA COROLLA? --- WHY HUMANS CAN'T STOP COMPLAINING OVER PETTY BULLSHIT --- 
+            <span>NEWSWIRE: </span>
+            JUAN THE HORSE STEALS PORTAL TO AGARTHA, CURRENTLY MOST WANTED --- TEACHER TORTURES CHILDREN WITH "NUMBERS" --- HATSUNE MIKU FOUND DRUNK AT ONLINE NIGHTCLUB --- 
+            KID SHOT DEAD DOING WHAT HE LOVED DOING MOST: DING DONG DITCHING --- LOCAL FAMILY DEBATING WHO MOVED CHAIR --- REPORT: WE CANT --- LOCAL TABLET CHILD CAN'T LEARN BASIC COMPUTER USAGE --- UK PARLAMENT BANS MASTRUBATION --- STUDY SHOWS THERE'S MORE SHIT IN THE AIR --- CLOROX COMPANY INTRODUCES NEW CONSUMABLE BLEACH --- OLD MAN COMPLAINS SUBWOOFER NOT LOUD ENOUGH IN CAR NEXT TO HIM --- INVESTIGATION: MIKU DROVE A 2011 TOYOTA COROLLA? --- WHY HUMANS CAN'T STOP COMPLAINING OVER PETTY BULLSHIT --- RESEARCH SHOWS MACHINES 40% MORE EFFECTIVE IN NOT GIVING A SHIT
           </i>
         </marquee>
       </div>
-    </header>
+    
     <div style="display:flex">
       <div class="main-flex">
-        <nav class="sidenav">
-          <a class="teletext4 a red" href="#about" onclick="loadPage('pages/about.html', 'ABOUT 784 STUDIOS')">[About]</a>
-          <br><br><br>
-          <span style="font-size:medium;">link us:</span><br>
-          <img src="/assets/784studios8831.png" width="88" height="31"><br>
-          <textarea><a href="https://784studios.net"><img src="dir/to/784studios8831.png"></a></textarea>
-          <br>
-          <span style="font-size:medium;">do not hotlink</span>
-        </nav>
         <main id="viewer">
-          <div id="teltxt" style="text-align: center;">
-            <img src="/assets/images/webtxt.png" alt="Please enable Javascript, this website will not work without it. WEBtxt. 784 Studios Website Viewer." class="teltxt" style="max-width: 500px;"><br>
-            </div>
         </main>
       </div>
     </div>
     <footer style="padding:10px;margin:5px;border-top: 1px red solid;">
-      © 784 Studios MMXXIV - MMXXV. Rights: All Reserved<br>
+      <div style="border-bottom: 1px red solid;margin-bottom:30px;padding-bottom:30px">Had enough? <a href="index.html">Return to parent company site ←←←</a></div>
+      © 784 Studios MMXXIV - MMXXV. Rights: All Reserved. The Wire, logo, and content, is copyright of 784 Studios. All articles are fictional. Any resemblance to real events and persons, living or dead, is purely coincidential. Server side services are served as best as we're possibly able to.<br>
       Teletext50, Mode7 and Teletext stylesheet by Alan Davies of <a href='https://galax.xyz' class='a'>galax.xyz</a><br>
       Teletext viewer by Jamie Nemeth of <a href="https://jamienemeth.co.uk">jamienemeth.co.uk</a>
     </footer>
   </body>
-  <script src="scripts/fetch.js"></script>
   
   <script>
       var mySwatchClock1 = document.getElementById('mySwatchClock1');
@@ -125,9 +114,10 @@ Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
       font-size: x-large;
     }
     #viewer, .teltxt {
-      flex: 2 1 1000px;
+      flex: 2 1 1320px;
       min-width: 250px;
-      max-width: 100%;
+      max-width: 1320px;
+      align-items: center;
     }
     .topnav {
       height: 0;
@@ -135,6 +125,18 @@ Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
     }
     #localTime2, #mySwatchClock2 {
       display:none;
+    }
+    .mobilelogo {
+      display: none;
+    }
+    .desktoplogo {
+      max-height: 93px;
+      height: auto;
+      width: auto;
+    }
+    header {
+      background-color: black;
+      display: flex;
     }
     @media (max-width: 700px) {
       .topnav {
@@ -153,6 +155,29 @@ Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
         font-size: xx-large;
         text-align: left;
       }
+      header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+      }
+      .desktoplogo {
+        display: none;
+      }
+      .mobilelogo {
+        display: block;
+        font-size: xx-large;
+    }
+  }
+    @media (max-width: 1316px) {
+      #viewer, .teltxt {
+        flex: none;
+        max-width: 98vw;
+        width: 98vw;
+      }
+      .teltxt { max-width: 98vw; content: center; }
+      .infotxt { width: 98vw; max-width: 98vw; }
+      .exfiller { display: none; visibility: hidden; width: 0px; overflow: hidden}
     }
     @media (max-width: 700px) {
       iframe { margin: 0; }
@@ -177,6 +202,6 @@ Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
       display: none;
     }
   </style>
-<script src="../scripts/the-cycler.js"></script>
-
+<script src="scripts/the-cycler.js"></script>
+<script src="news/scripts/fetch.js"></script>
 </html>
