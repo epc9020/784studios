@@ -45,10 +45,11 @@ p {
   src: url('/fonts/MODE7GX4.TTF');
 }
 .teletext {
-  font: "teletext" 9px;
+  font-family: teletext;
+  font-size: 9px;
 }
 .teletext-excond {
-  font: "teletext-excondense";
+  font-family: teletext-excond;
 }
 .teletext3 {
   font: "teletext3" 9px;
@@ -101,7 +102,7 @@ header {
 
 a {
   color:lightblue;
-  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAyCAYAAABLXmvvAAABV0lEQVRYR+2VsWrCUBSGvYhDn0RwCmhnx75EcSguRV/A2ZdoC46dfYXi4CSULsW1Ooo+gcH+B27gGhPy6wlG8AQOCeQ/57//d3OJq1V0uYp8a9UZH3CRqffOuQapLZS5WzNeY8nb1LJjJO4URiEFeYn7MJmQMy6S5Rn/YdoM5r2LphJNofES+jnqxfeJ+Rg1xQJ2xKyzJKHxGzqHqH1qQgTjn7OmEuIjYxi84iuvo+8jSB7j+R3vBsQ8WnJiLJ0w7+L2hBr5Sb+4f5VpnmnszVu4f6KaqAeUJG+j1mXsea5xwgzpv/EcBQxLOWpiLCnk2iDJKr1JeC/JnwPspRw16ifh91zOdHLUFljkI/0lZQgpY7/n8rUnR+16xpp0Wb10YjPWEjDUWoJ0v6GmUWmFhlpLkO431DQqrdBQawnS/YaaRqUVGmotQbrfUNOotEJDrSVI998f6n+/e20zGpntHAAAAABJRU5ErkJggg=="), pointer;
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAyCAYAAABLXmvvAAACCklEQVRYR+2UQUsCURDHZ12ioGv0FQoJE6yDJ+9+hchM9CB51UNXv4SBejHPQofOsQfxIHiqJPBgHiPxFFor9Z/FNV3X3HV3scMbGFzGee/35v9mnkQbMmlDXNoc+BtmsWpVkqQti7kr06T/Bu7hyO+GY49R8cnKUiwmmFacTCapVCoZt1AR8FbqbrdLiqJQLBYzwl1rxmnF7Xab6vU6JRIJDcbwfD5PtVqN+v0+h7gJfRaVXJk2BRcKBcpkMqSqrOivhcPhdqPRGCIyhrt/xwxOp9MkyzKVy+URZN6e4Bl4g8a6WlmGjYS5ihnMFolEKBqNfuVyOb2ZnhB+cBM+BReLxc9UKlUF4JLhfr+fqtUqBQKBkc/n4+q58hC8hwNol+7EpuBKpdKHvPvYbO6SW60WBYPBWUYS4IVZs3sIKRQKaU/mYDB46XQ6B/iU4XfwqF55PB4fZrPZncnmXfwqgC/Mmh04z6X+Vj/i+2iyOILfM3hKv3OeaX3UEGsCfGoHZMxdBtaKhfOdH8Ml7vaZUXMVfAvAuUkVz4gdzsT5Db+HO5aaO5XtDf5qAubKryfS638zfM+p1FbW851fwLVRg33Ad60sXJZj59HnbtdHrYlvx83l5OBrr7VT8doQs4UC7Kqcf20mpBZSe6aAaC7PpDVuLKQWUnumgGguz6QVcyyaSzSXZwpsrLl+ABiXqDO3bLHXAAAAAElFTkSuQmCC"), pointer;
 }
 
 a:visited {
