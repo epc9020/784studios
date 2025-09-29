@@ -82,7 +82,7 @@ function handleHash() {
 
     // media network pages
     if (hash === "#vidnet") {
-      loadPage('pages/videos.html', 'VIDEO NETWORK - 784 STUDIOS')
+      loadPage('pages/vidnet.html', 'ONLINE VIDEO NETWORK - 784 STUDIOS')
     }
     if (hash === "#socialnet") {
       loadPage('pages/social.html', 'SOCIAL NETWORK - 784 STUDIOS')
