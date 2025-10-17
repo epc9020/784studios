@@ -1,0 +1,52 @@
+<div style="display:flex; flex-direction: row;width:100%;padding-top:20px;">
+    <div>
+        <div style="display: flex;padding-top:20px;gap: 20px"  onclick="open('https://784studios.net', '_self')">
+            <div class="airtxt" id="teltxt">
+                <span class="teletext5 red" style="font-size:xx-large">AIRTXT OFF-AIR ((x))</span><br>
+                <span>AIRTXT operates from @500-@132. If it is that time, AIRTXT may be experiencing a fault. You can still browse most articles not marked [<span class="red">AIR</span><span class="yellow">txt</span>] below or through the links above.</span>
+            </div>
+            
+        </div>
+        <div class="news-container" style="display: flex;padding-top:20px; gap: 20px;">
+            <div class="top-headline">
+                <a class="teletext5 yellow" style="font-size:xx-large" href="#miku-corolla-2011" onclick="setTimeout(articletxt, 500)">INVESTIGATION: MIKU DROVE A 2011 TOYOTA COROLLA?</a>
+                <p>The Wire investigation team finds out whether or not Hatsune Miku actually drove a 2011 Toyota Corolla during her Mikunopolis tour in 2011. 
+                [<span class="red">AIR</span><span class="yellow">txt</span>]</p>
+            </div>
+            <div class="world">
+                <a class="teletext5 yellow" style="font-size:xx-large" href="#machines-give-less-to-no-shits">RESEARCH: MACHINES 40% MORE EFFICIENT IN NOT GIVING A SHIT</a>
+                <p>A new study shows that machines are better at humans at not actually caring about their jobs, especially minimum wage jobs.</p>
+            </div>
+        </div>
+        <div class="news-container" style="display: flex;padding-top:20px;gap: 20px">
+            <div class="world">
+                <a class="teletext5 yellow" style="font-size:xx-large" href="#kid-named-finger" >WHY HUMANS CANT STOP COMPLAINING OVER PETTY BULLSHIT</a>
+                <p>A social experiment conducted by The Wire investigation team finds out why humans cant stop complaining over petty bullshit.</p>
+            </div>
+            <div class="regional">
+                <a class="teletext5 yellow" style="font-size:xx-large" href="#kid-named-finger" >FORD INTRODUCES NEW PICKUP TRUCK BIGGER THAN OTHER PICKUPS</a>
+                <p>Ford Motor Corp. has introduced its biggest pickup yet. Sources say that it is able to crash trough traffc effortlessly than any other pickup on the market.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- [<span class="red">AIR</span><span class="yellow">txt</span> article] -->
+<style>
+    .airtxt { border: solid blue 3px; flex: 2 1 1320px}
+    .top-headline { border: solid magenta 3px; flex: 2 0 900px}
+    .regional { border: solid limegreen 3px; flex: 0 1 1320px}
+    .local { border: solid red 3px; flex: 0 1 1320px}
+    .national { border: solid yellow 3px; flex: 0 1 1320px;}
+    .world { border: solid cyan 3px; flex: 0 1 1320px}
+    .news-container { display: flex; flex-direction: row; width: 100%; padding-top:20px;gap: 20px }
+    @media (max-width: 900px) {
+        .airtxt { flex: 2 1 100%; align-items: center; display: flex; flex-direction: column;}
+        .top-headline { flex: 2 0 100%; }
+        .regional { flex: 0 1 100%; }
+        .local { flex: 0 1 100%; }
+        .national { flex: 0 1 100%;}
+        .world { flex: 0 1 100%}
+        .filler { display: none; }
+        .news-container { flex-direction: column; gap: 20px; }
+    }
+</style>

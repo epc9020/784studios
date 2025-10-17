@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- 
+Main site and vast mayority of assets © 784 Studios MMXXIV - MMXXV. Rights: All Reserved.
+Teletext fonts and stylesheet © Alan Davies 2014 - 2015. Some content under public domain. https://galax.xyz
+Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
+-->
+<html id="loader">
+  <head>
+    <script src="/scripts/loadCurWait.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/waitcur.css">
+    <title id="title">THE WIRE</title>
+    <link id="styles-link" href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="/favicon.gif">
+    <link rel="stylesheet" href="/terretext.css">
+    <script src="/scripts/fucking-jquery.js"></script>
+    <script src="/scripts/jquery.webticker.min.js"></script>
+    <script src="/scripts/cursor.js"></script>  
+    <script defer src="/scripts/sit-script.js"></script>
+  </head>
+  <body style="background-color:black;">
+    <header>
+      <a href="wire#">
+        <span class="blue mobilelogo teletext-excond"> <span style="font-weight: 1000;">⎯⎯</span> T H E  W I R E <span style="font-weight: 1000;">⎯⎯</span> </span>
+        <img class="desktoplogo" src="../../assets/images/en/thewirecompact.png">
+      </a>
+      <div style="padding: 20px;">
+        <div style="padding-bottom: 10px;">NEWS NAVIGATION ↓</div>
+        <div>
+          <a href="#local"  class="red" style="font-size: xx-large;">LOCAL</a>
+          <a href="#regional" class="green" style="font-size: xx-large;">REGIONAL</a> 
+          <a href="#national"  class="yellow" style="font-size: xx-large;">NATIONAL</a> 
+          <a href="#world" class="cyan" style="font-size: xx-large;">WORLD</a>
+        </div>
+      </div>  
+    </header>
+    <!-- AIRTXT INFOTICK SERVICE -->
+    <div style="display:flex;flex-direction: row;">
+        <span style="font-size: larger;background-color: red;color:black; width: 200px;word-wrap: unset; flex-shrink: 0;" class="infotxt">
+          <span id="jsless">ENABLE JAVASCRIPT!</span>
+          <span class="infotick"> INFOTICK  ((o))</span>
+          <span id="mySwatchClock1"></span>
+          <span id="localTime1"></span>
+          <span id="date1"></span>
+        </span>
+        <marquee style="font-size: larger;background-color: rgb(255, 255, 255);color:black;">
+          <i>
+            <span><span id="mySwatchClock2"> ENABLE   </span> <span id="localTime2">JAVASCRIPT  //</span></span>
+            <span>NEWSWIRE: </span>
+            JUAN THE HORSE STEALS PORTAL TO AGARTHA, CURRENTLY MOST WANTED --- TEACHER TORTURES CHILDREN WITH "NUMBERS" --- HATSUNE MIKU FOUND DRUNK AT ONLINE NIGHTCLUB --- 
+            KID SHOT DEAD DOING WHAT HE LOVED DOING MOST: DING DONG DITCHING --- LOCAL FAMILY DEBATING WHO MOVED CHAIR --- REPORT: WE CANT --- LOCAL TABLET CHILD CAN'T LEARN BASIC COMPUTER USAGE --- UK PARLAMENT BANS MASTRUBATION --- STUDY SHOWS THERE'S MORE SHIT IN THE AIR --- CLOROX COMPANY INTRODUCES NEW CONSUMABLE BLEACH --- OLD MAN COMPLAINS SUBWOOFER NOT LOUD ENOUGH IN CAR NEXT TO HIM --- INVESTIGATION: MIKU DROVE A 2011 TOYOTA COROLLA? --- WHY HUMANS CAN'T STOP COMPLAINING OVER PETTY BULLSHIT --- RESEARCH SHOWS MACHINES 40% MORE EFFECTIVE IN NOT GIVING A SHIT
+          </i>
+        </marquee>
+      </div>
+    
+    <div style="display:flex">
+      <div class="main-flex">
+        <main id="viewer">
+        </main>
+      </div>
+    </div>
+    <footer style="padding:10px;margin:5px;border-top: 1px red solid;">
+      <div style="border-bottom: 1px red solid;margin-bottom:30px;padding-bottom:30px">Had enough? <a href="index.html">Return to parent company site ←←←</a></div>
+      © 784 Studios MMXXIV - MMXXV. Rights: All Reserved. The Wire, logo, and content, is copyright of 784 Studios. All articles are fictional. Any resemblance to real events and persons, living or dead, is purely coincidential. Server side services are served as best as we're possibly able to.<br>
+      Teletext50, Mode7 and Teletext stylesheet by Alan Davies of <a href='https://galax.xyz' class='a'>galax.xyz</a><br>
+      Teletext viewer by Jamie Nemeth of <a href="https://jamienemeth.co.uk">jamienemeth.co.uk</a>
+    </footer>
+  </body>
+  
+  <script>
+      var mySwatchClock1 = document.getElementById('mySwatchClock1');
+      var mySwatchClock2 = document.getElementById('mySwatchClock2');
+      function updateSwatchClock() {
+          mySwatchClock1.innerHTML = 'INTERNET: @' + GetSwatchTime();
+          mySwatchClock2.innerHTML = "@" + GetSwatchTime() + " // ";
+      }
+      function getTime() {
+        document.getElementById('localTime1').innerHTML = "   " + new Date().toLocaleTimeString();
+        document.getElementById('localTime2').innerHTML = new Date().toLocaleTimeString() + " // ";
+      }
+      document.getElementById('date1').innerHTML = "    " + new Date().toLocaleDateString();
+      setInterval(getTime, 1000);
+      setInterval(updateSwatchClock, 864);
+  </script>
+  <script>
+
+  document.querySelectorAll('.navlink').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('main-nav').open = false;
+    });
+  });
+
+    setTimeout(loadfin, 1500);
+    setTimeout(cursor, 1501);
+    setTimeout(cursor, 2000);
+  </script>
+  <script>
+    setTimeout(cursor, 6000);
+  </script>
+  <style>
+    .teltxt { width: 100%; max-width: 800px; margin: 0 auto; }
+    .airtxt-img { width: 100%; max-width: 500px; height: auto; margin: 0 auto; display: block; }
+    .main-flex {
+      display: flex;
+      width: 100%;
+    }
+    .sidenav {
+      flex: 1 1 200px;
+      min-width: 180px;
+      max-width: 195px;
+      display:flex;
+      flex-direction: column;
+      background-color:darkblue;
+      font-size: x-large;
+    }
+    #viewer, .teltxt {
+      flex: 2 1 1320px;
+      min-width: 250px;
+      max-width: 1320px;
+      align-items: center;
+    }
+    .topnav {
+      height: 0;
+      display: none;
+    }
+    #localTime2, #mySwatchClock2 {
+      display:none;
+    }
+    .mobilelogo {
+      display: none;
+    }
+    .desktoplogo {
+      max-height: 93px;
+      height: auto;
+      width: auto;
+    }
+    header {
+      background-color: black;
+      display: flex;
+    }
+    @media (max-width: 700px) {
+      .topnav {
+        display: block;
+        height: auto;
+        width: 100%;
+      }
+      #main-nav summary {
+        font-size: xx-large;
+        cursor: pointer;
+      }
+      #main-nav a {
+        display: block;
+        width: 100%;
+        margin: 0.2em 0;
+        font-size: xx-large;
+        text-align: left;
+      }
+      header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+      }
+      .desktoplogo {
+        display: none;
+      }
+      .mobilelogo {
+        display: block;
+        font-size: xx-large;
+    }
+  }
+    @media (max-width: 1316px) {
+      #viewer, .teltxt {
+        flex: none;
+        max-width: 98vw;
+        width: 98vw;
+      }
+      .teltxt { max-width: 98vw; content: center; }
+      .infotxt { width: 98vw; max-width: 98vw; }
+      .exfiller { display: none; visibility: hidden; width: 0px; overflow: hidden}
+    }
+    @media (max-width: 700px) {
+      iframe {margin: 0;max-width: 433px;width: 100%;}
+      .infotxt, .infotick, #mySwatchClock1, #localTime1 {display: none; visibility: hidden; width: 0px; overflow: hidden}
+      .whoweare { max-width:98% }
+      .sidenav { visibility: hidden; width: 0px; overflow: hidden; height: 0;display:none; }
+      .topnav { display: block; height: auto; width: 100%; }
+      .ch7txt { width: 100% }
+      .teltxt { width: 98vw; max-width: 98vw;}
+      .main-flex { flex-direction: column; }
+      #viewer, .teltxt {
+        flex: none;
+      }
+      #viewer { min-width: 0; }
+      #mySwatchClock2, #localTime2 {
+        display: inline;
+      }
+    }
+    .infotick,
+    #mySwatchClock1,
+    #localTime1 {
+      display: none;
+    }
+  </style>
+<script src="scripts/the-cycler.js"></script>
+<script src="news/scripts/fetch.js"></script>
+</html>
