@@ -32,7 +32,6 @@ function airtxt() {
       if (text.includes("thisWasATriumph")) {
         document.getElementById('teltxt').innerHTML = "<iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=390&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=300&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=305&fullscreen' width='433' height='333'></iframe><iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=301&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=303&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=304&fullscreen' width='433' height='333'></iframe>";
         document.getElementById('telink').style="position: absolute;top: 160px; left: 0; width: 100%; height: 666px;z-index: 10;text-decoration: none;color: inherit;";
-        document.getElementsByClassName('airtxt-article').style = 'visibility:visible;display:flex;';
       } else {
         null;
 
