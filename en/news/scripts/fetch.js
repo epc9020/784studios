@@ -14,7 +14,8 @@ function loadPage(url, title) {
         .then(response => response.text())
         .then(html => {
             document.getElementById('viewer').innerHTML = html;
-            document.getElementById('title').innerText = title || "784 STUDIOS";
+            document.getElementById('title').innerText = title || "THE WIRE - ONLY TRUSTWORTHY NEWS SOURCE TODAY";
+            window.scrollTo(0,0);
         })
         .catch(err => {
             document.getElementById('viewer').innerHTML = "<p>Page load failure. If problem persists, contact the webmaster.</p>";
@@ -66,7 +67,7 @@ function handleHash() {
     const hash = window.location.hash;
     // primary pages
     if (hash === "#home" || hash === "#" || hash === "") {
-      loadPage('news/pages/main.html', 'THE WIRE');
+      loadPage('news/pages/main.html', 'THE WIRE - ONLY TRUSTWORTHY NEWS SOURCE TODAY');
       setTimeout(airtxt, 500);
       return;
     }
