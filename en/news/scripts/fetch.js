@@ -31,7 +31,8 @@ function airtxt() {
     .then(text => {
       if (text.includes("thisWasATriumph")) {
         document.getElementById('teltxt').innerHTML = "<iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=390&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=300&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=305&fullscreen' width='433' height='333'></iframe><iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=301&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=303&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=304&fullscreen' width='433' height='333'></iframe>";
-        document.getElementById('telink').style="position: absolute;top: 160px; left: 0; width: 100%; height: 666px;z-index: 10;text-decoration: none;color: inherit;";
+        document.getElementById('telink').style="position: absolute; left: 0; width: 100%; height: 682px;z-index: 10;text-decoration: none;color: inherit;";
+        document.getElementById('telink-style').innerHTML = "#telink {top:160px} @media (max-width:1023px) {#telink {top:193px;}@media(max-width:753px){#telink{top:225px;}}@media(max-width:699px){#telink{top:264px;}@media(max-width:443px){#telink{top:297px;}}}"
       } else {
         null;
 
@@ -87,6 +88,13 @@ function handleHash() {
       loadPage('news/n/machines-give-less-to-no-shits.html', 'MACHINES 40% MORE EFFICIENT IN NOT GIVING A SHIT - THE WIRE')
     }
 
+    if (hash === "#measles-is-back-again") {
+      loadPage('news/n/measles-is-back-again.html', 'MEASLES: "GUESS WHO&#39;S BACK AGAIN?"')
+    }
+
+    if (hash === "#clorox-new-consumable-bleach") {
+      loadPage('news/n/clorox-new-consumable-bleach.html', 'CLOROX COMPANY INTRODUCES NEW LINE OF CONSUMABLE PRODUCTS - THE WIRE')
+    }
 
     // world
 
