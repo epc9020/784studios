@@ -1,4 +1,6 @@
-/* so what this does is that basically
+/* worlds most complex way of using <a> tags
+
+so what this does is that basically
 1. reads the hash in the url every time it updates (e.g a link is clicked on the sidenav)
 2. based on that, it fetches a corresponding html file
 3. puts the html file into the .viewer element on index.html
@@ -6,7 +8,8 @@
 this makes development of the site easier since i dont have to be inserting the same ol nav, headers, and footers in all pages
 i also made it more convinient to end users to link to pages, so like, its all very seamless, yes yes
 
-this one is for the wire, but everything is essentially the same
+this script i fucked over to work in whimsical ways for the wire
+original script is located in /en/scripts/fetch.js
 */
 
 function loadPage(url, title) {
@@ -24,6 +27,7 @@ function loadPage(url, title) {
 
 // this function is used exclusively in this site
 function airtxt() {
+  const hash = window.location.hash;
   fetch('https://airtxt.784studios.net/stillalive.txt')
   .catch(() => {
     return;
@@ -31,9 +35,19 @@ function airtxt() {
     .then(response => response.text())
     .then(text => {
       if (text.includes("thisWasATriumph")) {
-        document.getElementById('teltxt').innerHTML = "<iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=390&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=300&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=305&fullscreen' width='433' height='333'></iframe><iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=301&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=303&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=304&fullscreen' width='433' height='333'></iframe>";
-        document.getElementById('telink').style="position: absolute; left: 0; width: 100%; height: 682px;z-index: 10;text-decoration: none;color: inherit;";
-        document.getElementById('telink-style').innerHTML = "#telink {top:160px} @media (max-width:1023px) {#telink {top:193px;}@media(max-width:753px){#telink{top:225px;}}@media(max-width:699px){#telink{top:264px;}@media(max-width:443px){#telink{top:297px;}}}"
+        if (hash === "#local") {
+          document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=301' width='433' height='600'></iframe>";
+        } else if (hash === "#regional") {
+          document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=302' width='433' height='600'></iframe>";
+        } else if (hash === "#national") {
+          document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=303' width='433' height='600'></iframe>";
+        } else if (hash === "#world") {document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=304' width='433' height='600'></iframe>";
+        } else {
+          document.getElementById('teltxt').innerHTML = "<iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=390&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=300&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=305&fullscreen' width='433' height='333'></iframe><iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=301&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=303&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=304&fullscreen' width='433' height='333'></iframe>";
+          document.getElementById('telink').style="position: absolute; left: 0; width: 100%; height: 682px;z-index: 10;text-decoration: none;color: inherit;";
+          document.getElementById('telink-style').innerHTML = "#telink {top:160px} @media (max-width:1023px) {#telink {top:193px;}@media(max-width:753px){#telink{top:225px;}}@media(max-width:699px){#telink{top:264px;}@media(max-width:443px){#telink{top:297px;}}}"
+        }
+        
       } else {
         null;
 
@@ -75,6 +89,7 @@ function handleHash() {
     // local
     if (hash === "#local") {
       loadPage('news/l/index.html', 'LOCAL NEWS - THE WIRE')
+      setTimeout(airtxt, 500);
     }
     if (hash === "#kid-named-finger") {
       loadPage('news/l/kid-named-finger.html', 'KID NAMED FINGER - THE WIRE');
@@ -82,6 +97,9 @@ function handleHash() {
 
 
     // regional
+    if (hash === "#regional") {
+      loadPage('news/news.html', 'HEADLINE - THE WIRE')
+    }
     
 
     // national
