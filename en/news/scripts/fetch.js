@@ -10,6 +10,11 @@ i also made it more convinient to end users to link to pages, so like, its all v
 
 this script i fucked over to work in whimsical ways for the wire
 original script is located in /en/scripts/fetch.js
+
+searchlist:
+airtxt redirections
+primary pages
+
 */
 
 function loadPage(url, title, callback) {
@@ -75,20 +80,26 @@ function articletxt() {
         if (queryString === "?directed=false" || queryString === "") {
           const newUrl = window.location.pathname + "?directed=true" + window.location.hash;
           window.history.replaceState({}, '', newUrl);
-        }
-        if (hash === "#miku-corolla-2011") {
+
+          // airtxt redirections
+
+          if (hash === "#miku-corolla-2011") {
           open(airtxt + "333", "_self");
+        }
+
+        } else if (queryString === "?directed=true") {
+          open("wire.html", "_self");
         }
       } else {
         if (airtitle) airtitle.innerHTML = "AIRTXT IS OFF-AIR ((x))";
-        if (airparg) airparg.innerHTML = "This article is an AIRTXT exclusive. Please try reading this article again later during @500 - @132.";
+        if (airparg) airparg.innerHTML = "This article is an AIRTXT exclusive. Please try reading this article again later during @500 - @132. <a href='wire.html'>Go back to frontpage</a>";
       }
     })
     .catch(() => {
       const airtitle = document.getElementById("airtitle");
       const airparg = document.getElementById("airparg");
       if (airtitle) airtitle.innerHTML = "AIRTXT IS OFF-AIR ((x))";
-      if (airparg) airparg.innerHTML = "This article is an AIRTXT exclusive. Please try reading this article again later during @500 - @132.";
+      if (airparg) airparg.innerHTML = "This article is an AIRTXT exclusive. Please try reading this article again later during @500 - @132. <a href='wire.html'>Go back to frontpage</a>";
     });
 }
 
