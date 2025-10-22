@@ -12,13 +12,14 @@ this script i fucked over to work in whimsical ways for the wire
 original script is located in /en/scripts/fetch.js
 */
 
-function loadPage(url, title) {
+function loadPage(url, title, callback) {
     fetch(url)
         .then(response => response.text())
         .then(html => {
             document.getElementById('viewer').innerHTML = html;
             document.getElementById('title').innerText = title || "THE WIRE - ONLY TRUSTWORTHY NEWS SOURCE TODAY";
             window.scrollTo(0,0);
+            if (typeof callback === "function") callback();
         })
         .catch(err => {
             document.getElementById('viewer').innerHTML = "<p>Page load failure. If problem persists, contact the webmaster.</p>";
@@ -34,45 +35,61 @@ function airtxt() {
   })
     .then(response => response.text())
     .then(text => {
-      if (text.includes("thisWasATriumph")) {
+      if (text && text.includes("thisWasATriumph")) {
         if (hash === "#local") {
           document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=301' width='433' height='600'></iframe>";
         } else if (hash === "#regional") {
           document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=302' width='433' height='600'></iframe>";
         } else if (hash === "#national") {
           document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=303' width='433' height='600'></iframe>";
-        } else if (hash === "#world") {document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=304' width='433' height='600'></iframe>";
+        } else if (hash === "#world") {
+          document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=304' width='433' height='600'></iframe>";
         } else {
           document.getElementById('teltxt').innerHTML = "<iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=390&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=300&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=305&fullscreen' width='433' height='333'></iframe><iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=301&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=303&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=304&fullscreen' width='433' height='333'></iframe>";
           document.getElementById('telink').style="position: absolute; left: 0; width: 100%; height: 682px;z-index: 10;text-decoration: none;color: inherit;";
           document.getElementById('telink-style').innerHTML = "#telink {top:160px} @media (max-width:1023px) {#telink {top:193px;}@media(max-width:753px){#telink{top:225px;}}@media(max-width:699px){#telink{top:264px;}@media(max-width:443px){#telink{top:297px;}}}"
         }
-        
-      } else {
-        null;
-
       }
-    })
-
+    });
   return;
 }
+
 function articletxt() {
   const hash = window.location.hash;
+  const queryString = window.location.search;
+  const airtxt = "https://airtxt.784studios.net/?service=airtxt&page=";
   fetch('https://airtxt.784studios.net/stillalive.txt')
-    .catch(() => {
-      return;
+    .then(response => {
+      if (!response || !response.ok) return null;
+      return response.text();
     })
-      .then(response => response.text())
-      .then(text => {
+    .then(text => {
+      const airtitle = document.getElementById("airtitle");
+      const airparg = document.getElementById("airparg");
+      if (!text) {
+        if (airtitle) airtitle.innerHTML = "AIRTXT IS OFF-AIR ((x))";
+        if (airparg) airparg.innerHTML = "This article is an AIRTXT exclusive. Please try reading this article again later during @500 - @132.";
+        return;
+      }
       if (text.includes("thisWasATriumph")) {
-        if(hash === "#miku-corolla-2011"){
-          document.getElementById('article').innerHTML = "<iframe src='https://airtxt.784studios.net/?service=airtxt&page=350' style='border:none;width:100%;height:80vh;'></iframe>";
+        if (queryString === "?directed=false" || queryString === "") {
+          const newUrl = window.location.pathname + "?directed=true" + window.location.hash;
+          window.history.replaceState({}, '', newUrl);
+        }
+        if (hash === "#miku-corolla-2011") {
+          open(airtxt + "333", "_self");
         }
       } else {
-       null;
-     }
-  })
-  return;
+        if (airtitle) airtitle.innerHTML = "AIRTXT IS OFF-AIR ((x))";
+        if (airparg) airparg.innerHTML = "This article is an AIRTXT exclusive. Please try reading this article again later during @500 - @132.";
+      }
+    })
+    .catch(() => {
+      const airtitle = document.getElementById("airtitle");
+      const airparg = document.getElementById("airparg");
+      if (airtitle) airtitle.innerHTML = "AIRTXT IS OFF-AIR ((x))";
+      if (airparg) airparg.innerHTML = "This article is an AIRTXT exclusive. Please try reading this article again later during @500 - @132.";
+    });
 }
 
 // this other function is used universally
@@ -81,49 +98,47 @@ function handleHash() {
     const hash = window.location.hash;
     // primary pages
     if (hash === "#home" || hash === "#" || hash === "") {
-      loadPage('news/pages/main.html', 'THE WIRE - ONLY TRUSTWORTHY NEWS SOURCE TODAY');
-      setTimeout(airtxt, 500);
+      loadPage('news/pages/main.html', 'THE WIRE - ONLY TRUSTWORTHY NEWS SOURCE TODAY', airtxt);
       return;
     }
 
     // local
     if (hash === "#local") {
-      loadPage('news/l/index.html', 'LOCAL NEWS - THE WIRE')
-      setTimeout(airtxt, 500);
+      loadPage('news/l/index.html', 'LOCAL NEWS - THE WIRE', airtxt);
+      return;
     }
     if (hash === "#kid-named-finger") {
       loadPage('news/l/kid-named-finger.html', 'KID NAMED FINGER - THE WIRE');
+      return;
     }
-
 
     // regional
     if (hash === "#regional") {
-      loadPage('news/news.html', 'HEADLINE - THE WIRE')
+      loadPage('news/news.html', 'HEADLINE - THE WIRE');
+      return;
     }
-    
 
     // national
     if (hash === "#machines-give-less-to-no-shits") {
-      loadPage('news/n/machines-give-less-to-no-shits.html', 'MACHINES 40% MORE EFFICIENT IN NOT GIVING A SHIT - THE WIRE')
+      loadPage('news/n/machines-give-less-to-no-shits.html', 'MACHINES 40% MORE EFFICIENT IN NOT GIVING A SHIT - THE WIRE');
+      return;
     }
 
     if (hash === "#measles-is-back-again") {
-      loadPage('news/n/measles-is-back-again.html', 'MEASLES: "GUESS WHO&#39;S BACK AGAIN?"')
+      loadPage('news/n/measles-is-back-again.html', 'MEASLES: "GUESS WHO&#39;S BACK AGAIN?"');
+      return;
     }
 
     if (hash === "#clorox-new-consumable-bleach") {
-      loadPage('news/n/clorox-new-consumable-bleach.html', 'CLOROX COMPANY INTRODUCES NEW LINE OF CONSUMABLE PRODUCTS - THE WIRE')
+      loadPage('news/n/clorox-new-consumable-bleach.html', 'CLOROX COMPANY INTRODUCES NEW LINE OF CONSUMABLE PRODUCTS - THE WIRE');
+      return;
     }
-
-    // world
-
 
     // investigative
     if (hash === "#miku-corolla-2011") {
-      loadPage('news/investigation/miku-corolla-2011.html', 'INVESTIGATION: MIKU DROVE A 2011 TOYOTA COROLLA? - THE WIRE');
-      setTimeout(articletxt(), 200);
+      loadPage('news/pages/airtxt-redirect.html', 'REDIRECTING TO AIRTXT... - THE WIRE', articletxt);
+      return;
     }
-
 }
 
 /*  hash thing temp
