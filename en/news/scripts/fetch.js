@@ -42,7 +42,7 @@ function airtxt() {
     .then(text => {
       if (text && text.includes("thisWasATriumph")) {
         if (hash === "#local") {
-          document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=301' width='433' height='600'></iframe>";
+          document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=315' width='433' height='600'></iframe>";
         } else if (hash === "#regional") {
           document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=302' width='433' height='600'></iframe>";
         } else if (hash === "#national") {
@@ -125,11 +125,15 @@ function handleHash() {
 
     // regional
     if (hash === "#regional") {
-      loadPage('news/news.html', 'HEADLINE - THE WIRE');
+      loadPage('news/r/index.html', 'REGIONAL NEWS - THE WIRE', airtxt);
       return;
     }
 
     // national
+    if (hash === "#national") {
+      loadPage('news/n/index.html', 'NATIONAL NEWS - THE WIRE', airtxt)
+    }
+    
     if (hash === "#machines-give-less-to-no-shits") {
       loadPage('news/n/machines-give-less-to-no-shits.html', 'MACHINES 40% MORE EFFICIENT IN NOT GIVING A SHIT - THE WIRE');
       return;
@@ -144,11 +148,21 @@ function handleHash() {
       loadPage('news/n/clorox-new-consumable-bleach.html', 'CLOROX COMPANY INTRODUCES NEW LINE OF CONSUMABLE PRODUCTS - THE WIRE');
       return;
     }
+    // world
+    if (hash === "#world") {
+      loadPage('news/w/index.html', 'WORLD NEWS - THE WIRE', airtxt)
+    }
 
     // investigative
     if (hash === "#miku-corolla-2011") {
       loadPage('news/pages/airtxt-redirect.html', 'REDIRECTING TO AIRTXT... - THE WIRE', articletxt);
       return;
+    }
+
+
+
+    if (hash === "#404") {
+      loadPage('/404.html', '404 - THE WIRE')
     }
 }
 
