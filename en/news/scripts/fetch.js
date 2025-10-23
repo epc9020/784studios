@@ -115,7 +115,7 @@ function handleHash() {
 
     // local
     if (hash === "#local") {
-      loadPage('news/l/index.html', 'LOCAL NEWS - THE WIRE', airtxt);
+      loadPage('news/l.html', 'LOCAL NEWS - THE WIRE', airtxt);
       return;
     }
     if (hash === "#kid-named-finger") {
@@ -125,13 +125,13 @@ function handleHash() {
 
     // regional
     if (hash === "#regional") {
-      loadPage('news/r/index.html', 'REGIONAL NEWS - THE WIRE', airtxt);
+      loadPage('news/r.html', 'REGIONAL NEWS - THE WIRE', airtxt);
       return;
     }
 
     // national
     if (hash === "#national") {
-      loadPage('news/n/index.html', 'NATIONAL NEWS - THE WIRE', airtxt)
+      loadPage('news/n.html', 'NATIONAL NEWS - THE WIRE', airtxt)
     }
     
     if (hash === "#machines-give-less-to-no-shits") {
@@ -150,7 +150,7 @@ function handleHash() {
     }
     // world
     if (hash === "#world") {
-      loadPage('news/w/index.html', 'WORLD NEWS - THE WIRE', airtxt)
+      loadPage('news/w.html', 'WORLD NEWS - THE WIRE', airtxt)
     }
 
     // investigative

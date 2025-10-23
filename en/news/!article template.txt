@@ -1,7 +1,7 @@
 <div style="display:grid">
     <div>
         <div id="fullarticle" style="max-width:900px;width:100%;position:relative;margin: 0 auto 0 auto;">
-            <h1 class="yellow">HEADLINE</h1>
+            <h1 class="yellow">HEADLINE HERE</h1>
             <p>CONTENT HERE</p>
         </div>
     </div>
