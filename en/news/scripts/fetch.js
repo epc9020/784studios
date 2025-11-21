@@ -43,6 +43,7 @@ function airtxt() {
       if (text && text.includes("thisWasATriumph")) {
         if (hash === "#local") {
           document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=315' width='433' height='600'></iframe>";
+          
         } else if (hash === "#regional") {
           document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=302' width='433' height='600'></iframe>";
         } else if (hash === "#national") {
@@ -50,7 +51,7 @@ function airtxt() {
         } else if (hash === "#world") {
           document.getElementById('teltxt').innerHTML = "<iframe class='newsect' src='https://airtxt.784studios.net/?service=airtxt&page=304' width='433' height='600'></iframe>";
         } else {
-          document.getElementById('teltxt').innerHTML = "<iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=390&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=300&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=305&fullscreen' width='433' height='333'></iframe><iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=301&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=303&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=304&fullscreen' width='433' height='333'></iframe>";
+          document.getElementById('teltxt').innerHTML = "<iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=705&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=300&fullscreen' width='433' height='333'></iframe><iframe src='https://airtxt.784studios.net/?service=airtxt&page=305&fullscreen' width='433' height='333'></iframe><iframe class='filler' src='https://airtxt.784studios.net/?service=airtxt&page=301&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=303&fullscreen' width='433' height='333'></iframe><iframe class='exfiller' src='https://airtxt.784studios.net/?service=airtxt&page=304&fullscreen' width='433' height='333'></iframe>";
           document.getElementById('telink').style="position: absolute; left: 0; width: 100%; height: 682px;z-index: 10;text-decoration: none;color: inherit;";
           document.getElementById('telink-style').innerHTML = "#telink {top:160px} @media (max-width:1023px) {#telink {top:193px;}@media(max-width:753px){#telink{top:225px;}}@media(max-width:699px){#telink{top:264px;}@media(max-width:443px){#telink{top:297px;}}}"
         }
@@ -84,9 +85,14 @@ function articletxt() {
           // airtxt redirections
 
           if (hash === "#miku-corolla-2011") {
-          open(airtxt + "333", "_self");
-        }
+            open(airtxt + "333", "_self");
+          }
+          
 
+        /*if (hash === "#miku-corolla-2011") {
+            open(airtxt + "333", "_self");
+          }
+        */
         } else if (queryString === "?directed=true") {
           open("wire.html", "_self");
         }
@@ -158,6 +164,12 @@ function handleHash() {
       loadPage('news/pages/airtxt-redirect.html', 'REDIRECTING TO AIRTXT... - THE WIRE', articletxt);
       return;
     }
+
+    // archive
+    if (hash === "#archive") {
+      loadPage('news/pages/archive.html', 'NEWS ARCHIVE - THE WIRE')
+    }
+
 
 
 
