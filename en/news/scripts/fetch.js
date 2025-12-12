@@ -128,6 +128,13 @@ function handleHash() {
       loadPage('news/l/kid-named-finger.html', 'KID NAMED FINGER - THE WIRE');
       return;
     }
+    if (hash === "#electric-bill-gambling") {
+      loadPage('news/l/electric-bill-gambling.html', ' YOUR ELECTRICITY BILL TO BE DECIDED IN A GAME OF ROULETTE - THE WIRE')
+    }
+    if (hash === "#nuclear-new-year") {
+      loadPage('news/l/nuclear-new-year.html', ' SOME GUY TO USE NUCLEAR BOMBS AS FIREWORKS THIS NEW YEAR - THE WIRE')
+    }
+
 
     // regional
     if (hash === "#regional") {
