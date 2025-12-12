@@ -4,9 +4,13 @@
         <p>The AIRTXT service is currently off-air. Teletext articles are currently unavailable. Please try again during @500 - @132</p>
     </div>
     <div>
-       <div class="article">
-            <a class="teletext5 yellow" style="font-size:xx-large" href="#404">SOURCES REPORT: THIS ARTICLE CONTAINS NOTHING OF VALUE</a>
-            <p>Sources have reported that this article contains nothing of value and that clicking on it wont do anything special.</p>
+        <div class="article">
+            <a class="teletext5 yellow" style="font-size:xx-large" href="#electric-bill-gambling">YOUR ELECTRICITY BILL TO BE DECIDED IN A GAME OF ROULETTE</a>
+            <p>LUMA Energy this prior week has announced its plan on implementing a new billing system that decides your bill based on a game of roulette.</p>
+        </div>
+        <div class="article">
+            <a class="teletext5 yellow" style="font-size:xx-large" href="#nuclear-new-year">SOME GUY TO USE NUCLEAR BOMBS AS FIREWORKS THIS NEW YEAR</a>
+            <p>Reports indicate that a man plans to repurpose nuclear bombs found in basement as fireworks for the New Year's celebration.</p>
         </div> 
     </div>
 </div>
@@ -14,8 +18,11 @@
     .newscontainer {display:flex;}
     .newsect {width:443px; height:538px; position: sticky; top: 30px}
     .article {border: red groove 2px; margin: 20px}
+    #teltxt {flex: 0 0 400px;align-items: center;display:flex;flex-direction: column;}
     @media (max-width:700px) {
         .newscontainer{flex-direction: column;}
         .newsect{align-self: center;max-width: 443px;width:100%;}
+        #teltxt {flex: 0;font-size: small;}
+        .dimrod {font-size: 30px;color:red;padding:none;margin:none;gap:none;}
     }
 </style>
