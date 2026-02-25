@@ -1,1 +1,3 @@
-assets/ulltrakill/.directory
+./assets/ulltrakill/.directory
+./.vscode
+./.gitignore
