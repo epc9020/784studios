@@ -1,0 +1,282 @@
+p {
+  font-family:"ibees";
+  color:white;
+  
+  
+}
+
+body {
+  max-width:1320px;
+  font-size:20px;
+  height: 100%;
+  margin: 0;
+  background-color:black;
+  font-family:'ibees';
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+
+  color:white;
+  
+}
+@font-face {
+    font-family: "ibees";
+    src: url("/fonts/corodat/WebPlus_IBM_XGA-AI_12x20.woff");
+}
+@font-face {
+    font-family: "title";
+    src: url("/fonts/corodat/Web437_IBM_XGA-AI_12x23.woff");
+}
+
+h1 {
+  font-family: 'title';
+  font-size:46px
+}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+
+main { 
+  margin-left:6px;
+  margin-right:6px;
+  font-size: large;
+}
+span, p, li {
+  font-size:20px
+}
+button {font-family:"ibees";font-size:20px;background-color: black;}
+
+.logoimage {
+  width:87px;
+}
+
+header {
+  background: rgb(0, 48, 78);
+}
+
+a, button {
+  color:lightblue;
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAyCAYAAABLXmvvAAACCklEQVRYR+2UQUsCURDHZ12ioGv0FQoJE6yDJ+9+hchM9CB51UNXv4SBejHPQofOsQfxIHiqJPBgHiPxFFor9Z/FNV3X3HV3scMbGFzGee/35v9mnkQbMmlDXNoc+BtmsWpVkqQti7kr06T/Bu7hyO+GY49R8cnKUiwmmFacTCapVCoZt1AR8FbqbrdLiqJQLBYzwl1rxmnF7Xab6vU6JRIJDcbwfD5PtVqN+v0+h7gJfRaVXJk2BRcKBcpkMqSqrOivhcPhdqPRGCIyhrt/xwxOp9MkyzKVy+URZN6e4Bl4g8a6WlmGjYS5ihnMFolEKBqNfuVyOb2ZnhB+cBM+BReLxc9UKlUF4JLhfr+fqtUqBQKBkc/n4+q58hC8hwNol+7EpuBKpdKHvPvYbO6SW60WBYPBWUYS4IVZs3sIKRQKaU/mYDB46XQ6B/iU4XfwqF55PB4fZrPZncnmXfwqgC/Mmh04z6X+Vj/i+2iyOILfM3hKv3OeaX3UEGsCfGoHZMxdBtaKhfOdH8Ml7vaZUXMVfAvAuUkVz4gdzsT5Db+HO5aaO5XtDf5qAubKryfS638zfM+p1FbW851fwLVRg33Ad60sXJZj59HnbtdHrYlvx83l5OBrr7VT8doQs4UC7Kqcf20mpBZSe6aAaC7PpDVuLKQWUnumgGguz6QVcyyaSzSXZwpsrLl+ABiXqDO3bLHXAAAAAElFTkSuQmCC"), pointer;
+}
+
+button:hover {
+  color:black;
+  background-color: white;
+}
+
+button:focus {
+  animation: flash 0.5s;
+}
+
+button:active {
+  border: inset rgb(inherit);
+}
+
+@keyframes flash {
+  0%, 20%, 40%, 60%, 80%, 100% { background:black; color:white; }
+  10%, 30%, 50%, 70%, 90% { background:white; color:black; }
+}
+
+
+a:visited {
+  color:lightskyblue;
+}
+
+a:hover {
+  color:white;
+  
+}
+
+li {
+  list-style-type: ">> ";
+}
+
+html {background-color: black;}
+.main-nav{display:flex;justify-content: center;margin: 10px;}
+body {border-left:5px red ridge;border-right:5px red ridge;}
+
+@media (max-width: 1320px) {
+  body {
+    border:none;
+  }
+}
+@media (max-width: 700px) {
+  .main-nav {
+    display: none;
+  }
+  
+  .mobile-nav {
+    display: block;
+    align-items: center;
+    width: 100%;
+  }
+  .mobile-nav summary {
+    font-size: xx-large;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    border: 1px solid red;
+  }
+  .mobile-nav a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+  }
+  .navlink {
+    width:80vw;
+    align-self: center;
+    font-size: xx-large;
+  }
+  .dlogo {display:none}
+  .mlogo {display:block !important}
+}
+@media (min-width: 701px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+.mlogo{display:none;}
+
+.navlink {
+  font-size: 20px;
+}
+
+
+/* fuck */
+@font-face {
+  font-family:teletext;
+  src: url('/fonts/Teletext50.otf');
+}
+@font-face {
+  font-family: teletext-excond;
+  src: url('/fonts/Teletext50-extracondensed.otf');
+}
+@font-face {
+  font-family: teletext-cond;
+  src: url('/fonts/Teletext50-condensed.otf');
+}
+@font-face {
+  font-family: teletext-semicond;
+  src: url('/fonts/Teletext50-semicondensed.otf');
+}
+@font-face {
+  font-family: teletext-wide;
+  src: url('/fonts/Teletext50-extended.otf');
+}
+@font-face {
+  font-family:teletext1;
+  src: url('/fonts/MODE7GX0.TTF');
+}
+@font-face {
+  font-family: teletext2;
+  src: url('/fonts/MODE7GX1.TTF');
+}
+@font-face {
+  font-family: teletext3;
+  src: url('/fonts/MODE7GX2.TTF');
+}
+@font-face {
+  font-family: teletext4;
+  src: url('/fonts/MODE7GX3.TTF');
+}
+@font-face {
+  font-family: teletext5;
+  src: url('/fonts/MODE7GX4.TTF');
+}
+@font-face {
+  font-family: "vhs";
+  src: url('/fonts/vhs.ttf');
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+/* Inline styles extracted to classes */
+.tvtxtlogo {
+  display: grid;
+  justify-content: center;
+}
+
+.reclin {
+  --btn-color: red;
+  border: 3px outset var(--btn-color);
+  color: var(--btn-color);
+}
+
+.reclin:active {
+  border: 3px inset var(--btn-color);
+}
+
+.artlin {
+  --btn-color: yellow;
+  border: 3px outset var(--btn-color);
+  color: var(--btn-color);
+}
+
+.artlin:active {
+  border: 3px inset var(--btn-color);
+}
+
+.nwslin {
+  --btn-color: blue;
+  border: 3px outset var(--btn-color);
+  color: var(--btn-color);
+}
+
+.nwslin:active {
+  border: 3px inset var(--btn-color);
+}
+
+.abtlin {
+  --btn-color: lime;
+  border: 3px outset var(--btn-color);
+  color: var(--btn-color);
+}
+
+.abtlin:active {
+  border: 3px inset var(--btn-color);
+}
+
+/* slideshow 
+.slide1 {
+  animation: slideshow 10s infinite;
+  z-index: 1;
+}
+.slide2 {
+  animation: slideshow 10s infinite;
+  animation-delay: 5s;
+  z-index: 2;
+}
+
+
+@keyframes slideshow {
+  0% { opacity: 1; }
+  40%, 50%, 90% { opacity: 0; }
+}
+  */
+
+.slide2 {
+  display: none; /* temporary, remove later */
+}

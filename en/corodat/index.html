@@ -1,0 +1,73 @@
+<div class="welcome">
+    <video src="/assets/videos/static.mp4" autoplay="" muted="" loop="" id="bannervid" playsinline></video>
+    <div class="slide1" style="position:relative;display:grid;align-self: last baseline;">
+        <div class="corre-vid">CORODAT<br>RECORDS</div>
+        <span style="font-family: vhs;font-size: 20px;background-color: black;width: fit-content;color: rgb(255, 255, 255);z-index: 1;padding:5px">kick-ass music for the masses</span>
+    </div>
+    <!-- devnote: in the future, this could be a slideshow box, but i need to figure that out later :P -->
+</div>
+<div style="margin:5px;border-top: 1px red solid;"></div>
+<div>
+    <div class="about">
+        <div class="about-box">
+            <h1 style="text-align: center;">WHAT IS?</h1>
+            <p>CORODAT RECORDS is an independent record label based in Puerto Rico. It is the in-house record label for 784 STUDIOS. We publish "kick-ass music for the masses."</p>
+        </div>
+        <div class="about-box">
+            <h1 style="text-align: center;">WHY IS?</h1>
+            <p>Because no idiot is going to publish some rookie artist, that same rookie artist made their own record label to publish under.</p>
+        </div>
+        <div class="about-box ablast">
+            <h1 style="text-align: center;">WHO IS?</h1>
+            <p>CORODAT RECORDS is comprised of one idiot who also runs 784 STUDIOS.</p>
+        </div>
+    </div>
+</div>
+<div style="margin:5px;border-top: 1px red solid;"></div>
+<div>
+    <div style="display: flex;flex-direction: rows;justify-content: cemter;">
+        <h1>LINK US?</h1>
+        <div></div>
+    </div>
+</div>
+<style>
+    .corre-vid {font-family: vhs;font-size: 60px;letter-spacing: 20px;background-color: rgb(255, 255, 255);width: fit-content;color: rgb(0, 0, 0);padding-left: 23px;padding-bottom: 10px;z-index: 1;mix-blend-mode: screen;font-weight:bolder}
+    .about{ grid-template-columns: auto auto auto;display:grid;justify-items: center;text-align: center;gap:20px}
+    .about-box {max-width: 400px;width: 100%;border-right:2px ridge red;padding:20px}
+    .ablast {border: none !important}
+    .welcome {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+        color: white;
+        overflow: hidden;
+    }
+    .welcome video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+    .welcome h1 {
+        font-size: 3em;
+        position: relative;
+        z-index: 1;
+    }
+    .welcome p {
+        position: relative;
+        z-index: 1;
+    }
+    @media (max-width:700px) {
+        .welcome {height:60vh;text-align: center;}
+        .about{grid-template-columns: auto;gap:20px;}
+        .about-box {border: none !important}
+        .corre-vid {letter-spacing: 10.3px;}
+    }
+</style>
