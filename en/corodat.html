@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- 
+Main site and vast mayority of assets © 784 Studios MMXXIV - MMXXV. Rights: All Reserved.
+Teletext fonts and stylesheet © Alan Davies 2014 - 2015. Some content under public domain. https://galax.xyz
+Teletext viewer by Jamie Nemeth https://jamienemeth.co.uk
+-->
+<html id="loader" lang="en">
+  <head>
+    <script src="/scripts/loadCurWait.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/waitcur.css">
+    <title id="title">CORODAT RECORDS</title>
+    <link id="styles-link" href="corodat/corodat.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="/favicon.gif">
+    <link rel="stylesheet" href="/terretext.css">
+    <script src="/scripts/fucking-jquery.js"></script>
+    <script src="/scripts/jquery.webticker.min.js"></script>
+    <script src="/scripts/cursor.js"></script>
+    <script src="corodat/videopick.js"></script>
+    
+    <script defer src="/scripts/sit-script.js"></script>
+  </head>
+  <body style="background-color:black;">
+    <header style="background: linear-gradient(red, black, black, black, red)">
+
+        <div class="tvtxtlogo a" style="display: grid;">
+          <a href="#home"><img src="/assets/images/corodat-logo.png" alt="corodat records logo" style="max-width:1250px;width:100%"></a>
+        </div>
+
+      <!-- AIRTXT INFOTICK SERVICE -->
+    </header>
+    <nav class="main-nav">
+      <div>
+      <a href="#records">
+        <button class="reclin navlink">
+        CATALOG
+        </button>
+      </a>
+      <a href="#artists">
+        <button class="artlin navlink">
+        ARTISTS
+        </button>
+      </a>
+      <a href="#news">
+        <button class="nwslin navlink">
+        NEWS
+        </button>
+      </a>
+      <a href="#about">
+        <button class="abtlin navlink">
+        ABOUT
+        </button>
+      </a>
+      </div>
+    </nav>
+    <details class="mobile-nav" id="mobile-nav">
+      <summary>MENU</summary>
+      <div style="display:grid;justify-content: center;">
+        <a href="#records"><button class="reclin navlink">CATALOG</button></a>
+        <a href="#artists"><button class="artlin navlink">ARTISTS</button></a>
+        <a href="#news"><button class="nwslin navlink">NEWS</button></a>
+        <a href="#about"><button class="abtlin navlink">ABOUT</button></a>
+      </div>
+    </details>
+    <div style="display:flex">
+      <div class="main-flex">
+        <main id="viewer">
+          <div id="teltxt" style="text-align: center;">
+                <div style="display: flex; align-items: center; justify-content: center; height: 600px;flex-direction: column;">
+                <img src="/assets/images/corodat-logo.png" style="max-width: 700px;width:100%"><br>
+                <noscript>
+                  <p style="color:rgb(255, 0, 0);max-width: 500px;width:100%">Sorry, but this site requires Javascript to operate. Enable Javascript or use a Javascript supported browser.</p>
+                </noscript>
+              </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer style="padding:10px;margin:5px;border-top: 1px red solid;">
+      ℗ CORODAT RECORDS MMXXVI. CORODAT RECORDS is the record label of 784 STUDIOS. Rights: All Reserved.<br>
+      © 784 STUDIOS MMXXIV - MMXXVI. Unless specified, all material featured IP of 784 STUDIOS.<br>
+      Server side services are served as best as we're possibly able to.<br>
+      Oldschool PC fonts by VileR of <a href='https://int10h.org' class='a'>int10h.org</a>. Used under CC BY-SA 4.0 INTL.<br>
+      Teletext viewer by Jamie Nemeth of <a href="https://jamienemeth.co.uk">jamienemeth.co.uk</a>
+    </footer>
+  </body>
+  <script src="corodat/scripts/fetch.js"></script>
+  
+  <script>
+      var mySwatchClock1 = document.getElementById('mySwatchClock1');
+      var mySwatchClock2 = document.getElementById('mySwatchClock2');
+      function updateSwatchClock() {
+          mySwatchClock1.innerHTML = 'INTERNET: @' + GetSwatchTime();
+          mySwatchClock2.innerHTML = "@" + GetSwatchTime() + " // ";
+      }
+      document.getElementById('date1').innerHTML = "    " + new Date().toLocaleDateString();
+      setInterval(getTime, 1000);
+      setInterval(updateSwatchClock, 864);
+      setTimeout(video, 1500);
+  </script>
+  <script>
+
+  document.querySelectorAll('.navlink').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobile-nav').open = false;
+    });
+  });
+
+    setTimeout(loadfin, 1500);
+    setTimeout(cursor, 1501);
+    setTimeout(cursor, 2000);
+  </script>
+  <script>
+    setTimeout(cursor, 6000);
+  </script>
+  <style>
+    .teltxt { width: 100%; max-width: 800px; margin: 0 auto; }
+    .airtxt-img { width: 100%; max-width: 500px; height: auto; margin: 0 auto; display: block; }
+    .main-flex {
+      display: flex;
+      width: 100%;
+    }
+    .sidenav {
+      flex: 1 1 200px;
+      min-width: 180px;
+      max-width: 195px;
+      display:flex;
+      flex-direction: column;
+      background-color:darkblue;
+      font-size: x-large;
+    }
+    #viewer, .teltxt {
+      flex: 2 1 1000px;
+      min-width: 250px;
+      max-width: 100%;
+    }
+    .topnav {
+      height: 0;
+      display: none;
+    }
+    #localTime2, #mySwatchClock2 {
+      display:none;
+    }
+    @media (max-width: 700px) {
+      .topnav {
+        display: block;
+        height: auto;
+        width: 100%;
+      }
+      #main-nav summary {
+        font-size: xx-large;
+        cursor: pointer;
+      }
+      #main-nav a {
+        display: block;
+        width: 100%;
+        margin: 0.2em 0;
+        font-size: xx-large;
+        text-align: left;
+      }
+    }
+    @media (max-width: 700px) {
+      iframe { margin: 0; }
+      .infotxt, .infotick, #mySwatchClock1, #localTime1 {display: none; visibility: hidden; width: 0px; overflow: hidden}
+      .whoweare { max-width:98% }
+      .sidenav { visibility: hidden; width: 0px; overflow: hidden; height: 0;display:none; }
+      .topnav { display: block; height: auto; width: 100%; }
+      .ch7txt { width: 100% }
+      .teltxt { width: 98vw; max-width: 98vw;}
+      .main-flex { flex-direction: column; }
+      #viewer, .teltxt {
+        flex: none;
+      }
+      #viewer { min-width: 0; }
+      #mySwatchClock2, #localTime2 {
+        display: inline;
+      }
+    }
+    .infotick,
+    #mySwatchClock1,
+    #localTime1 {
+      display: none;
+    }
+  </style>
+<script src="scripts/the-cycler.js"></script>
+
+
+</html>
